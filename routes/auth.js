@@ -156,9 +156,10 @@ authRoutes.post('/forgotPassword', (req, res, next) => {
             'Si cette demande ne vient pas de vous, veuillez ignorer cet e-mail et votre mot de passe restera inchangé.\n'
         };
         smtpTransport.sendMail(mailOptions, function(err) {
-          req.flash('info', 'Un email contenant des informations supplémentaires a été envoyé à : ' + user.email );
+        //   req.flash('info', 'Un email contenant des informations supplémentaires a été envoyé à : ' + user.email );
           done(err, 'done');
         });
+        res.status(200).json({ message: 'l\'email de reinitialisation a été envoyé !' });
       }
     ], function(err) {
             res.status(400).json({ message: 'il y a eu un problème, l\'email n\a pas pu être envoyé' });
@@ -167,9 +168,53 @@ authRoutes.post('/forgotPassword', (req, res, next) => {
     });
   });
 
+  //Modifier mdp oublié grâce à un lien contenant le token
+  authRoutes.get('/changePasswordByMail/:token', function(req, res) {
+    User.findOne({ resetPasswordToken: req.params.token }, function(err, user) {
+      if (!user) {
+        res.status(400).json({ message: 'le lien a expiré' });
+        
+      }
+      res.status(200).json(user);
+    });
+  });
+
+  authRoutes.post("/changePasswordByMail/:token", (req, res, next) => { 
+    const password1 = req.body.password1;
+    const password2 = req.body.password2;
+    const salt = bcrypt.genSaltSync(10);
+    const hashPassNew = bcrypt.hashSync(req.body.password1, salt);
+    //Check password1 and password2 are not empty
+      if (password1 === "" || password2 === "" ) {
+        res.status(400).json({ message: 'le mot de passe ne peut être vide' });
+        return;
+      }
+    //on verifie que les deux mdp sont identiques
+      if (password1 !== password2) {
+        res.status(400).json({ message: 'les mots de passe ne sont pas identiques' });
+        return;
+      }
+    async.waterfall([
+      User.findOne({ resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } }, function(err, user) {
+        if (!user) {
+            res.status(400).json({ message:'Le token pour mettre à jour votre mot de passe est invalide ou a expiré.'});
+          return res.redirect('/login');
+        }
+        user.password = hashPassNew;
+        user.resetPasswordToken = undefined;
+        user.resetPasswordExpires = undefined;
+        user.save()
+          .then(user => {
+            res.status(200).json({ message: 'le nouveau mot de passe a bien été enregistré!' });
+          })
+        .catch(err => next(err));
+      })
+    ]);
+  });
+
 
   //Logout
-  authRoutes.get('/logout', (req, res) => {
+  authRoutes.delete('/session', (req, res) => {
       req.logout();
       res.redirect('/');
   });

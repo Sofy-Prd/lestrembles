@@ -13,7 +13,7 @@ const Lieu = require('../models/lieu');
 
 
 //les tarifs
-router.get('/tarifs', (req, res, next) => {
+router.get('/prices', (req, res, next) => {
   Tarif.find()
   .then(allTheTarifs => {
     res.json(allTheTarifs);
@@ -24,7 +24,7 @@ router.get('/tarifs', (req, res, next) => {
 });
 
 //les profs
-router.get('/professeurs', (req, res, next) => {
+router.get('/teachers', (req, res, next) => {
   Prof.find()
   .then(allTheProfs => {
     res.json(allTheProfs);
@@ -36,7 +36,7 @@ router.get('/professeurs', (req, res, next) => {
 
 
 //les cours
-router.get('/cours', (req, res, next) => {
+router.get('/courses', (req, res, next) => {
   Cours.find()
   // .populate({
   //   path: 'prof',

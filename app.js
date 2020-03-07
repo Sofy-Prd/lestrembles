@@ -68,7 +68,7 @@ const authRoutes = require('./routes/auth');
 app.use('/api', authRoutes);
 
 const espaceUserRoutes = require('./routes/espaceUser');
-app.use('/api/user', espaceUserRoutes);
+app.use('/api', espaceUserRoutes);
 
 const generalRoutes = require('./routes/general');
 app.use('/api', generalRoutes);
