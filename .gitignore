@@ -1,0 +1,15 @@
+# Dependency directory
+node_modules
+
+# Debug log from npm
+npm-debug.log
+
+# Environment Variables should NEVER be published
+.env
+
+# ignorer les seeds
+bin/coursSeeds.js
+bin/lieuxSeeds.js
+bin/profsSeeds.js
+bin/tarifsSeeds.js
+bin/usersSeeds.js
