@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AuthService from './auth-service';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Login extends Component {
      constructor(props){
@@ -14,9 +14,9 @@ class Login extends Component {
       const username = this.state.username;
       const password = this.state.password;
       this.service.login(username, password)
-      .then( response => {
+      .then( data => {
           this.setState({ username: "", password: "" });
-          this.props.getUser(response);
+          this.props.getUser(data);
           this.props.history.push('/espacePerso');
       })
       .catch( error => console.log(error) )
@@ -39,7 +39,7 @@ class Login extends Component {
           <input type="submit" value="Login" />
         </form>
         <p> 
-            {/* <Link to={"/forgetPassword"}>J'ai oublié mon mot de passe</Link> */}
+            <Link to={"/espacePerso/forgotPassword"}>J'ai oublié mon mot de passe</Link>
         </p>
       </div>
     )
