@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Login extends Component {
      constructor(props){
       super(props);
-      this.state = { username: '', password: '' };
+      this.state = { username: '', password: '', error: "" };
       this.service = new AuthService();
     }
   
@@ -15,11 +15,12 @@ class Login extends Component {
       const password = this.state.password;
       this.service.login(username, password)
       .then( data => {
+          this.setState({error: ""});
           this.setState({ username: "", password: "" });
           this.props.getUser(data);
           this.props.history.push('/espacePerso');
       })
-      .catch( error => console.log(error) )
+      .catch( err => this.setState({error: err.response.data.message}) )
     }
       
     handleChange = (event) => {  
@@ -31,6 +32,10 @@ class Login extends Component {
     return(
       <div>
         <form onSubmit={this.handleFormSubmit}>
+          {this.state.error && (
+                <p className="error">{this.state.error}</p>
+              )}
+
           <label>Nom :</label>
           <input type="text" name="username" value={this.state.username} onChange={ e => this.handleChange(e)}/>
           <label>Mot de passe:</label>

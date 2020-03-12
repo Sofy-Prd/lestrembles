@@ -29,7 +29,7 @@ class AuthService {
   //     .then(response => response.data)
   // }
 
-  changePasswordByMail(password1, password2, paramsId) {
+  changePasswordByMail(password1, password2) {
     return this.service.post('/changePasswordByMail/:token', {
       password1,
       password2

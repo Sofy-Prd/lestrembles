@@ -92,11 +92,8 @@ router.put("/user", (req, res, next) => {
 });
 
 
-
-
-
 // Absence
-router.put("/user/adherents/:id/sendAbsences", (req, res, next) => {
+router.put("/user/sendAbsences", (req, res, next) => {
   let email = req.body.profEmail;
   let message = req.body.message;
   let prenom = req.body.prenom;

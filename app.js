@@ -9,6 +9,10 @@ const logger       = require('morgan');
 const path         = require('path');
 const session       = require('express-session');
 const passport      = require('passport');
+const cors = require('cors');
+const MongoStore = require('connect-mongo')(session);
+
+
 require('./configs/passport');
 
 
@@ -48,6 +52,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
+app.use(cors({
+  credentials: true,
+  origin: ['http://localhost:3000'] // <== this will be the URL of our React app (it will be running on port 3000)
+}));
 
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
@@ -55,7 +63,8 @@ app.locals.title = 'Express - Generated with IronGenerator';
 app.use(session({
   secret:"some secret goes here",
   resave: true,
-  saveUninitialized: true
+  saveUninitialized: true,
+  store: new MongoStore( { mongooseConnection: mongoose.connection })
 }));
 
 app.use(passport.initialize());

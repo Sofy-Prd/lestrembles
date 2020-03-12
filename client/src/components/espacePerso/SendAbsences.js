@@ -40,20 +40,35 @@ class SendAbsences extends Component {
 
  
   render() {
-    
+     
+    //  let prenom = this.props.user.adherent.prenom;
+    //  let nom = this.props.user.adherent.nom;
+    const { params } = this.props.match;
+    let user = this.props.user;
+    let adherents = user.adherent;
+      console.log ("adherents", adherents);
+      console.log ("params", params);
+      
+      
+     let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
+     console.log("adherent", adherent);
       return (
         <div className="SendAbsences">
 
         {/* <h3>adherent : {this.props.adherent[0].prenom}</h3> */}
 
-        {/* <form onSubmit={this.handleFormSubmit}>
-          <label>Motif:</label>
-          <input type="textarea" name="message" value={this.state.message} onChange={e => this.handleSendAbsences(e)}/>
-          <label>Nom :</label>
-          <input type="date" name="date" value={this.state.date} onChange={e => this.handleSendAbsences(e)}/>
+        <form onSubmit={this.handleFormSubmit}>
+            <input type="hidden" name="prenom"  value={adherent.prenom}/>
+            <input type="hidden" name="nom" value={adherent.prenom}/>
+         
+            <input type="hidden" name="profEmail" value="sophie.pirodon@gmail.com"/>
+            <label>Motif:</label>
+            <input type="textarea" name="message" value={this.state.message} onChange={e => this.handleSendAbsences(e)}/>
+            <label>Nom :</label>
+            <input type="date" name="date" value={this.state.date} onChange={e => this.handleSendAbsences(e)}/>
           
           <input type="submit" value="Submit" />
-        </form> */}
+        </form>
         
         
         </div>

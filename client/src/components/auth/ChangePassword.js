@@ -6,6 +6,7 @@ class ChangePassword extends Component {
   state = {
     password1:"",
     password2:"",
+    error:""
 
 
   }
@@ -24,7 +25,7 @@ class ChangePassword extends Component {
       
         this.props.history.push('/espacePerso');
       })
-      .catch( error => console.log(error) )
+      .catch( err => this.setState({error: err.response.data.message}) )
     }
 
   handleChangePassword = (event) => {  
@@ -40,6 +41,9 @@ class ChangePassword extends Component {
 
         <h3>Modification du mot de passe</h3>
         <form onSubmit={this.handleFormSubmit}>
+          {this.state.error && (
+                  <p className="error">{this.state.error}</p>
+                )}
           <label>Veuiller taper votre nouveau mot de passe :</label>
           <input type="password" name="password1" value={this.state.password1} onChange={e => this.handleChangePassword(e)}/>
           <label>Veuillez confirmer votre mot de passe :</label>

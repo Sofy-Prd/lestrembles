@@ -47,6 +47,7 @@ class EspacePerso extends Component {
 
         if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
         // console.log(this.props.user.adherent);
+        
        
         return (
            
@@ -60,7 +61,7 @@ class EspacePerso extends Component {
                     <ul>
                     {
                     this.props.user.adherent.map(membre => (
-                            <Link to="/espacePerso/sendAbsences"><li key={membre._id}>Prénom de l'adhérent: {membre.prenom}</li></Link>
+                            <Link to={`/espacePerso/${membre.prenom}/sendAbsences`}><li key={membre._id}>Prénom de l'adhérent: {membre.prenom}</li></Link>
                         ))
                     }
                     </ul>

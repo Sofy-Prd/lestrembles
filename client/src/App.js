@@ -61,7 +61,7 @@ class App extends Component {
 
             <Route exact path='/cours' component={CoursList} />/>
             <Route exact path='/tarifs' component={TarifsList} />/>
-            <Route exact path='/espacePerso/:name/sendAbsences' render={() => <SendAbsences />}/> />/>
+            <Route exact path='/espacePerso/:name/sendAbsences' render={(props) => <SendAbsences {...props} getUser={this.getTheUser} user={this.state.user}/>}/> />/>
 
 
             <Route exact path='/espacePerso/forgotPassword' component={ForgotPassword} />/>
@@ -71,7 +71,7 @@ class App extends Component {
           
             <Route exact path='/espacePerso/login' render={(props) => <Login {...props} getUser={this.getTheUser}/>}/>
 
-            <Route exact path="/espacePerso" render={(props) => (<EspacePerso {...props} getAdherent={this.getTheAdherent} getUser={this.getTheUser} user={this.state.user} />)} />
+            <Route exact path="/espacePerso" render={(props) => (<EspacePerso {...props} getUser={this.getTheUser} user={this.state.user} />)} />
           </Switch>
         
         </div>

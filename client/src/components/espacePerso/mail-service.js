@@ -9,7 +9,7 @@ class MailService {
   }
   
   sendAbsence = (profEmail, message,prenom, nom, date) => {
-    return this.service.post('/sessions', {profEmail, message,prenom, nom, date})
+    return this.service.put('/user/adherents/:id/sendAbsences', {profEmail, message,prenom, nom, date})
     .then(response => response.data)
   }
 }
