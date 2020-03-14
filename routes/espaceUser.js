@@ -11,6 +11,7 @@ const oauth2Client = new OAuth2(
   "https://developers.google.com/oauthplayground"
 );
 
+
 const smtpTransport = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -29,14 +30,16 @@ oauth2Client.setCredentials({
 
 
 router.get("/user", (req, res, next) => {
-  if (!req.user) {
-    res.status(401).json({
-    message: "Vous devez être connecté pour consulter vos informations"
-    });
-    return;
-  }
+  console.log("req", req);
+  // if (!req.user) {
+    
+  //   res.status(401).json({
+  //   message: "Vous devez être connecté pour consulter vos informations"
+  //   });
+  //   return;
+  // }
   // ok, req.user is defined    
-  User.findOne({_id : req.user._id})
+  User.findOne({_id : req.query.userId})
   .populate({
     path: 'adherent.cours1',
     populate: {
@@ -67,7 +70,7 @@ router.get("/user", (req, res, next) => {
   .catch(function (err) { 
     next(err);
   });
-});
+}); 
 
 // Update User
 router.put("/user", (req, res, next) => {

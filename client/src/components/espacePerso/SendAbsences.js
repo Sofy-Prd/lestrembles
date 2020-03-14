@@ -23,7 +23,7 @@ class SendAbsences extends Component {
     
     event.preventDefault();
 
-    axios.post(`http://localhost:5000/api/user/sendAbesences`, { profEmail, message,prenom, nom, date })
+    axios.put(`http://localhost:5000/api/user/sendAbsences`, { profEmail, message,prenom, nom, date })
         .then(
            
             this.props.history.push('/espacePerso')
@@ -48,6 +48,7 @@ class SendAbsences extends Component {
     let adherents = user.adherent;
       console.log ("adherents", adherents);
       console.log ("params", params);
+      // let profEmail="sophie.pirodon@gmail.com"
       
       
      let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
@@ -61,7 +62,7 @@ class SendAbsences extends Component {
             <input type="hidden" name="prenom"  value={adherent.prenom}/>
             <input type="hidden" name="nom" value={adherent.prenom}/>
          
-            <input type="hidden" name="profEmail" value="sophie.pirodon@gmail.com"/>
+            <input type="hidden" name="profEmail" value={adherent.cours1.prof.email}/>
             <label>Motif:</label>
             <input type="textarea" name="message" value={this.state.message} onChange={e => this.handleSendAbsences(e)}/>
             <label>Nom :</label>

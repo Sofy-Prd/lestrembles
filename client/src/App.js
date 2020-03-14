@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
+import axios from 'axios';
 import Login from './components/auth/Login.js'
 import EspacePerso from './components/espacePerso/EspacePerso.js'
+import Profil from './components/espacePerso/Profil.js'
 import SendAbsences from './components/espacePerso/SendAbsences.js'
 import ChangePassword from './components/auth/ChangePassword.js'
 import ChangePasswordByMail from './components/auth/ChangePasswordByMail.js'
@@ -16,7 +18,8 @@ import AuthService from './components/auth/auth-service';
 class App extends Component {
   state = {
     user: {},
-    adherent:{}
+    // adherent:{},
+    theFamily:{}
 
   }
 
@@ -29,7 +32,9 @@ class App extends Component {
     if (!this.state.user._id){
       this.service.loggedin()
         .then(data => {
+        
           this.setState({user: data})
+          this.getTheFamily(data._id)
         })
         .catch(err => {
 
@@ -50,6 +55,22 @@ class App extends Component {
     })
   }
 
+  getTheFamily = () => {
+        
+    axios.get(`http://localhost:5000/api/user`,{params:{userId:this.state.user._id}})
+    .then(responseFromApi => {
+        console.log("responseFromApi",responseFromApi);
+
+     
+      this.setState({
+        theFamily: responseFromApi.data
+      })
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+
+  }
  
 
   render() {
@@ -62,7 +83,8 @@ class App extends Component {
             <Route exact path='/cours' component={CoursList} />/>
             <Route exact path='/tarifs' component={TarifsList} />/>
             <Route exact path='/espacePerso/:name/sendAbsences' render={(props) => <SendAbsences {...props} getUser={this.getTheUser} user={this.state.user}/>}/> />/>
-
+            
+           
 
             <Route exact path='/espacePerso/forgotPassword' component={ForgotPassword} />/>
 
@@ -70,8 +92,9 @@ class App extends Component {
             <Route exact path="/espacePerso/changePasswordByMail/:token" render={(props) => (<ChangePasswordByMail {...props} />)} />
           
             <Route exact path='/espacePerso/login' render={(props) => <Login {...props} getUser={this.getTheUser}/>}/>
-
-            <Route exact path="/espacePerso" render={(props) => (<EspacePerso {...props} getUser={this.getTheUser} user={this.state.user} />)} />
+            <Route exact path="/espacePerso/profil" render={(props) => (<Profil {...props} />)} />
+            <Route exact path="/espacePerso" render={(props) => (<EspacePerso {...props} getUser={this.getTheUser} user={this.state.user} family={this.state.theFamily}/>)} />
+           
           </Switch>
         
         </div>

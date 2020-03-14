@@ -33,7 +33,9 @@ const accessToken = oauth2Client.getAccessToken();
 const User       = require('../models/user');
 
 
-
+function getUserPopulated(userid) {
+  return User.find().populate()
+}
 
 //LOGIN
 authRoutes.post('/sessions', (req, res, next) => {
@@ -57,8 +59,40 @@ authRoutes.post('/sessions', (req, res, next) => {
                 return;
             }
 
-            // We are now logged in (thats why we can also send req.user)
-            res.status(200).json(theUser);
+            getUserPopulated(req.user.id).then()
+
+            User.find()
+            
+            theUser
+             .populate({
+              path: 'adherent.cours1',
+              populate: {
+                path: 'prof'
+              }
+            })
+            .populate({
+              path: 'adherent.cours2',
+              populate: {
+                path: 'prof'
+              }
+            })
+            .populate({
+              path: 'adherent.cours1',
+              populate: {
+                path: 'lieu'
+              }
+            })
+            .populate({
+              path: 'adherent.cours2',
+              populate: {
+                path: 'lieu'
+              }
+            }, (err, theUserPopulated) => {
+              if (err) {
+                return res.status(500).json({message: err.message})
+              }
+              res.json(theUserPopulated)
+            })
         });
     })(req, res, next);
 });
@@ -166,6 +200,7 @@ authRoutes.post('/forgotPassword', (req, res, next) => {
     });
 });
 
+
   //Modifier mdp oublié grâce à un lien contenant le token
   authRoutes.get('/changePasswordByMail/:token', function(req, res) {
     User.findOne({ resetPasswordToken: req.params.token }, function(err, user) {
@@ -217,5 +252,6 @@ authRoutes.post('/forgotPassword', (req, res, next) => {
       res.redirect('/');
   });
 
+  
 
 module.exports = authRoutes;
