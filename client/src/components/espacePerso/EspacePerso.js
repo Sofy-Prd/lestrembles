@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import AuthService from '../auth/auth-service';
-import axios from 'axios';
+// import axios from 'axios';
 
 import { Link } from 'react-router-dom'; 
 // import { Redirect } from 'react-router-dom';
@@ -46,27 +46,7 @@ class EspacePerso extends Component {
     //     // this.props.getUser(this.props.user);
     //     console.log("this.props.user",this.props.user)
     //     this.getTheFamily()
-     
-        
-
-    //   }
-
-    // getTheFamily = () => {
-        
-    //     axios.get(`http://localhost:5000/api/user`,{params:{userId:this.props.user._id}})
-    //     .then(responseFromApi => {
-    //         console.log("responseFromApi",responseFromApi);
-
-         
-    //       this.setState({
-    //         theFamily: responseFromApi.data
-    //       })
-    //     })
-    //     .catch((err)=>{
-    //         console.log(err)
-    //     })
-
-    //   }
+   
 
     
     render () {
@@ -83,7 +63,7 @@ class EspacePerso extends Component {
                 
                 <div className="EspacePerso">
                     <h1>Bienvenue {this.props.user.username}</h1>
-                    <p>family : {this.props.family.username}</p>
+                   
 
                     <Link to="/espacePerso/profil"><h2>voir mes information personnelles</h2></Link>
                     <p>quel enfant sera absent ?</p>

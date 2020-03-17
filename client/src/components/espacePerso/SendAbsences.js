@@ -52,14 +52,14 @@ class SendAbsences extends Component {
     
       
       
-     let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
-     console.log("adherent", adherent);
-       let prenom = adherent[0].prenom;
-       console.log("prenom",prenom);
-       let nom = adherent[0].nom;
-       console.log("nom",nom)
-       let profEmail=adherent[0].cours1.prof.email;
-       console.log("profEmail",profEmail)
+    //  let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
+    //  console.log("adherent", adherent);
+    //    let prenom = adherent[0].prenom;
+    //    console.log("prenom",prenom);
+    //    let nom = adherent[0].nom;
+    //    console.log("nom",nom)
+    //    let profEmail=adherent[0].cours1.prof.email;
+    //    console.log("profEmail",profEmail)
       //  this.setState({
       //   prenom:prenom,
       //   nom:nom,

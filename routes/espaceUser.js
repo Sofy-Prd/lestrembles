@@ -30,7 +30,7 @@ oauth2Client.setCredentials({
 
 
 router.get("/user", (req, res, next) => {
-  console.log("req", req);
+  // console.log("req", req);
   // if (!req.user) {
     
   //   res.status(401).json({

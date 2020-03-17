@@ -1,82 +1,66 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-// import { Link } from 'react-router-dom';
+// import axios from 'axios';
+import { Link } from 'react-router-dom';
 
-import EditProfil from './EditProfil.js'
+
+import Loader from '../Loader.js';
 
 
 class Profil extends Component {
- 
-      state = {
-        theFamily:{}
-      }
-  
-
-  // componentDidMount(){
-  //     this.props.getFamily()
-  //     .then(family => {
    
-  //       this.setState({
-  //         theFamily: family
-  //       })
-  //     })
-  //     .catch((err)=>{
-  //         console.log(err)
-  //     })
-
-  // }
-
-
-  // getUser = () => {
-  //   //   const { params } = this.props.match;
-  //     axios.get(`http://localhost:5000/api/user`)
-  //     .then( responseFromApi =>{
-  //         const theUser = responseFromApi.data;
-  //         this.setState(theUser);
-  //     })
-  //     .catch((err)=>{
-  //         console.log(err)
-  //     })
-  // }
-  
-  // 👨‍🏫
-  // renderEditForm = () => {
-  //   if(!this.state.nom){
-  //     this.getFamily();
-  //   } else {
-  //   //                                                    {...props} => so we can have 'this.props.history' in Edit.js
-  //   //                                                                                          ^
-  //   //                                                                                          |
-  //     return <EditProfil theFamily={this.state.theFamily} />
+  // renderEditProfil = () => {
+                                                                                
+  //     return <EditProfil user={this.props.user} />
         
   //   }
-  // }
+ 
 
   
   render() {
-    
+    if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
 
-    console.log("theFamily", this.state.theFamily);
-    console.log("props", this.props)
+    let user = this.props.user;
+    let adherents = user.adherent;
+      console.log ("user", user);
+      console.log ("adherents", adherents);
     
     return(
       <div>
    
-        <h1>Nom : {this.state.nom}</h1>
-        <p>Prénom : {this.state.prenom}</p>
-        <p>Adherents : </p>
+        <p>Nom : {user.username}</p>
+        <p>email : {user.email}</p>
+        <p>adresse : {user.rue}  </p>
+        <p>{user.codePostal} {user.ville}</p>  
+        <p>Téléphones : </p>
+        <p>{user.telephone1} </p>
+        <p >{user.telephone2} </p>
+
+         <p>Adhérent(s):</p>
+
+         
         <ul>
-                    {/* {
-                    this.state.adherent.map(membre => (
-                            <li key={membre._id}>Prénom de l'adhérent: {membre.prenom}</li>
-                        ))
-                    } */}
-                    </ul>
+          {
+          adherents.map(membre => (
+         <div>
+                 <p>Prénom de l'adhérent: {membre.prenom}</p>
+                   <p>Cours :{membre.cours1.nom} </p> 
+                  <p> {membre.cours1.jour} {membre.cours1.horaire}</p> 
+                  <p>{membre.cours1.lieu.nom}</p>
+          
+          
+                  <p>avec {membre.cours1.prof.prenom}</p>
+                  <img src={membre.cours1.prof.photo} alt="prof"/>  
+                  
+         </div>        
+        
+              ))
+          }
+          </ul>
 
-
+          <Link to="/espacePerso/editProfil">Modifier le profil</Link>
        
 
-        {/* <div>{this.renderEditForm()} </div> */}
+        {/* <div>{this.renderEditProfil()} </div> */}
 
        
       </div>

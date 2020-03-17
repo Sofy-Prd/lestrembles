@@ -5,6 +5,7 @@ import axios from 'axios';
 import Login from './components/auth/Login.js'
 import EspacePerso from './components/espacePerso/EspacePerso.js'
 import Profil from './components/espacePerso/Profil.js'
+import EditProfil from './components/espacePerso/EditProfil.js'
 import SendAbsences from './components/espacePerso/SendAbsences.js'
 import ChangePassword from './components/auth/ChangePassword.js'
 import ChangePasswordByMail from './components/auth/ChangePasswordByMail.js'
@@ -92,7 +93,9 @@ class App extends Component {
             <Route exact path="/espacePerso/changePasswordByMail/:token" render={(props) => (<ChangePasswordByMail {...props} />)} />
           
             <Route exact path='/espacePerso/login' render={(props) => <Login {...props} getUser={this.getTheUser}/>}/>
-            <Route exact path="/espacePerso/profil" render={(props) => (<Profil {...props} />)} />
+            <Route exact path="/espacePerso/profil" render={(props) => (<Profil {...props} getUser={this.getTheUser} user={this.state.user}/>)} />
+            <Route exact path="/espacePerso/editProfil" render={(props) => (<EditProfil {...props} user={this.state.user}/>)} />
+
             <Route exact path="/espacePerso" render={(props) => (<EspacePerso {...props} getUser={this.getTheUser} user={this.state.user} family={this.state.theFamily}/>)} />
            
           </Switch>
