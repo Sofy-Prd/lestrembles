@@ -14,7 +14,7 @@ class EspacePerso extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            theFamily:{}
+            
         }
         this.service = new AuthService();
     }
@@ -74,7 +74,7 @@ class EspacePerso extends Component {
         if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
 
         console.log("user",this.props.user);
-        console.log("family",this.props.family);
+        // console.log("family",this.props.family);
         
        
         return (

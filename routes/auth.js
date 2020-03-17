@@ -33,9 +33,35 @@ const accessToken = oauth2Client.getAccessToken();
 const User       = require('../models/user');
 
 
-function getUserPopulated(userid) {
-  return User.find().populate()
-}
+// function getUserPopulated(userId) {
+//   return User.findOne({_id : userId})
+//   .populate({
+//     path: 'adherent.cours1',
+//     populate: {
+//       path: 'prof'
+//     }
+//   })
+//   .populate({
+//     path: 'adherent.cours2',
+//     populate: {
+//       path: 'prof'
+//     }
+//   })
+//   .populate({
+//     path: 'adherent.cours1',
+//     populate: {
+//       path: 'lieu'
+//     }
+//   })
+//   .populate({
+//     path: 'adherent.cours2',
+//     populate: {
+//       path: 'lieu'
+//     }
+//   })
+  
+ 
+// }
 
 //LOGIN
 authRoutes.post('/sessions', (req, res, next) => {
@@ -59,35 +85,18 @@ authRoutes.post('/sessions', (req, res, next) => {
                 return;
             }
 
-            getUserPopulated(req.user.id).then()
+            // getUserPopulated(req.user.id).then()
 
-            User.find()
-            
+            // User.find()
+            // getTheUserPopulated(theUser._id)
             theUser
-             .populate({
-              path: 'adherent.cours1',
-              populate: {
-                path: 'prof'
-              }
-            })
-            .populate({
-              path: 'adherent.cours2',
-              populate: {
-                path: 'prof'
-              }
-            })
             .populate({
               path: 'adherent.cours1',
               populate: {
-                path: 'lieu'
+                path: 'prof lieu duree'
               }
-            })
-            .populate({
-              path: 'adherent.cours2',
-              populate: {
-                path: 'lieu'
-              }
-            }, (err, theUserPopulated) => {
+            }
+            , (err, theUserPopulated) => {
               if (err) {
                 return res.status(500).json({message: err.message})
               }
@@ -95,7 +104,7 @@ authRoutes.post('/sessions', (req, res, next) => {
             })
         });
     })(req, res, next);
-});
+    });
 
 //LOGOUT
 authRoutes.post('/logout', (req, res, next) => {
@@ -109,7 +118,23 @@ authRoutes.post('/logout', (req, res, next) => {
 authRoutes.get('/loggedin', (req, res, next) => {
     // req.isAuthenticated() is defined by passport
     if (req.isAuthenticated()) {
-        res.status(200).json(req.user);
+      let theUser=req.user;
+     
+      theUser
+      .populate({
+        path: 'adherent.cours1',
+        populate: {
+          path: 'prof lieu duree'
+        }
+      }
+      , (err, theUserPopulated) => {
+        if (err) {
+          return res.status(500).json({message: err.message})
+        }
+        res.json(theUserPopulated)
+      });
+
+        
         return;
     }
     res.status(403).json({ message: 'Vous n\'êtes pas autorisé' });

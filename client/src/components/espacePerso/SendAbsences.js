@@ -4,10 +4,10 @@ import axios from 'axios';
 
 class SendAbsences extends Component {
   state = {
-    profEmail:this.props.profEmail,
+    profEmail:"",
     message:"",
-    prenom:this.props.prenom,
-    nom:this.props.nom,
+    prenom:"",
+    nom:"",
     date:""
   }
 
@@ -23,7 +23,8 @@ class SendAbsences extends Component {
     
     event.preventDefault();
 
-    axios.put(`http://localhost:5000/api/user/sendAbsences`, { profEmail, message,prenom, nom, date })
+
+    axios.put(`http://localhost:5000/api/user/:name/sendAbsences`, { profEmail, message,prenom, nom, date })
         .then(
            
             this.props.history.push('/espacePerso')
@@ -41,29 +42,44 @@ class SendAbsences extends Component {
  
   render() {
      
-    //  let prenom = this.props.user.adherent.prenom;
-    //  let nom = this.props.user.adherent.nom;
+   
     const { params } = this.props.match;
     let user = this.props.user;
     let adherents = user.adherent;
+      console.log ("user", user);
       console.log ("adherents", adherents);
       console.log ("params", params);
-      // let profEmail="sophie.pirodon@gmail.com"
+    
       
       
      let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
      console.log("adherent", adherent);
+       let prenom = adherent[0].prenom;
+       console.log("prenom",prenom);
+       let nom = adherent[0].nom;
+       console.log("nom",nom)
+       let profEmail=adherent[0].cours1.prof.email;
+       console.log("profEmail",profEmail)
+      //  this.setState({
+      //   prenom:prenom,
+      //   nom:nom,
+      //   profEmail:profEmail
+
+      
+      //   })
       return (
         <div className="SendAbsences">
 
         {/* <h3>adherent : {this.props.adherent[0].prenom}</h3> */}
 
         <form onSubmit={this.handleFormSubmit}>
-            <input type="hidden" name="prenom"  value={adherent.prenom}/>
-            <input type="hidden" name="nom" value={adherent.prenom}/>
-         
-            <input type="hidden" name="profEmail" value={adherent.cours1.prof.email}/>
-            <label>Motif:</label>
+            <label>Nom:</label>
+            <input type="text" name="prenom"  value={this.state.prenom}/>
+            <label>Prenom:</label>
+            <input type="text" name="nom" value={this.state.nom}/>
+            <label>Email de la prof:</label>
+            <input type="text" name="profEmail" value={this.state.profEmail}/>
+            <label>Motif:</label> 
             <input type="textarea" name="message" value={this.state.message} onChange={e => this.handleSendAbsences(e)}/>
             <label>Nom :</label>
             <input type="date" name="date" value={this.state.date} onChange={e => this.handleSendAbsences(e)}/>

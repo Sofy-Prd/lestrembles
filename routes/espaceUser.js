@@ -96,12 +96,17 @@ router.put("/user", (req, res, next) => {
 
 
 // Absence
-router.put("/user/sendAbsences", (req, res, next) => {
+router.put("/user/:name/sendAbsences", (req, res, next) => {
   let email = req.body.profEmail;
+  console.log("email", email);
   let message = req.body.message;
+  console.log("message", message);
   let prenom = req.body.prenom;
-
+  console.log("prenom", prenom);
+ 
+ 
   let nom = req.body.nom;
+  console.log("nom", nom);
   let date = req.body.date;
   let subject = `Absence de ${prenom} ${nom} le ${date}`;
   smtpTransport.sendMail({
