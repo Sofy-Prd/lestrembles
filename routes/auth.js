@@ -72,8 +72,7 @@ authRoutes.post('/sessions', (req, res, next) => {
         }
     
         if (!theUser) {
-            // "failureDetails" contains the error messages
-            // from our logic in "LocalStrategy" { message: '...' }.
+            
             res.status(401).json(failureDetails);
             return;
         }
@@ -85,10 +84,7 @@ authRoutes.post('/sessions', (req, res, next) => {
                 return;
             }
 
-            // getUserPopulated(req.user.id).then()
-
-            // User.find()
-            // getTheUserPopulated(theUser._id)
+        
             theUser
             .populate({
               path: 'adherent.cours1',

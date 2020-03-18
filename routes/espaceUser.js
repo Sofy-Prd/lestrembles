@@ -40,6 +40,7 @@ router.get("/user", (req, res, next) => {
   // }
   // ok, req.user is defined    
   User.findOne({_id : req.query.userId})
+  // User.findOne({_id : userId})
   .populate({
     path: 'adherent.cours1',
     populate: {
@@ -81,7 +82,7 @@ router.put("/user", (req, res, next) => {
     return;
   }
 
-  User.updateOne({ _id: req.user._id  }, { $set : {
+  User.updateOne({ _id : req.body.userId  }, { $set : {
     email: req.body.email,
     rue: req.body.rue,
     codePostal: req.body.codePostal,

@@ -4,25 +4,44 @@ import { Link } from 'react-router-dom';
 
 
 import Loader from '../Loader.js';
-
+import AuthService from '../auth/auth-service';
 
 class Profil extends Component {
-   
-  // renderEditProfil = () => {
-                                                                                
-  //     return <EditProfil user={this.props.user} />
-        
-  //   }
- 
 
+
+  state= {
+    user:this.props.user
+  }
+
+  service = new AuthService();
+
+  fetchUser() {
+    if (!this.state.user._id){
+      this.service.loggedin()
+        .then(data => {
+        
+          this.setState({user: data})
+         
+        })
+        .catch(err => {
+
+          this.setState({user: false}) 
+        })
+    }
+  }
   
+  // 👇
+  componentDidMount() {
+    this.fetchUser();
+  }
+   
   render() {
     if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
 
-    let user = this.props.user;
+    let user = this.state.user;
     let adherents = user.adherent;
-      console.log ("user", user);
-      console.log ("adherents", adherents);
+      // console.log ("user", user);
+      // console.log ("adherents", adherents);
     
     return(
       <div>
@@ -60,7 +79,7 @@ class Profil extends Component {
           <Link to="/espacePerso/editProfil">Modifier le profil</Link>
        
 
-        {/* <div>{this.renderEditProfil()} </div> */}
+       
 
        
       </div>

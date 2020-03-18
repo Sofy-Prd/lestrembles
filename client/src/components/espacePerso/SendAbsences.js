@@ -3,14 +3,63 @@ import MailService from './mail-service';
 import axios from 'axios';
 
 class SendAbsences extends Component {
-  state = {
-    profEmail:"",
-    message:"",
-    prenom:"",
-    nom:"",
-    date:""
-  }
+  constructor(props) {
+    super(props)
 
+    const { params } = this.props.match;  // {name: "Marion"}
+    let user = this.props.user; // {}
+    let adherents = user.adherent; // undefined
+    console.log ("user", user);
+    console.log ("adherents", adherents);
+    console.log ("params", params);
+
+    if (adherents) {
+
+    
+    let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
+    console.log("adherent", adherent);
+    let prenom = adherent[0].prenom;
+    console.log("prenom",prenom);
+    let nom = adherent[0].nom;
+    console.log("nom",nom)
+    let profEmail=adherent[0].cours1.prof.email;
+    console.log("profEmail",profEmail)
+
+    this.state={
+      profEmail:profEmail,
+      message:"",
+      prenom:prenom,
+      nom:nom,
+      date:""
+
+    }
+  }
+  
+    
+  }
+  
+  componentDidUpdate(prevProps) {
+    if (prevProps.user !== this.props.user) {
+      const { params } = this.props.match;  // {name: "Marion"}
+      let user = this.props.user; // {}
+      let adherents = user.adherent;
+      let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
+      console.log("adherent", adherent);
+      let prenom = adherent[0].prenom;
+      console.log("prenom",prenom);
+      let nom = adherent[0].nom;
+      console.log("nom",nom)
+      let profEmail=adherent[0].cours1.prof.email;
+      console.log("profEmail",profEmail)
+
+      this.setState({ 
+        profEmail:profEmail,
+        message:"",
+        prenom:prenom,
+        nom:nom,
+        date:"" })
+    }
+  }
  
   service = new MailService();
 
@@ -43,30 +92,14 @@ class SendAbsences extends Component {
   render() {
      
    
-    const { params } = this.props.match;
-    let user = this.props.user;
-    let adherents = user.adherent;
-      console.log ("user", user);
-      console.log ("adherents", adherents);
-      console.log ("params", params);
-    
-      
-      
-    //  let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
-    //  console.log("adherent", adherent);
-    //    let prenom = adherent[0].prenom;
-    //    console.log("prenom",prenom);
-    //    let nom = adherent[0].nom;
-    //    console.log("nom",nom)
-    //    let profEmail=adherent[0].cours1.prof.email;
-    //    console.log("profEmail",profEmail)
-      //  this.setState({
-      //   prenom:prenom,
-      //   nom:nom,
-      //   profEmail:profEmail
+   
+  //   this.setState({
+  //   prenom:prenom,
+  //   nom:nom,
+  //   profEmail:profEmail
 
       
-      //   })
+  // })
       return (
         <div className="SendAbsences">
 
@@ -74,7 +107,7 @@ class SendAbsences extends Component {
 
         <form onSubmit={this.handleFormSubmit}>
             <label>Nom:</label>
-            <input type="text" name="prenom"  value={this.state.prenom}/>
+            <input type="text" name="prenom"  value={this.state.prenom} onChange={e => this.handleSendAbsences(e)}/>
             <label>Prenom:</label>
             <input type="text" name="nom" value={this.state.nom}/>
             <label>Email de la prof:</label>
@@ -92,5 +125,6 @@ class SendAbsences extends Component {
       );
               }
 }
+
 
 export default SendAbsences;

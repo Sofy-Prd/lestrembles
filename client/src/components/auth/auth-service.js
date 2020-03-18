@@ -21,13 +21,12 @@ class AuthService {
       .then(response => response.data)
   }
 
-  // changePasswordByMailGet(password1, password2, paramsId) {
-  //   return this.service.get('/changePasswordByMail/:token', {
-  //     password1,
-  //     password2
-  //   })
-  //     .then(response => response.data)
-  // }
+  editProfil(userId, email, rue,codePostal, ville, telephone1, telephone2 ) {
+    return this.service.put('/user', {
+      userId, email, rue,codePostal, ville, telephone1, telephone2
+    })
+      .then(response => response.data)
+  }
 
   changePasswordByMail(password1, password2) {
     return this.service.post('/changePasswordByMail/:token', {

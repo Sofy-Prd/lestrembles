@@ -65,7 +65,7 @@ class EspacePerso extends Component {
                     <h1>Bienvenue {this.props.user.username}</h1>
                    
 
-                    <Link to="/espacePerso/profil"><h2>voir mes information personnelles</h2></Link>
+                    <Link to="/espacePerso/profil"><h2>voir mes informations personnelles</h2></Link>
                     <p>quel enfant sera absent ?</p>
                     <ul>
                     {

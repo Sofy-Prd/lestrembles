@@ -59,8 +59,9 @@ class App extends Component {
   getTheFamily = () => {
         
     axios.get(`http://localhost:5000/api/user`,{params:{userId:this.state.user._id}})
+    // axios.get(`http://localhost:5000/api/user`,{userId:this.state.user._id})
     .then(responseFromApi => {
-        console.log("responseFromApi",responseFromApi);
+        // console.log("responseFromApi",responseFromApi);
 
      
       this.setState({
@@ -83,7 +84,7 @@ class App extends Component {
 
             <Route exact path='/cours' component={CoursList} />/>
             <Route exact path='/tarifs' component={TarifsList} />/>
-            <Route exact path='/espacePerso/:name/sendAbsences' render={(props) => <SendAbsences {...props} getUser={this.getTheUser} user={this.state.user}/>}/> />/>
+            <Route exact path='/espacePerso/:name/sendAbsences' render={(props) => <SendAbsences {...props} user={this.state.user}/>}/> />/>
             
            
 
