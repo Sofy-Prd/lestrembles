@@ -4,13 +4,13 @@ import AuthService from '../auth/auth-service';
 
 class EditProfil extends Component {
   state= {
-    userId:this.props.user._id,
-    email: this.props.user.email,
-    rue: this.props.user.rue,
-    codePostal: this.props.user.codePostal,
-    ville: this.props.user.ville,
-    telephone1:this.props.user.telephone1,
-    telephone2:this.props.user.telephone2,
+    userId:this.props.family._id,
+    email: this.props.family.email,
+    rue: this.props.family.rue,
+    codePostal: this.props.family.codePostal,
+    ville: this.props.family.ville,
+    telephone1:this.props.family.telephone1,
+    telephone2:this.props.family.telephone2,
     error:""
   }
   
@@ -30,19 +30,25 @@ class EditProfil extends Component {
     event.preventDefault();
 
     this.service.editProfil(userId, email, rue,codePostal, ville, telephone1, telephone2)
-    .then(response => {
+    .then(data => {
+        
         this.setState({error: ""});
         console.log("on est entré dans le then");
+
+        // on veut maj le user de App
+        this.props.getUser(data)
              
         this.props.history.push('/espacePerso/profil');
+        this.props.getFamily();
       })
-      .catch( err => this.setState({error: err.response.data.message}) )
+      .catch( err => this.setState({error: "error"}) )
     }
   
 
   
   handleChangeProfil = (event) => {  
     const {name, value} = event.target;
+  
     this.setState({[name]: value});
 }
   

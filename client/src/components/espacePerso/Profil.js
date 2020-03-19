@@ -9,36 +9,45 @@ import AuthService from '../auth/auth-service';
 class Profil extends Component {
 
 
-  state= {
-    user:this.props.user
-  }
+  // state= {
+  //   user:this.props.user
+  // }
 
   service = new AuthService();
 
-  fetchUser() {
-    if (!this.state.user._id){
-      this.service.loggedin()
-        .then(data => {
+  // fetchUser() {
+  //   if (!this.state.user._id){
+  //     this.service.loggedin()
+  //       .then(data => {
         
-          this.setState({user: data})
+  //         this.setState({user: data})
          
-        })
-        .catch(err => {
+  //       })
+  //       .catch(err => {
 
-          this.setState({user: false}) 
-        })
-    }
-  }
+  //         this.setState({user: false}) 
+  //       })
+  //   }
+  // }
   
-  // 👇
-  componentDidMount() {
-    this.fetchUser();
-  }
+
+  // componentDidMount() {
+  //   this.props.getUser();
+  // }
+
+  // componentDidUpdate(prevProps) {
+  //   if (prevProps.user !== this.props.user) {
+  //     this.props.getUser();
+
+     
+  //   }
+  // }
    
   render() {
     if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
 
-    let user = this.state.user;
+    let user = this.props.user;
+    console.log("user",user)
     let adherents = user.adherent;
       // console.log ("user", user);
       // console.log ("adherents", adherents);
@@ -60,7 +69,7 @@ class Profil extends Component {
         <ul>
           {
           adherents.map(membre => (
-         <div>
+         <div key={membre._id}>
                  <p>Prénom de l'adhérent: {membre.prenom}</p>
                    <p>Cours :{membre.cours1.nom} </p> 
                   <p> {membre.cours1.jour} {membre.cours1.horaire}</p> 

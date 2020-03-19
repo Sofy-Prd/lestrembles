@@ -82,15 +82,33 @@ router.put("/user", (req, res, next) => {
     return;
   }
 
-  User.updateOne({ _id : req.body.userId  }, { $set : {
+  User.findByIdAndUpdate(req.body.userId  , { $set : {
     email: req.body.email,
     rue: req.body.rue,
     codePostal: req.body.codePostal,
     ville: req.body.ville,
     telephone1:req.body.telephone1,
     telephone2:req.body.telephone2,
-  }})
-    .then(user => res.status(200).json( {message : "Vos informations ont bien été modifiées !" } ))
+  }
+}, {
+  new:true
+})
+    .then(user => {
+      user
+      .populate({
+        path: 'adherent.cours1',
+        populate: {
+          path: 'prof lieu duree'
+        }
+      }
+      , (err, theUserPopulated) => {
+        if (err) {
+          return res.status(500).json({message: err.message})
+        }
+        res.json(theUserPopulated)
+      });
+     
+    })
     .catch(err => next(err))
   ;
 });

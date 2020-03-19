@@ -85,19 +85,17 @@ class App extends Component {
             <Route exact path='/cours' component={CoursList} />/>
             <Route exact path='/tarifs' component={TarifsList} />/>
             <Route exact path='/espacePerso/:name/sendAbsences' render={(props) => <SendAbsences {...props} user={this.state.user}/>}/> />/>
-            
-           
-
-            <Route exact path='/espacePerso/forgotPassword' component={ForgotPassword} />/>
+              
+           <Route exact path='/espacePerso/forgotPassword' component={ForgotPassword} />/>
 
             <Route exact path='/espacePerso/changePassword' render={(props) => (<ChangePassword {...props} />)} />/>
             <Route exact path="/espacePerso/changePasswordByMail/:token" render={(props) => (<ChangePasswordByMail {...props} />)} />
           
             <Route exact path='/espacePerso/login' render={(props) => <Login {...props} getUser={this.getTheUser}/>}/>
-            <Route exact path="/espacePerso/profil" render={(props) => (<Profil {...props} getUser={this.getTheUser} user={this.state.user}/>)} />
-            <Route exact path="/espacePerso/editProfil" render={(props) => (<EditProfil {...props} user={this.state.user}/>)} />
+            <Route exact path="/espacePerso/profil" render={(props) => (<Profil {...props} getUser={this.getTheUser} fetchUser={this.fetchUser} user={this.state.user}/>)} />
+            <Route exact path="/espacePerso/editProfil" render={(props) => (<EditProfil {...props} getUser={this.getTheUser} family={this.state.theFamily} getFamily={this.state.getTheFamily} user={this.state.user}/>)} />
 
-            <Route exact path="/espacePerso" render={(props) => (<EspacePerso {...props} getUser={this.getTheUser} user={this.state.user} family={this.state.theFamily}/>)} />
+            <Route exact path="/espacePerso" render={(props) => (<EspacePerso {...props} getUser={this.getTheUser}  user={this.state.user} family={this.state.theFamily}/>)} />
            
           </Switch>
         
