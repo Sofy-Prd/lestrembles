@@ -27,7 +27,7 @@ class EspacePerso extends Component {
           .then(()=>{
             this.props.history.push('/espacePerso/login')
            
-            this.props.getUser(null);
+            this.props.setUser(null);
            
                 })}
           
@@ -42,10 +42,7 @@ class EspacePerso extends Component {
             }
         }
     }
-    // componentDidMount() {
-    //     // this.props.getUser(this.props.user);
-    //     console.log("this.props.user",this.props.user)
-    //     this.getTheFamily()
+   
    
 
     
@@ -54,7 +51,7 @@ class EspacePerso extends Component {
         if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
 
         console.log("user",this.props.user);
-        // console.log("family",this.props.family);
+      
         
        
         return (
@@ -77,7 +74,7 @@ class EspacePerso extends Component {
 
 
 
-                    {/* <SendAbsences prenom=""    /> */}
+                  
                     
                     <button className="btn logout" onClick={this.logout}>Logout</button>
                 </div>

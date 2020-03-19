@@ -4,13 +4,13 @@ import AuthService from '../auth/auth-service';
 
 class EditProfil extends Component {
   state= {
-    userId:this.props.family._id,
-    email: this.props.family.email,
-    rue: this.props.family.rue,
-    codePostal: this.props.family.codePostal,
-    ville: this.props.family.ville,
-    telephone1:this.props.family.telephone1,
-    telephone2:this.props.family.telephone2,
+    userId:this.props.user._id,
+    email: this.props.user.email,
+    rue: this.props.user.rue,
+    codePostal: this.props.user.codePostal,
+    ville: this.props.user.ville,
+    telephone1:this.props.user.telephone1,
+    telephone2:this.props.user.telephone2,
     error:""
   }
   
@@ -36,10 +36,10 @@ class EditProfil extends Component {
         console.log("on est entré dans le then");
 
         // on veut maj le user de App
-        this.props.getUser(data)
+        this.props.setUser(data)
              
         this.props.history.push('/espacePerso/profil');
-        this.props.getFamily();
+        // this.props.getFamily();
       })
       .catch( err => this.setState({error: "error"}) )
     }

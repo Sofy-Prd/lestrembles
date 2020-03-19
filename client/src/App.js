@@ -20,7 +20,7 @@ class App extends Component {
   state = {
     user: {},
     // adherent:{},
-    theFamily:{}
+    // theFamily:{}
 
   }
 
@@ -35,7 +35,7 @@ class App extends Component {
         .then(data => {
         
           this.setState({user: data})
-          this.getTheFamily(data._id)
+          // this.getTheFamily(data._id)
         })
         .catch(err => {
 
@@ -49,30 +49,30 @@ class App extends Component {
     this.fetchUser();
   }
 
-  getTheUser= (userObj) => {
-    console.log("getTheUser", userObj);
+  setTheUser= (userObj) => {
+    console.log("setTheUser", userObj);
     this.setState({
       user: userObj
     })
   }
 
-  getTheFamily = () => {
+  // getTheFamily = () => {
         
-    axios.get(`http://localhost:5000/api/user`,{params:{userId:this.state.user._id}})
-    // axios.get(`http://localhost:5000/api/user`,{userId:this.state.user._id})
-    .then(responseFromApi => {
-        // console.log("responseFromApi",responseFromApi);
+  //   axios.get(`http://localhost:5000/api/user`,{params:{userId:this.state.user._id}})
+  //   // axios.get(`http://localhost:5000/api/user`,{userId:this.state.user._id})
+  //   .then(responseFromApi => {
+  //       // console.log("responseFromApi",responseFromApi);
 
      
-      this.setState({
-        theFamily: responseFromApi.data
-      })
-    })
-    .catch((err)=>{
-        console.log(err)
-    })
+  //     this.setState({
+  //       theFamily: responseFromApi.data
+  //     })
+  //   })
+  //   .catch((err)=>{
+  //       console.log(err)
+  //   })
 
-  }
+  // }
  
 
   render() {
@@ -91,11 +91,11 @@ class App extends Component {
             <Route exact path='/espacePerso/changePassword' render={(props) => (<ChangePassword {...props} />)} />/>
             <Route exact path="/espacePerso/changePasswordByMail/:token" render={(props) => (<ChangePasswordByMail {...props} />)} />
           
-            <Route exact path='/espacePerso/login' render={(props) => <Login {...props} getUser={this.getTheUser}/>}/>
-            <Route exact path="/espacePerso/profil" render={(props) => (<Profil {...props} getUser={this.getTheUser} fetchUser={this.fetchUser} user={this.state.user}/>)} />
-            <Route exact path="/espacePerso/editProfil" render={(props) => (<EditProfil {...props} getUser={this.getTheUser} family={this.state.theFamily} getFamily={this.state.getTheFamily} user={this.state.user}/>)} />
+            <Route exact path='/espacePerso/login' render={(props) => <Login {...props} setUser={this.setTheUser}/>}/>
+            <Route exact path="/espacePerso/profil" render={(props) => (<Profil {...props} setUser={this.setTheUser} fetchUser={this.fetchUser} user={this.state.user}/>)} />
+            <Route exact path="/espacePerso/editProfil" render={(props) => (<EditProfil {...props} setUser={this.setTheUser}  user={this.state.user}/>)} />
 
-            <Route exact path="/espacePerso" render={(props) => (<EspacePerso {...props} getUser={this.getTheUser}  user={this.state.user} family={this.state.theFamily}/>)} />
+            <Route exact path="/espacePerso" render={(props) => (<EspacePerso {...props} setUser={this.setTheUser}  user={this.state.user} />)} />
            
           </Switch>
         

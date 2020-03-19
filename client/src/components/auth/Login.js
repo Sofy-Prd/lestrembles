@@ -17,7 +17,7 @@ class Login extends Component {
       .then( data => {
           this.setState({error: ""});
           this.setState({ username: "", password: "" });
-          this.props.getUser(data);
+          this.props.setUser(data);
           this.props.history.push('/espacePerso');
       })
       .catch( err => this.setState({error: err.response.data.message}) )
