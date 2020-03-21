@@ -1,0 +1,5267 @@
+/* Home */
+
+position: relative;
+width: 1440px;
+height: 7000px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 21 */
+
+position: absolute;
+width: 1388px;
+height: 602px;
+left: 28px;
+top: 6465px;
+
+background: linear-gradient(89.18deg, rgba(255, 56, 92, 0.6) 1.35%, rgba(248, 108, 102, 0.6) 102.91%);
+border-radius: 42px;
+
+
+/* Vector */
+
+position: absolute;
+left: 1.88%;
+right: 1.74%;
+top: 98.59%;
+bottom: -1.87%;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.28) 0%, rgba(248, 108, 102, 0.28) 100%);
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 24.83%;
+right: 70.73%;
+top: 15.9%;
+bottom: 82.6%;
+
+background: rgba(255, 255, 255, 0.41);
+filter: blur(4px);
+transform: matrix(0.92, -1.3, 0.2, 0.76, 0, 0);
+
+
+/* Polygon 2 */
+
+position: absolute;
+left: 13.95%;
+right: 80.98%;
+top: 11.19%;
+bottom: 86.08%;
+
+background: rgba(255, 255, 255, 0.41);
+filter: blur(4px);
+transform: matrix(1, -0.01, 0, 1, 0, 0);
+
+
+/* Polygon 3 */
+
+position: absolute;
+left: 31.66%;
+right: 63.66%;
+top: 9.98%;
+bottom: 88.47%;
+
+background: rgba(255, 255, 255, 0.41);
+filter: blur(4px);
+transform: matrix(0.97, -0.98, 0.15, 0.81, 0, 0);
+
+
+/* Polygon 4 */
+
+position: absolute;
+left: 3.32%;
+right: 92.65%;
+top: 16.71%;
+bottom: 81.38%;
+
+background: rgba(174, 106, 242, 0.12);
+filter: blur(4px);
+transform: matrix(1, -0.33, 0.06, 0.95, 0, 0);
+
+
+/* ALT */
+
+position: absolute;
+left: 2.22%;
+right: 91.67%;
+top: 0.93%;
+bottom: 97.17%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 43px;
+line-height: 52px;
+
+color: #FFFFFF;
+
+
+
+/* Cours */
+
+position: absolute;
+width: 66px;
+height: 21px;
+left: 969px;
+top: 44px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* Mon espace */
+
+position: absolute;
+width: 133px;
+height: 31px;
+left: 579px;
+top: 44px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* Rectangle 25 */
+
+position: absolute;
+width: 140px;
+height: 7px;
+left: 391px;
+top: 60px;
+
+background: rgba(255, 56, 92, 0.34);
+
+
+/* Rectangle 36 */
+
+position: absolute;
+width: 133px;
+height: 7px;
+left: 579px;
+top: 60px;
+
+background: rgba(255, 56, 92, 0.34);
+
+
+/* Rectangle 37 */
+
+position: absolute;
+width: 61px;
+height: 7px;
+left: 788px;
+top: 60px;
+
+background: rgba(255, 56, 92, 0.34);
+
+
+/* Rectangle 38 */
+
+position: absolute;
+width: 70px;
+height: 7px;
+left: 965px;
+top: 60px;
+
+background: rgba(255, 56, 92, 0.34);
+
+
+/* Rectangle 39 */
+
+position: absolute;
+width: 57px;
+height: 7px;
+left: 1151px;
+top: 60px;
+
+background: rgba(255, 56, 92, 0.34);
+
+
+/* Rectangle 40 */
+
+position: absolute;
+width: 117px;
+height: 7px;
+left: 1315px;
+top: 60px;
+
+background: rgba(255, 56, 92, 0.34);
+
+
+/* L’association */
+
+position: absolute;
+width: 140px;
+height: 22px;
+left: 391px;
+top: 43px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* ALT */
+
+position: absolute;
+width: 96px;
+height: 55px;
+left: 142px;
+top: 48px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 51px;
+line-height: 62px;
+
+color: #FF385C;
+
+
+
+/* Tarifs */
+
+position: absolute;
+width: 62px;
+height: 31px;
+left: 1151px;
+top: 44px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* Spectacles */
+
+position: absolute;
+width: 125px;
+height: 31px;
+left: 1315px;
+top: 44px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* Profs */
+
+position: absolute;
+width: 61px;
+height: 18px;
+left: 791px;
+top: 44px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* L’association */
+
+position: absolute;
+width: 221px;
+height: 27px;
+left: 661px;
+top: 6625px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 23px;
+line-height: 28px;
+
+color: #FFFFFF;
+
+
+
+/* Nous contacter */
+
+position: absolute;
+width: 252px;
+height: 36px;
+left: 65px;
+top: 6511px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+
+
+
+/* Vous avez des questions ? */
+
+position: absolute;
+width: 238px;
+height: 19px;
+left: 140px;
+top: 6631px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.07em;
+
+color: #FFFFFF;
+
+
+
+/* Retrouvez nous ici ! */
+
+position: absolute;
+width: 177px;
+height: 19px;
+left: 157px;
+top: 6711px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.07em;
+
+color: #FFFFFF;
+
+
+
+/* stages.lestrembles@gmail.com */
+
+position: absolute;
+width: 214px;
+height: 19px;
+left: 152px;
+top: 6660px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.07em;
+
+color: #FFFFFF;
+
+
+
+/* Les cours */
+
+position: absolute;
+width: 161px;
+height: 27px;
+left: 661px;
+top: 6706px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 23px;
+line-height: 28px;
+
+color: #FFFFFF;
+
+
+
+/* Les tarifs */
+
+position: absolute;
+width: 152px;
+height: 28px;
+left: 661px;
+top: 6733px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 23px;
+line-height: 28px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Les spectacles */
+
+position: absolute;
+width: 182px;
+height: 27px;
+left: 661px;
+top: 6761px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 23px;
+line-height: 28px;
+
+color: #FFFFFF;
+
+
+
+/* Mon espace */
+
+position: absolute;
+width: 206px;
+height: 27px;
+left: 661px;
+top: 6652px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 23px;
+line-height: 28px;
+
+color: #FFFFFF;
+
+
+
+/* Les profs */
+
+position: absolute;
+width: 152px;
+height: 27px;
+left: 661px;
+top: 6678px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 23px;
+line-height: 28px;
+
+color: #FFFFFF;
+
+
+
+/* Partenaires */
+
+position: absolute;
+width: 131px;
+height: 31px;
+left: 65px;
+top: 6845px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 200;
+font-size: 22px;
+line-height: 27px;
+
+color: #FFFFFF;
+
+
+
+/* Les Clos Fleuri */
+
+position: absolute;
+width: 158px;
+height: 31px;
+left: 212px;
+top: 6846px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 200;
+font-size: 17px;
+line-height: 21px;
+
+color: #FFFFFF;
+
+
+
+/* Senior Adom */
+
+position: absolute;
+width: 146px;
+height: 31px;
+left: 212px;
+top: 6884px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 200;
+font-size: 17px;
+line-height: 21px;
+
+color: #FFFFFF;
+
+
+
+/* instagram (3) 1 */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 249px;
+top: 6746px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 24.36%;
+right: 24.33%;
+top: 24.32%;
+bottom: 24.36%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: -0.01%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 70.7%;
+right: 17.31%;
+top: 17.32%;
+bottom: 70.69%;
+
+background: #FFFFFF;
+
+
+/* facebook (4) 1 */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 209px;
+top: 6746px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* All Rights Reserves to Coderym */
+
+position: absolute;
+width: 219px;
+height: 19px;
+left: 627px;
+top: 6962px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: #FFFFFF;
+
+
+
+/* Copie-de-Sans-titre-3 (1) 1 */
+
+position: absolute;
+width: 1439px;
+height: 606px;
+left: 1px;
+top: 146px;
+
+background: url(Copie-de-Sans-titre-3 (1).png);
+
+
+/* Les Profs */
+
+position: absolute;
+width: 318px;
+height: 67px;
+left: 567px;
+top: 821.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.37);
+
+
+
+/* Cassandre */
+
+position: absolute;
+width: 227px;
+height: 42px;
+left: 76px;
+top: 939.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 200;
+font-size: 34px;
+line-height: 41px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: #FF385C;
+
+
+
+/* Claudia */
+
+position: absolute;
+width: 163px;
+height: 42px;
+left: 380px;
+top: 939.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 200;
+font-size: 34px;
+line-height: 41px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: #FF385C;
+
+
+
+/* Lucile */
+
+position: absolute;
+width: 134px;
+height: 42px;
+left: 655px;
+top: 939.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 200;
+font-size: 34px;
+line-height: 41px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: #FF385C;
+
+
+
+/* Angelina */
+
+position: absolute;
+width: 194px;
+height: 42px;
+left: 889px;
+top: 939.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 200;
+font-size: 34px;
+line-height: 41px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: #FF385C;
+
+
+
+/* Marie */
+
+position: absolute;
+width: 125px;
+height: 42px;
+left: 1192px;
+top: 939.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 200;
+font-size: 34px;
+line-height: 41px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: #FF385C;
+
+
+
+/* Rectangle 22 */
+
+position: absolute;
+width: 1289px;
+height: 120px;
+left: 76px;
+top: 1225.27px;
+
+background: rgba(0, 0, 0, 0.17);
+border-radius: 7px;
+
+
+/* Dancehall */
+
+position: absolute;
+width: 152px;
+height: 42px;
+left: 112px;
+top: 1309.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 28px;
+letter-spacing: 0.16em;
+
+color: #FFFFFF;
+
+text-shadow: 4px 4px 30px #FF385C, -4px -4px 30px #F86C66;
+
+
+/* Modern */
+
+position: absolute;
+width: 123px;
+height: 42px;
+left: 401px;
+top: 1309.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 28px;
+letter-spacing: 0.16em;
+
+color: #FFFFFF;
+
+text-shadow: 4px 4px 30px #FF385C, -4px -4px 30px #F86C66;
+
+
+/* Modern */
+
+position: absolute;
+width: 116px;
+height: 42px;
+left: 658px;
+top: 1309.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 28px;
+letter-spacing: 0.16em;
+
+color: #FFFFFF;
+
+text-shadow: 4px 4px 30px #FF385C, -4px -4px 30px #F86C66;
+
+
+/* Afrovibe */
+
+position: absolute;
+width: 127px;
+height: 42px;
+left: 918px;
+top: 1309.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 28px;
+letter-spacing: 0.16em;
+
+color: #FFFFFF;
+
+text-shadow: 4px 4px 30px #FF385C, -4px -4px 30px #F86C66;
+
+
+/* Street-Jazz */
+
+position: absolute;
+width: 168px;
+height: 42px;
+left: 1164px;
+top: 1309.27px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 28px;
+letter-spacing: 0.16em;
+
+color: #FFFFFF;
+
+text-shadow: 4px 4px 30px #FF385C, -4px -4px 30px #F86C66;
+
+
+/* Rectangle 21 */
+
+position: absolute;
+width: 1382px;
+height: 46px;
+left: 30px;
+top: 1122.27px;
+
+background: linear-gradient(158.79deg, rgba(255, 56, 92, 0.77) 0.58%, rgba(248, 108, 102, 0.77) 109.95%);
+filter: blur(112px);
+border-radius: 7px;
+
+
+/* IMG-20191006-WA0023 1 */
+
+position: absolute;
+width: 223px;
+height: 272px;
+left: 76px;
+top: 1001.27px;
+
+background: url(IMG-20191006-WA0023.jpg);
+border-radius: 25px;
+
+
+/* IMG-20191006-WA0024 1 */
+
+position: absolute;
+width: 223px;
+height: 272px;
+left: 346px;
+top: 1001.27px;
+
+background: url(IMG-20191006-WA0024.jpg);
+border-radius: 25px;
+
+
+/* IMG-20191015-WA0001 1 */
+
+position: absolute;
+width: 223px;
+height: 272px;
+left: 870px;
+top: 1007.27px;
+
+background: url(IMG-20191015-WA0001.jpg);
+border-radius: 25px;
+
+
+/* IMG-20191006-WA0020 1 */
+
+position: absolute;
+width: 225px;
+height: 275px;
+left: 607px;
+top: 1007.27px;
+
+background: url(IMG-20191006-WA0020.jpg);
+border-radius: 25px;
+
+
+/* IMG_2961 2 */
+
+position: absolute;
+width: 225px;
+height: 277px;
+left: 1134px;
+top: 1008.27px;
+
+background: url(IMG_2961.jpg);
+border-radius: 25px;
+
+
+/* Les Cours */
+
+position: absolute;
+width: 332px;
+height: 67px;
+left: 583px;
+top: 1871px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.37);
+
+
+
+/* Group 14 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 336px;
+top: 2022px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 23.33%;
+right: 59.51%;
+top: 28.89%;
+bottom: 67.34%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Eveil : Enfants nés en 2015 et 2016 */
+
+position: absolute;
+width: 170px;
+height: 27px;
+left: 375px;
+top: 2053px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 361px;
+top: 2117px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Samedi */
+
+position: absolute;
+width: 60px;
+height: 19px;
+left: 479px;
+top: 2117px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 10h30-11h30 */
+
+position: absolute;
+width: 95px;
+height: 19px;
+left: 461px;
+top: 2158px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Lucile */
+
+position: absolute;
+width: 50px;
+height: 19px;
+left: 484px;
+top: 2240px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle des associations Centre ville */
+
+position: absolute;
+width: 141px;
+height: 19px;
+left: 438px;
+top: 2200px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 361px;
+top: 2158px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 360px;
+top: 2199px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 361px;
+top: 2240px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 15 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 621px;
+top: 2018px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 43.12%;
+right: 39.72%;
+top: 28.83%;
+bottom: 67.4%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Initiation : Enfants nés en 2014 */
+
+position: absolute;
+width: 170px;
+height: 27px;
+left: 660px;
+top: 2049px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 646px;
+top: 2113px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Samedi */
+
+position: absolute;
+width: 60px;
+height: 19px;
+left: 764px;
+top: 2113px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 11h30-12h30 */
+
+position: absolute;
+width: 95px;
+height: 19px;
+left: 746px;
+top: 2154px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Lucile */
+
+position: absolute;
+width: 50px;
+height: 19px;
+left: 769px;
+top: 2236px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle des associations Centre ville */
+
+position: absolute;
+width: 141px;
+height: 19px;
+left: 723px;
+top: 2196px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 646px;
+top: 2154px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 645px;
+top: 2195px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 646px;
+top: 2236px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 16 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 914px;
+top: 2018px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 63.47%;
+right: 19.38%;
+top: 28.83%;
+bottom: 67.4%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 63.47%;
+right: 19.38%;
+top: 28.83%;
+bottom: 67.4%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* 1er niveau : Enfants nés en 2013 */
+
+position: absolute;
+width: 170px;
+height: 27px;
+left: 953px;
+top: 2049px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 939px;
+top: 2113px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Samedi */
+
+position: absolute;
+width: 60px;
+height: 19px;
+left: 1057px;
+top: 2113px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 15h00-16h00 */
+
+position: absolute;
+width: 95px;
+height: 19px;
+left: 1039px;
+top: 2154px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Lucile */
+
+position: absolute;
+width: 50px;
+height: 19px;
+left: 1062px;
+top: 2236px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle des associations Centre ville */
+
+position: absolute;
+width: 141px;
+height: 19px;
+left: 1016px;
+top: 2196px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 939px;
+top: 2154px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 938px;
+top: 2195px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 939px;
+top: 2236px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 17 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 336px;
+top: 2326px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 23.33%;
+right: 59.51%;
+top: 33.23%;
+bottom: 63%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 23.33%;
+right: 59.51%;
+top: 33.23%;
+bottom: 63%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* 1er niveau : Enfants nés en 2013 */
+
+position: absolute;
+width: 170px;
+height: 27px;
+left: 375px;
+top: 2357px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 361px;
+top: 2421px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Samedi */
+
+position: absolute;
+width: 60px;
+height: 19px;
+left: 479px;
+top: 2421px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 15h00-16h00 */
+
+position: absolute;
+width: 95px;
+height: 19px;
+left: 461px;
+top: 2462px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Lucile */
+
+position: absolute;
+width: 50px;
+height: 19px;
+left: 484px;
+top: 2544px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle des associations Centre ville */
+
+position: absolute;
+width: 141px;
+height: 19px;
+left: 438px;
+top: 2504px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 361px;
+top: 2462px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 360px;
+top: 2503px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 361px;
+top: 2544px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 18 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 625px;
+top: 2325px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 43.4%;
+right: 39.44%;
+top: 33.21%;
+bottom: 63.01%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 43.4%;
+right: 39.44%;
+top: 33.21%;
+bottom: 63.01%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* 2ème niveau : Enfants nés en 2010 et 2011 et 2012 (GROUPE A) */
+
+position: absolute;
+width: 170px;
+height: 45px;
+left: 664px;
+top: 2346px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 650px;
+top: 2420px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Samedi */
+
+position: absolute;
+width: 60px;
+height: 19px;
+left: 768px;
+top: 2420px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 13h-14h */
+
+position: absolute;
+width: 60px;
+height: 19px;
+left: 768px;
+top: 2461px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Lucile */
+
+position: absolute;
+width: 50px;
+height: 19px;
+left: 773px;
+top: 2543px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle des associations Centre ville */
+
+position: absolute;
+width: 141px;
+height: 19px;
+left: 727px;
+top: 2503px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 650px;
+top: 2461px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 649px;
+top: 2502px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 650px;
+top: 2543px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 914px;
+top: 2321px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 63.47%;
+right: 19.38%;
+top: 33.16%;
+bottom: 63.07%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 63.47%;
+right: 19.38%;
+top: 33.16%;
+bottom: 63.07%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* 2ème niveau : Enfants nés en 2010 et 2011 et 2012 (GROUPE B) */
+
+position: absolute;
+width: 170px;
+height: 45px;
+left: 953px;
+top: 2342px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 939px;
+top: 2416px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Samedi */
+
+position: absolute;
+width: 60px;
+height: 19px;
+left: 1057px;
+top: 2416px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 14h-15h */
+
+position: absolute;
+width: 60px;
+height: 19px;
+left: 1057px;
+top: 2457px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Lucile */
+
+position: absolute;
+width: 50px;
+height: 19px;
+left: 1062px;
+top: 2539px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle des associations Centre ville */
+
+position: absolute;
+width: 141px;
+height: 19px;
+left: 1016px;
+top: 2499px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 939px;
+top: 2457px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 938px;
+top: 2498px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 939px;
+top: 2539px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 20 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 335px;
+top: 2621px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 23.26%;
+right: 59.58%;
+top: 37.44%;
+bottom: 58.79%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 23.26%;
+right: 59.58%;
+top: 37.44%;
+bottom: 58.79%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* 3ème niveau : Enfants nés en 2007 2008 et 2009 (GROUPE A) */
+
+position: absolute;
+width: 170px;
+height: 45px;
+left: 374px;
+top: 2642px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 360px;
+top: 2716px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Lundi */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 486px;
+top: 2716px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 18h30-20h */
+
+position: absolute;
+width: 80px;
+height: 19px;
+left: 471px;
+top: 2757px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Claudia */
+
+position: absolute;
+width: 58px;
+height: 19px;
+left: 480px;
+top: 2839px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Espace 110 */
+
+position: absolute;
+width: 84px;
+height: 19px;
+left: 469px;
+top: 2798px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 360px;
+top: 2757px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 359px;
+top: 2798px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 360px;
+top: 2839px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 21 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 335px;
+top: 2921px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 23.26%;
+right: 59.58%;
+top: 41.73%;
+bottom: 54.5%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 23.26%;
+right: 59.58%;
+top: 41.73%;
+bottom: 54.5%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Ados (Street Jazz) : nés en 2002, 2003 et 2004 */
+
+position: absolute;
+width: 170px;
+height: 45px;
+left: 374px;
+top: 2942px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 360px;
+top: 3016px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Mardi */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 486px;
+top: 3016px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 18h30-20h30 */
+
+position: absolute;
+width: 99px;
+height: 19px;
+left: 461px;
+top: 3057px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Marie */
+
+position: absolute;
+width: 46px;
+height: 19px;
+left: 488px;
+top: 3141px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Dossisart */
+
+position: absolute;
+width: 84px;
+height: 19px;
+left: 469px;
+top: 3098px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 360px;
+top: 3057px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 359px;
+top: 3098px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 360px;
+top: 3139px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 621px;
+top: 2917px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 43.12%;
+right: 39.72%;
+top: 41.67%;
+bottom: 54.56%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 43.12%;
+right: 39.72%;
+top: 41.67%;
+bottom: 54.56%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Jeunes Adultes : 2001 et avant */
+
+position: absolute;
+width: 170px;
+height: 45px;
+left: 660px;
+top: 2938px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 646px;
+top: 3012px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jeudi */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 772px;
+top: 3012px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 20h – 22h (2e jeudi du mois 19h – 20h30) */
+
+position: absolute;
+width: 121px;
+height: 36px;
+left: 736px;
+top: 3053px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Cassandre */
+
+position: absolute;
+width: 78px;
+height: 19px;
+left: 758px;
+top: 3135px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Dossisart */
+
+position: absolute;
+width: 84px;
+height: 19px;
+left: 755px;
+top: 3094px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 646px;
+top: 3053px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 645px;
+top: 3094px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 646px;
+top: 3135px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 23 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 914px;
+top: 2917px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 63.47%;
+right: 19.38%;
+top: 41.67%;
+bottom: 54.56%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 63.47%;
+right: 19.38%;
+top: 41.67%;
+bottom: 54.56%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Adultes */
+
+position: absolute;
+width: 170px;
+height: 45px;
+left: 953px;
+top: 2938px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 939px;
+top: 3012px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Lundi */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 1065px;
+top: 3012px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 20h – 22h */
+
+position: absolute;
+width: 75px;
+height: 16px;
+left: 1052px;
+top: 3053px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Claudia */
+
+position: absolute;
+width: 58px;
+height: 19px;
+left: 1061px;
+top: 3135px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Espace 110 */
+
+position: absolute;
+width: 84px;
+height: 19px;
+left: 1048px;
+top: 3094px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 939px;
+top: 3053px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 938px;
+top: 3094px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 939px;
+top: 3135px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 24 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 625px;
+top: 3217px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 43.4%;
+right: 39.44%;
+top: 45.96%;
+bottom: 50.27%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 43.4%;
+right: 39.44%;
+top: 45.96%;
+bottom: 50.27%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Afrovibe */
+
+position: absolute;
+width: 74px;
+height: 21px;
+left: 664px;
+top: 3238px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 650px;
+top: 3312px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Lundi */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 776px;
+top: 3312px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 20h – 22h */
+
+position: absolute;
+width: 75px;
+height: 16px;
+left: 763px;
+top: 3353px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Angelina */
+
+position: absolute;
+width: 71px;
+height: 19px;
+left: 765px;
+top: 3435px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Espace 110 */
+
+position: absolute;
+width: 84px;
+height: 19px;
+left: 759px;
+top: 3394px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 650px;
+top: 3353px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 649px;
+top: 3394px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 650px;
+top: 3435px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 25 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 625px;
+top: 2617px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 43.4%;
+right: 39.44%;
+top: 37.39%;
+bottom: 58.84%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 43.4%;
+right: 39.44%;
+top: 37.39%;
+bottom: 58.84%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* 3ème niveau : Enfants nés en 2007 2008 et 2009 (GROUPE B) */
+
+position: absolute;
+width: 170px;
+height: 45px;
+left: 664px;
+top: 2638px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 650px;
+top: 2712px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Vendredi */
+
+position: absolute;
+width: 72px;
+height: 19px;
+left: 766px;
+top: 2712px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 18h30-20h */
+
+position: absolute;
+width: 80px;
+height: 19px;
+left: 761px;
+top: 2753px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Claudia */
+
+position: absolute;
+width: 58px;
+height: 19px;
+left: 770px;
+top: 2835px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Gymnase Guimier */
+
+position: absolute;
+width: 113px;
+height: 19px;
+left: 745px;
+top: 2794px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 650px;
+top: 2753px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 649px;
+top: 2794px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 650px;
+top: 2835px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Group 26 */
+
+position: absolute;
+width: 247px;
+height: 264px;
+left: 914px;
+top: 2617px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+left: 63.47%;
+right: 19.38%;
+top: 37.39%;
+bottom: 58.84%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+left: 63.47%;
+right: 19.38%;
+top: 37.39%;
+bottom: 58.84%;
+
+background: #FFFFFF;
+border: 1px solid #FF385C;
+box-sizing: border-box;
+border-radius: 53px;
+
+
+/* 4ème niveau : Enfants nés en 2005 et 2006 */
+
+position: absolute;
+width: 170px;
+height: 45px;
+left: 953px;
+top: 2638px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Jour */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 939px;
+top: 2712px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Vendredi */
+
+position: absolute;
+width: 72px;
+height: 19px;
+left: 1055px;
+top: 2712px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* 20h-22h */
+
+position: absolute;
+width: 63px;
+height: 19px;
+left: 1060px;
+top: 2753px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Claudia */
+
+position: absolute;
+width: 58px;
+height: 19px;
+left: 1059px;
+top: 2835px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Gymnase Guimier */
+
+position: absolute;
+width: 113px;
+height: 19px;
+left: 1034px;
+top: 2794px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+text-align: center;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Horaire */
+
+position: absolute;
+width: 61px;
+height: 19px;
+left: 939px;
+top: 2753px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Salle */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 938px;
+top: 2794px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Prof */
+
+position: absolute;
+width: 32px;
+height: 19px;
+left: 939px;
+top: 2835px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.16em;
+
+color: #000000;
+
+
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 292px;
+height: 292px;
+left: 1260px;
+top: 1908px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 10 */
+
+position: absolute;
+width: 292px;
+height: 292px;
+left: -77px;
+top: 3039px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 11 */
+
+position: absolute;
+width: 206px;
+height: 206px;
+left: -41px;
+top: 1904px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 12 */
+
+position: absolute;
+width: 96px;
+height: 96px;
+left: 186px;
+top: 2437px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 13 */
+
+position: absolute;
+width: 96px;
+height: 96px;
+left: 1039px;
+top: 1860px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 20 */
+
+position: absolute;
+width: 190px;
+height: 190px;
+left: 1008px;
+top: 668.27px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 14 */
+
+position: absolute;
+width: 178px;
+height: 178px;
+left: 1260px;
+top: 2871px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 21 */
+
+position: absolute;
+width: 178px;
+height: 178px;
+left: 58px;
+top: 3662px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 15 */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 1200px;
+top: 2643px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Ellipse 16 */
+
+position: absolute;
+width: 328px;
+height: 328px;
+left: 961px;
+top: 3246px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 22 */
+
+position: absolute;
+width: 328px;
+height: 328px;
+left: 1205px;
+top: 4613.73px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 26 */
+
+position: absolute;
+width: 328px;
+height: 328px;
+left: -134px;
+top: 4487.73px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 24 */
+
+position: absolute;
+width: 328px;
+height: 328px;
+left: 341px;
+top: 4922.73px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 25 */
+
+position: absolute;
+width: 328px;
+height: 328px;
+left: 1022px;
+top: 5217.73px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 27 */
+
+position: absolute;
+width: 328px;
+height: 328px;
+left: 30px;
+top: 5465.73px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 28 */
+
+position: absolute;
+width: 328px;
+height: 328px;
+left: 812px;
+top: 5471.73px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 23 */
+
+position: absolute;
+width: 328px;
+height: 328px;
+left: -92px;
+top: 5326.73px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Rectangle 21 */
+
+position: absolute;
+width: 1350px;
+height: 297px;
+left: 64px;
+top: 3898px;
+
+background: linear-gradient(111.3deg, rgba(255, 56, 92, 0.43) 0.58%, rgba(248, 108, 102, 0.43) 109.95%);
+border-radius: 53px;
+
+
+/* Polygon 2 */
+
+position: absolute;
+left: 26.01%;
+right: 71%;
+top: 60.25%;
+bottom: 39.02%;
+
+background: rgba(255, 255, 255, 0.41);
+filter: blur(4px);
+transform: rotate(-31.25deg);
+
+
+/* Rectangle 22 */
+
+position: absolute;
+left: 12.15%;
+right: 64.51%;
+top: 53.4%;
+bottom: 42.2%;
+
+background: #FFFFFF;
+box-shadow: -13px -13px 14px rgba(255, 56, 92, 0.21), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 53px;
+
+
+/* 150 € */
+
+position: absolute;
+left: 19.44%;
+right: 71.81%;
+top: 54.27%;
+bottom: 44.97%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 43px;
+line-height: 52px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 23 */
+
+position: absolute;
+width: 70px;
+height: 22px;
+left: 201px;
+top: 3937px;
+
+background: #FFAFBE;
+
+
+/* 1 heure de cours par semaine */
+
+position: absolute;
+left: 14.24%;
+right: 66.67%;
+top: 56.24%;
+bottom: 43.39%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #000000;
+
+
+
+/* / AN */
+
+position: absolute;
+left: 26.81%;
+right: 68.75%;
+top: 55.14%;
+bottom: 44.37%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 29px;
+line-height: 35px;
+
+color: #000000;
+
+
+
+/* Rectangle 24 */
+
+position: absolute;
+left: 40.76%;
+right: 35.9%;
+top: 53.4%;
+bottom: 42.2%;
+
+background: #FFFFFF;
+box-shadow: -13px -13px 14px rgba(255, 56, 92, 0.21), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 53px;
+
+
+/* 180 € */
+
+position: absolute;
+left: 48.06%;
+right: 43.19%;
+top: 54.27%;
+bottom: 44.97%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 43px;
+line-height: 52px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 25 */
+
+position: absolute;
+width: 56px;
+height: 22px;
+left: 615px;
+top: 3937px;
+
+background: #FFAFBE;
+
+
+/* 1 h30 de cours par semaine */
+
+position: absolute;
+left: 43.19%;
+right: 38.33%;
+top: 56.24%;
+bottom: 43.39%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #000000;
+
+
+
+/* / AN */
+
+position: absolute;
+left: 55.42%;
+right: 40.14%;
+top: 55.14%;
+bottom: 44.37%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 29px;
+line-height: 35px;
+
+color: #000000;
+
+
+
+/* Rectangle 26 */
+
+position: absolute;
+left: 69.38%;
+right: 7.29%;
+top: 53.4%;
+bottom: 42.2%;
+
+background: #FFFFFF;
+box-shadow: -13px -13px 14px rgba(255, 56, 92, 0.21), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 53px;
+
+
+/* 216 € */
+
+position: absolute;
+left: 76.67%;
+right: 14.58%;
+top: 54.27%;
+bottom: 44.97%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 43px;
+line-height: 52px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 27 */
+
+position: absolute;
+width: 80px;
+height: 22px;
+left: 1017px;
+top: 3939px;
+
+background: #FFAFBE;
+
+
+/* 2 heures de cours par semaine */
+
+position: absolute;
+left: 70.62%;
+right: 9.44%;
+top: 56.24%;
+bottom: 43.39%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #000000;
+
+
+
+/* / AN */
+
+position: absolute;
+left: 84.03%;
+right: 11.53%;
+top: 55.14%;
+bottom: 44.37%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 29px;
+line-height: 35px;
+
+color: #000000;
+
+
+
+/* Les Tarifs */
+
+position: absolute;
+width: 332px;
+height: 67px;
+left: 583px;
+top: 3584px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.37);
+
+
+
+/* Spectacles */
+
+position: absolute;
+width: 378px;
+height: 67px;
+left: 566px;
+top: 4333.73px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.37);
+
+
+
+/* Photos */
+
+position: absolute;
+width: 247px;
+height: 67px;
+left: 631px;
+top: 5191.73px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.37);
+
+
+
+/* Vidéos */
+
+position: absolute;
+width: 227px;
+height: 67px;
+left: 641px;
+top: 4624.73px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.37);
+
+
+
+/* Rectangle 35 */
+
+position: absolute;
+width: 1123px;
+height: 67px;
+left: 175px;
+top: 4441.73px;
+
+background: linear-gradient(145.18deg, rgba(255, 56, 92, 0.43) 0.58%, rgba(248, 108, 102, 0.43) 109.95%);
+border-radius: 53px;
+
+
+/* 2016 */
+
+position: absolute;
+width: 158px;
+height: 67px;
+left: 211px;
+top: 4441.73px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 56px;
+line-height: 68px;
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.56);
+
+
+
+/* 2017 */
+
+position: absolute;
+width: 158px;
+height: 67px;
+left: 511px;
+top: 4441.73px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 56px;
+line-height: 68px;
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.56);
+
+
+
+/* 2018 */
+
+position: absolute;
+width: 158px;
+height: 67px;
+left: 811px;
+top: 4441.73px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 56px;
+line-height: 68px;
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.56);
+
+
+
+/* 2019 */
+
+position: absolute;
+width: 158px;
+height: 67px;
+left: 1107px;
+top: 4441.73px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 56px;
+line-height: 68px;
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.56);
+
+
+
+/* Rectangle 28 */
+
+position: absolute;
+left: 55%;
+right: 39.93%;
+top: 55.63%;
+bottom: 44.31%;
+
+background: #FF385C;
+
+
+/* Rectangle 29 */
+
+position: absolute;
+left: 83.68%;
+right: 11.25%;
+top: 55.63%;
+bottom: 44.31%;
+
+background: #FF385C;
+
+
+/* Rectangle 30 */
+
+position: absolute;
+left: 26.46%;
+right: 68.47%;
+top: 55.63%;
+bottom: 44.31%;
+
+background: #FF385C;
+
+
+/* Déduction de 12 euros à partir de la 2ème inscription */
+
+position: absolute;
+width: 756px;
+height: 35px;
+left: 392px;
+top: 4089px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 32px;
+
+color: #000000;
+
+
+
+/* Possibilité de régler en trois chèques, encaissés mi-octobre, mi-novembre et fin janvier */
+
+position: absolute;
+width: 1247px;
+height: 37px;
+left: 131px;
+top: 4132px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 32px;
+
+color: #000000;
+
+
+
+/* testTrembles 2 */
+
+position: absolute;
+width: 110px;
+height: 116px;
+left: 32px;
+top: 16px;
+
+background: url(testTrembles.png);
+box-shadow: 4px 4px 18px #FFFFFF;
+border-radius: 31px;
+
+
+/* Rectangle 31 */
+
+position: absolute;
+width: 1439px;
+height: 606px;
+left: 1px;
+top: 146px;
+
+background: rgba(255, 56, 92, 0.19);
+
+
+/* Bienvenue sur le site des Trembles Association de danse à partir de 3ans à Tremblay en France */
+
+position: absolute;
+width: 1004px;
+height: 197px;
+left: 219px;
+top: 344px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 51px;
+line-height: 136.9%;
+/* or 70px */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* image 3 */
+
+position: absolute;
+width: 442px;
+height: 293px;
+left: 142px;
+top: 4804.73px;
+
+background: url(image.png);
+opacity: 0.78;
+border-radius: 53px;
+
+
+/* image 4 */
+
+position: absolute;
+width: 482px;
+height: 271px;
+left: 853px;
+top: 4807.73px;
+
+background: url(image.png);
+opacity: 0.78;
+border-radius: 53px;
+
+
+/* image 2 */
+
+position: absolute;
+width: 563px;
+height: 318px;
+left: 468px;
+top: 4792.73px;
+
+background: url(image.png);
+border-radius: 53px;
+
+
+/* Sans-titre-5-1 1 */
+
+position: absolute;
+width: 546px;
+height: 314px;
+left: 147px;
+top: 5339.73px;
+
+background: url(Sans-titre-5-1.png);
+border-radius: 29px;
+
+
+/* Copie-de-Sans-titre 1 */
+
+position: absolute;
+width: 560.23px;
+height: 314.94px;
+left: 828px;
+top: 5339.73px;
+
+background: url(Copie-de-Sans-titre.png);
+border-radius: 29px;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 238px;
+height: 0px;
+left: 69px;
+top: 6564.5px;
+
+border: 1px solid #FFFFFF;
+
+
+/* Line 2 */
+
+position: absolute;
+width: 143px;
+height: 0px;
+left: 69px;
+top: 6565.5px;
+
+border: 4px solid #FFFFFF;
+
+
+/* Liens rapides */
+
+position: absolute;
+width: 252px;
+height: 36px;
+left: 611px;
+top: 6510px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+
+
+
+/* Line 3 */
+
+position: absolute;
+width: 238px;
+height: 0px;
+left: 615px;
+top: 6563.5px;
+
+border: 1px solid #FFFFFF;
+
+
+/* Line 4 */
+
+position: absolute;
+width: 143px;
+height: 0px;
+left: 615px;
+top: 6564.5px;
+
+border: 4px solid #FFFFFF;
+
+
+/* Instagram */
+
+position: absolute;
+width: 183px;
+height: 36px;
+left: 1090px;
+top: 6509px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+
+
+
+/* Line 5 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 1094px;
+top: 6562.5px;
+
+border: 1px solid #FFFFFF;
+
+
+/* Line 6 */
+
+position: absolute;
+width: 115px;
+height: 0px;
+left: 1094px;
+top: 6563.5px;
+
+border: 4px solid #FFFFFF;
+
+
+/* email (1) 1 */
+
+position: absolute;
+width: 46px;
+height: 46px;
+left: 83px;
+top: 6635px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 30%;
+right: 30%;
+top: 13.33%;
+bottom: 46.67%;
+
+background: #FFFFFF;
+
+
+/* social-media 1 */
+
+position: absolute;
+width: 46px;
+height: 46px;
+left: 83px;
+top: 6723px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 8.33%;
+bottom: 88.33%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 8.33%;
+bottom: 88.33%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 8.33%;
+bottom: 88.33%;
+
+background: #FFFFFF;
+
+
+/* Group */
+
+position: absolute;
+left: 21.67%;
+right: 17.5%;
+top: 33.33%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 21.67%;
+right: 17.5%;
+top: 33.33%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 21.67%;
+right: 17.5%;
+top: 33.33%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Group */
+
+position: absolute;
+left: 6.67%;
+right: 75%;
+top: 15%;
+bottom: 70%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 6.67%;
+right: 75%;
+top: 15%;
+bottom: 70%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 6.67%;
+right: 75%;
+top: 15%;
+bottom: 70%;
+
+background: #FFFFFF;
+
+
+/* Group */
+
+position: absolute;
+left: 45%;
+right: 45%;
+top: 25%;
+bottom: 58.33%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 45%;
+right: 45%;
+top: 25%;
+bottom: 58.33%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 45%;
+right: 45%;
+top: 25%;
+bottom: 58.33%;
+
+background: #FFFFFF;
+
+
+/* Group */
+
+position: absolute;
+left: 35%;
+right: 35%;
+top: 18.33%;
+bottom: 51.67%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 35%;
+right: 35%;
+top: 18.33%;
+bottom: 51.67%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 35%;
+right: 35%;
+top: 18.33%;
+bottom: 51.67%;
+
+background: #FFFFFF;
+
+
+/* Group */
+
+position: absolute;
+left: 0%;
+right: 70%;
+top: 8.33%;
+bottom: 61.67%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 0%;
+right: 70%;
+top: 8.33%;
+bottom: 61.67%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 70%;
+top: 8.33%;
+bottom: 61.67%;
+
+background: #FFFFFF;
+
+
+/* Group */
+
+position: absolute;
+left: 70%;
+right: 0%;
+top: 0%;
+bottom: 70%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 70%;
+right: 0%;
+top: 0%;
+bottom: 70%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 70%;
+right: 0%;
+top: 0%;
+bottom: 70%;
+
+background: #FFFFFF;
+
+
+/* Group */
+
+position: absolute;
+left: 48.33%;
+right: 48.33%;
+top: 68.33%;
+bottom: 28.33%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 48.33%;
+right: 48.33%;
+top: 68.33%;
+bottom: 28.33%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 48.33%;
+right: 48.33%;
+top: 68.33%;
+bottom: 28.33%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 29 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 631px;
+top: 6633px;
+
+border: 1px solid #FF385C;
+box-sizing: border-box;
+
+
+/* Ellipse 30 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 631px;
+top: 6660px;
+
+border: 1px solid #FF385C;
+box-sizing: border-box;
+
+
+/* Ellipse 31 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 631px;
+top: 6687px;
+
+border: 1px solid #FF385C;
+box-sizing: border-box;
+
+
+/* Ellipse 32 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 631px;
+top: 6715px;
+
+border: 1px solid #FF385C;
+box-sizing: border-box;
+
+
+/* Ellipse 33 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 631px;
+top: 6742px;
+
+border: 1px solid #FF385C;
+box-sizing: border-box;
+
+
+/* Ellipse 34 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 631px;
+top: 6769px;
+
+border: 1px solid #FF385C;
+box-sizing: border-box;
+
+
+/* Screenshot_20200307_151624_com.instagram 1 */
+
+position: absolute;
+width: 166px;
+height: 279px;
+left: 1103px;
+top: 6595px;
+
+background: url(Screenshot_20200307_151624_com.instagram.jpg);
+
+
+/* Rectangle 25 */
+
+position: absolute;
+width: 1547px;
+height: 316px;
+left: -58px;
+top: 1451px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.41) 0%, rgba(248, 108, 102, 0.41) 100%);
+border-radius: 32px;
+
+
+/* A */
+
+position: absolute;
+width: 175px;
+height: 239px;
+left: 187px;
+top: 1469px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 209px;
+line-height: 255px;
+letter-spacing: 0.16em;
+
+color: rgba(255, 255, 255, 0.18);
+
+
+
+/* L */
+
+position: absolute;
+width: 131px;
+height: 219px;
+left: 659px;
+top: 1472px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 209px;
+line-height: 255px;
+letter-spacing: 0.16em;
+
+color: rgba(255, 255, 255, 0.18);
+
+
+
+/* T */
+
+position: absolute;
+width: 143px;
+height: 239px;
+left: 1101px;
+top: 1469px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 209px;
+line-height: 255px;
+letter-spacing: 0.16em;
+
+color: rgba(255, 255, 255, 0.18);
+
+
+
+/* Rectangle 32 */
+
+position: absolute;
+width: 297px;
+height: 225px;
+left: 125px;
+top: 1494px;
+
+border: 1px dashed #FFFFFF;
+box-sizing: border-box;
+
+
+/* Rectangle 33 */
+
+position: absolute;
+width: 297px;
+height: 225px;
+left: 565px;
+top: 1494px;
+
+border: 1px dashed #FFFFFF;
+box-sizing: border-box;
+
+
+/* Rectangle 34 */
+
+position: absolute;
+width: 297px;
+height: 225px;
+left: 1012px;
+top: 1494px;
+
+border: 1px dashed #FFFFFF;
+box-sizing: border-box;
+
+
+/* + de 150 */
+
+position: absolute;
+width: 280px;
+height: 67px;
+left: 140px;
+top: 1526px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.58);
+
+
+
+/* danseuses */
+
+position: absolute;
+width: 252px;
+height: 67px;
+left: 154px;
+top: 1614px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 38px;
+line-height: 46px;
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.58);
+
+
+
+/* + de 10 */
+
+position: absolute;
+width: 280px;
+height: 67px;
+left: 1026px;
+top: 1536px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.58);
+
+
+
+/* niveaux */
+
+position: absolute;
+width: 184px;
+height: 67px;
+left: 1074px;
+top: 1624px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 38px;
+line-height: 46px;
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.58);
+
+
+
+/* + de 30 */
+
+position: absolute;
+width: 280px;
+height: 67px;
+left: 569px;
+top: 1536px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.58);
+
+
+
+/* bénévoles */
+
+position: absolute;
+width: 239px;
+height: 67px;
+left: 598px;
+top: 1624px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 38px;
+line-height: 46px;
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.58);
+
+
+
+/* À PROPOS */
+
+position: absolute;
+width: 373px;
+height: 67px;
+left: 559px;
+top: 5843.78px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 67px;
+/* identical to box height */
+letter-spacing: 0.16em;
+
+color: rgba(0, 0, 0, 0.37);
+
+
+
+/* L’association est née en 1969 au cœur des « cités des douanes ». Pendant des années, les nombreux accueils ont permis à tous les enfants du quartier d’occuper leurs après-midi et soirées. Le lien social était le premier objectif et il le reste encore aujourd’hui. De nombreux bénévoles ont donné de leur temps et de leur énergie, mais celui qui reste dans nos cœur, même si physiquement il reste loin, c’est Roger Caniou. Aujourd’hui, pour des raisons techniques, nous ne poursuivons que l’activité Danse Modern’Jazz qui rassemble tous les ans entre 130 et 150 danseurs. Nous accueillons les enfants à partir de la 1ère année de maternelle et jusqu’aux cours adultes y compris les débutantes. Il n’y a pas d’examen à passer en fin d’année. Les cours sont regroupés par âge et sont dispensés par des professeurs diplômés d’état. L’association est gérée par les membres du bureau et par un comité de direction (regroupant les bénévoles actifs pour la préparation du spectacle). Notre volonté reste la même : ASSOCIATIF pour respecter le bien-être des tremblaysiens. Venez nous rejoindre ! */
+
+position: absolute;
+width: 1249px;
+height: 412px;
+left: 99px;
+top: 6009.78px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 141.4%;
+/* or 31px */
+text-align: justify;
+letter-spacing: 0.13em;
+
+color: #000000;
+
+
+
+/* Ellipse 17 */
+
+position: absolute;
+width: 292px;
+height: 292px;
+left: 1209px;
+top: 5882px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 18 */
+
+position: absolute;
+width: 206px;
+height: 206px;
+left: -92px;
+top: 5878px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);
+
+
+/* Ellipse 19 */
+
+position: absolute;
+width: 96px;
+height: 96px;
+left: 988px;
+top: 5834px;
+
+background: linear-gradient(180deg, rgba(255, 56, 92, 0.11) 0%, rgba(248, 108, 102, 0.11) 100%);
+filter: blur(50px);

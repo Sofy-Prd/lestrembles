@@ -12,7 +12,7 @@ import ChangePasswordByMail from './components/auth/ChangePasswordByMail.js'
 import ForgotPassword from './components/auth/ForgotPassword.js'
 import CoursList from './components/general/CoursList.js'
 import TarifsList from './components/general/TarifsList.js'
-
+import HomePage from './components/general/HomePage.js'
 
 import AuthService from './components/auth/auth-service';
 
@@ -79,8 +79,8 @@ class App extends Component {
       return (
         <div className="App">
 
-
           <Switch> 
+            <Route exact path='/' component={HomePage} />/>
 
             <Route exact path='/cours' component={CoursList} />/>
             <Route exact path='/tarifs' component={TarifsList} />/>
