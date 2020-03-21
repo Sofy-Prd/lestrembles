@@ -10,9 +10,12 @@ class Tarif extends Component {
     render () {
      
         return (
-            <div className="Tarif">
-                <h4>Durée : {this.props.duree}</h4>
-                <p>{this.props.montant}</p>
+            <div className="tarifVerticalCenter">
+
+                 <p className="tarifMontant">{this.props.montant} €</p>
+                 <p className="tarifAn">/AN</p>
+                <p className="tarifDuree"><span>{this.props.duree}</span> de cours par semaine</p>
+               
                            
             </div>
         );

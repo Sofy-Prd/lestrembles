@@ -1,0 +1,239 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  @media (max-width:900px) {
+
+  }
+}
+
+@media (max-width:900px) {¨
+  .App-header {}
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+* :before, after {
+  box-sizing:border-box;
+  }
+
+body {
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  max-width:100%;
+}
+
+.navBar {
+  height: 10vh;
+}
+
+.homePage,
+.aboutPAge {
+
+}
+
+.homePage {
+  .accueil {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:90vh;
+    background:#FCBCBD url("/images/backgroundHomepage.png") center no-repeat;
+  
+  }
+  
+  .profsList {
+    display:flex;
+    justify-content: space-around;
+    
+  }
+  
+  
+  .prof {
+    width:15%;
+    text-align:center;
+   
+  
+  }
+  
+  .prof h1 {
+    color:#FF385C;
+    font-weight: lighter;
+  
+   
+  }
+  
+  .prof img {
+    display:block;
+    width:100%;
+    height: 275px;
+    border-radius:25px;
+    object-fit: cover;
+    
+  }
+  
+  .prof h2 {
+    font-size:1.5em;
+    font-weight: lighter;
+  
+  
+  }
+  
+  .backgroundWhitePink{
+    background: url("/images/backgroundWhitePink.png") center no-repeat ;
+  }
+  
+  .cours {
+    border:solid 1px #FF385C;
+    border-radius:25px;
+    width: 25%;
+    margin-bottom:3em;
+  }
+  
+  .cours span {
+    font-weight: bold;
+  } 
+  
+  .coursTitre {
+    text-align: center;
+  }
+  
+  .coursSection {
+    display: flex;
+    justify-content: space-between;
+  }
+  .coursLibelle {
+    width:35%;
+    padding-left: 15px;
+  }
+  
+  .coursDetail {
+    width:65%;
+    text-align: center;
+    padding-right: 15px;
+  }
+  
+  .coursList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+  
+  
+  .tarifsList {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .tarif {
+    width : 25%;
+    border: solid 1px grey;
+    border-radius: 25px;
+    height:40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tarifVerticalCenter {
+    
+    height:40vh;
+    margin:2em;
+  
+  }
+  
+  .tarif p {
+    margin-top: 0;
+  }
+  
+  .tarifMontant {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0em;
+  }
+  
+  .tarifAn {
+    margin-top: 0em;
+    text-align: right;
+    font-size: 2.8em;
+    text-decoration: underline ;
+    font-weight: lighter;
+    /* solid #FF385C 10px; */
+  }
+  
+  
+  .tarifDuree {
+   font-weight: bold;
+   text-align: center;
+  //  font-size: 1.5em;
+  
+  }
+  
+  .tarifDuree span {
+    background-color: #FFAFBE;
+  
+  }
+  
+  .spectacles {
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    width:25%;
+    height:20%;
+    display:flex;
+  }
+  
+  .imgSpectacles img {
+    display:block;
+    margin-top:25px;
+  }
+  
+  .fleche {
+    width:50px;
+  }
+}
+

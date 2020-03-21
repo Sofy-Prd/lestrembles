@@ -7,7 +7,8 @@ const CoursSchema = new Schema({
   lieu: {type: Schema.Types.ObjectId, ref: 'Lieu'},
   jour: String,
   horaire: String,
-  duree: {type: Schema.Types.ObjectId, ref: 'Tarif'}
+  duree: {type: Schema.Types.ObjectId, ref: 'Tarif'},
+  public: String
 });
 
 const Cours = mongoose.model('Cours', CoursSchema);

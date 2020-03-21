@@ -22,13 +22,13 @@ class CoursList extends Component {
     render () {
      
         return (
-            <div className="CoursList">
-                <h1>Répartition des cours pour l'année 2019 2020</h1>
-                    <ul>
+            <div className="coursList">
+             
+                  
                         {this.state.listOfCours.map(cours => (
-                            <li key={cours._id}><Cours nom={cours.nom} jour={cours.jour} horaire={cours.horaire} lieu={cours.lieu} prof={cours.prof}/></li>
+                            <div className="cours" key={cours._id}><Cours nom={cours.nom} jour={cours.jour} horaire={cours.horaire} lieu={cours.lieu} prof={cours.prof} public={cours.public}/></div>
                             ))}
-                    </ul> 
+                   
             </div>
         );
     }

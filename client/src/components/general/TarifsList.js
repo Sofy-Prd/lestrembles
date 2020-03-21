@@ -22,13 +22,13 @@ class TarifsList extends Component {
     render () {
      
         return (
-            <div className="TarifsList">
-                <h1>Les tarifs</h1>
-                    <ul>
+            <div className="tarifsList">
+             
+                  
                         {this.state.listOfTarifs.map(tarif => (
-                            <li key={tarif._id}><Tarif duree={tarif.duree} montant={tarif.montant}/></li>
+                            <div className="tarif" key={tarif._id}><Tarif duree={tarif.duree} montant={tarif.montant}/></div>
                             ))}
-                    </ul> 
+                  
             </div>
         );
     }

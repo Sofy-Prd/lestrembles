@@ -1,5 +1,9 @@
 import React, {Component} from 'react'
 import ProfsList from './ProfsList.js'
+import CoursList from './CoursList.js'
+import TarifsList from './TarifsList.js'
+import Spectacles from './Spectacles.js'
+
 
 
 class HomePage extends Component {
@@ -20,6 +24,11 @@ class HomePage extends Component {
                 </div>
                
                 <ProfsList/>
+                <div className="backgroundWhitePink">
+                <CoursList/>
+                <TarifsList/>
+                <Spectacles/>
+                </div>
                
 
             </div>

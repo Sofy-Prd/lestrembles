@@ -10,11 +10,23 @@ class Cours extends Component {
     render () {
      
         return (
-            <div className="Cours">
-                <h2>Nom du cours : {this.props.nom}</h2>
-                <p>le {this.props.jour} de {this.props.horaire}</p>
-                <p> lieu : {this.props.lieu.nom}</p>
-                <p> avec {this.props.prof.prenom}</p>
+            <div>
+                <p className="coursTitre"><span>{this.props.nom}</span> : {this.props.public}</p>
+                <div className="coursInfo">
+                    <div className="coursSection">
+                        <p className="coursLibelle">Jour</p> <p className="coursDetail">{this.props.jour}</p>
+                    </div>
+                    <div className="coursSection">
+                        <p className="coursLibelle">Horaire </p> <p className="coursDetail">{this.props.horaire}</p>
+                    </div>
+                    <div className="coursSection">
+                        <p className="coursLibelle">Salle </p> <p className="coursDetail">{this.props.lieu.nom}</p>
+                    </div>
+                    <div className="coursSection">
+                        <p className="coursLibelle">Prof </p> <p className="coursDetail">{this.props.prof.prenom}</p>
+                    </div>
+
+                </div>
 
             
             </div>

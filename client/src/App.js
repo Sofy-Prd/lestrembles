@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import './App.css';
+import './App.scss';
 import { Switch, Route } from 'react-router-dom';
-import axios from 'axios';
 import Login from './components/auth/Login.js'
 import EspacePerso from './components/espacePerso/EspacePerso.js'
 import Profil from './components/espacePerso/Profil.js'
