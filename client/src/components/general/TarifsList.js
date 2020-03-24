@@ -28,17 +28,18 @@ class TarifsList extends Component {
                 <h1>Les Tarifs</h1>
               </div>
 
-              <div className="tarifListBackground">
+            
                   <div className="tarifsList">
                       {this.state.listOfTarifs.map(tarif => (
                          <div className="tarif" key={tarif._id}><Tarif duree={tarif.duree} montant={tarif.montant}/></div>
                        ))}
                         
                   </div>
-                  <p>Déduction de 12€ à partir de la 2ème inscription</p>
-                  <p>Possibilité de régler en trois chèques, encaissés mi-octobre, mi-novembre et fin janvier</p>
-              </div>
-            </div>
+                  <div className="tarifListBackground">
+                    <p>Déduction de 12€ à partir de la 2ème inscription</p>
+                    <p>Possibilité de régler en trois chèques, encaissés mi-octobre, mi-novembre et fin janvier</p>
+                  </div>
+               </div>
         );
     }
 }

@@ -72,8 +72,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-const index = require('./routes/index');
-app.use('/', index);
+// const index = require('./routes/index');
+// app.use('/', index);
 
 const authRoutes = require('./routes/auth');
 app.use('/api', authRoutes);
@@ -86,6 +86,35 @@ app.use('/api', generalRoutes);
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
+app.use((req, res, next) => {
+  res.sendFile(path.join(__dirname, 'client/build/index.html'), function (err) {
+    if (err) {
+      next(err)
+    }
+  })
+});
+
+app.use((err, req, res, next) => {
+  function er2JSON(er) {
+    // http://stackoverflow.com/questions/18391212/is-it-not-possible-to-stringify-an-error-using-json-stringify#18391212
+    var o = {};
+  
+    Object.getOwnPropertyNames(er).forEach(function (key) {
+      o[key] = er[key];
+    });
+  
+    return o;
+  }
+
+  // always log the error
+  console.error('ERROR', req.method, req.path, err);
+
+  err = er2JSON(err);
+  err.status || (err.status = 500); // default to 500
+  res.status(err.status);
+
+  res.json(err);
+});
 
 
 

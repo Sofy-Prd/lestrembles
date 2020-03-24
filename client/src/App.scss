@@ -199,8 +199,10 @@ img {
   text-align: center;
   margin-left: 2em;
   margin-right: 2em;
-  // position: relative;
-  top: -25vh;
+  position: relative;
+  height:13em;
+  z-index: 1;
+  top: -8em;
 }
   
 .tarifsContainer h1 {
@@ -217,7 +219,9 @@ img {
     justify-content: space-between;
     margin-left: 4em;
     margin-right: 4em;
-    // position: absolute;
+    position: relative;
+    height:13em;
+    z-index: 2;
     
   }
   
@@ -225,7 +229,7 @@ img {
     width : 25%;
     border: solid 1px grey;
     border-radius: 25px;
-    
+    background-color: white;
     display:flex;
     flex-direction: column;
     justify-content: center;
