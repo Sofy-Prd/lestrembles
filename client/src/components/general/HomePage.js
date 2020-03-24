@@ -3,6 +3,7 @@ import ProfsList from './ProfsList.js'
 import CoursList from './CoursList.js'
 import TarifsList from './TarifsList.js'
 import Spectacles from './Spectacles.js'
+import Footer from './Footer.js'
 
 
 
@@ -28,6 +29,7 @@ class HomePage extends Component {
                 <CoursList/>
                 <TarifsList/>
                 <Spectacles/>
+                <Footer/>
                 </div>
                
 

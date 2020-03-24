@@ -142,7 +142,7 @@ router.put("/user/:name/sendAbsences", (req, res, next) => {
 
 // Facture
 router.put("/user/adherents/:id/sendInvoices", (req, res) => {
-  let email = req.user.email; //req.body.email pour postman
+  let email = req.body.email; //req.body.email pour postman
   let prenom = req.body.prenom;
   let nom = req.body.nom;
   let tarif = req.body.tarif;

@@ -49,6 +49,12 @@
   box-sizing:border-box;
   }
 
+:root {
+  -pad:1em;
+  -ma1:2em;
+
+  }
+
 body {
   margin:0;
   font-family: 'Montserrat', sans-serif;
@@ -62,16 +68,18 @@ img {
   height: 10vh;
 }
 
-.homePage,
-.aboutPAge {
 
-}
+
+// .homePage,
+// .aboutPAge {
+
+// }
 
 .homePage {
   .accueil {
     text-align: center;
     color: white;
-    font-size: 2em;
+    font-size: 1.2em;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -83,21 +91,33 @@ img {
   
   .profsList {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left:2.5em;
+    margin-right:2.5em;
+    background:url("/images/backgroundProfsList.svg") center no-repeat;
     
   }
-  
+
+  .profsContainer h1 {
+    display:block;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: lighter;
+    color:grey;
+    width:100vw;
+  }
   
   .prof {
-    width:15%;
+    width:18%;
     text-align:center;
    
   
   }
   
-  .prof h1 {
+  .prof h2 {
     color:#FF385C;
     font-weight: lighter;
+    font-size: 1.8em;
   
    
   }
@@ -111,15 +131,15 @@ img {
     
   }
   
-  .prof h2 {
-    font-size:1.5em;
+  .prof h3 {
+    font-size:1.3em;
     font-weight: lighter;
   
   
   }
   
   .backgroundWhitePink{
-    background: url("/images/backgroundWhitePink.png") center no-repeat ;
+    background: url("/images/backgroundWhitePink.png");
   }
   
   .cours {
@@ -127,6 +147,8 @@ img {
     border-radius:25px;
     width: 25%;
     margin-bottom:3em;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .cours span {
@@ -135,15 +157,17 @@ img {
   
   .coursTitre {
     text-align: center;
+    font-size: 1em;
   }
   
   .coursSection {
     display: flex;
     justify-content: space-between;
+    font-size: 0.8em;
   }
   .coursLibelle {
     width:35%;
-    padding-left: 15px;
+    
   }
   
   .coursDetail {
@@ -154,16 +178,46 @@ img {
   
   .coursList {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 7em;
+    margin-right: 7em;
   }
+
+  .coursContainer h1 {
+    display:block;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: lighter;
+    color:grey;
+    width:100vw;
+  }
+
+.tarifListBackground {
+  background-color:#FCBCBD;
+  border-radius: 25px;
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  // position: relative;
+  top: -25vh;
+}
   
-  
+.tarifsContainer h1 {
+  display:block;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color:grey;
+  width:100vw;
+}
+
   .tarifsList {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 4em;
+    margin-right: 4em;
+    // position: absolute;
     
   }
   
@@ -171,16 +225,15 @@ img {
     width : 25%;
     border: solid 1px grey;
     border-radius: 25px;
-    height:40vh;
+    
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   
   .tarifVerticalCenter {
-    
-    height:40vh;
     margin:2em;
   
   }
@@ -191,7 +244,7 @@ img {
   
   .tarifMontant {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 0em;
   }
@@ -199,17 +252,22 @@ img {
   .tarifAn {
     margin-top: 0em;
     text-align: right;
-    font-size: 2.8em;
-    text-decoration: underline ;
+    font-size: 2em;
+    
     font-weight: lighter;
+    // border-bottom: #FF385C solid 3px;
     /* solid #FF385C 10px; */
+  }
+
+  .tarifAn span {
+    border-bottom: #FF385C solid 3px;
   }
   
   
   .tarifDuree {
    font-weight: bold;
    text-align: center;
-  //  font-size: 1.5em;
+  font-size: 0.6em;
   
   }
   
@@ -235,5 +293,39 @@ img {
   .fleche {
     width:50px;
   }
+
+  .footer {
+    background-image: url("/images/backgroundFooter.svg");
+    display:flex;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+    margin-top: 3em;
+   
+  }
+
+  .footer p {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .footerGauche a {
+    text-decoration:inherit; 
+    color:white;
+    margin-left: 1em;
+  }
+
+  .footerDroite {
+    a {
+    text-align:center;
+  }
+    img {
+      width:2em;
+    }
+    .footerIcon {
+      display:flex;
+      justify-content: space-around;
+    }
+} 
+
 }
 

@@ -7,7 +7,7 @@ class CoursList extends Component {
     state = { listOfCours: [] };
    
     getAllCours = () =>{
-        axios.get(`http://localhost:5000/api/courses`)
+        axios.get(`${process.env.REACT_APP_APIURL || ""}/api/courses`)
         .then(responseFromApi => {
           this.setState({
             listOfCours: responseFromApi.data
@@ -22,14 +22,18 @@ class CoursList extends Component {
     render () {
      
         return (
-            <div className="coursList">
-             
-                  
-                        {this.state.listOfCours.map(cours => (
-                            <div className="cours" key={cours._id}><Cours nom={cours.nom} jour={cours.jour} horaire={cours.horaire} lieu={cours.lieu} prof={cours.prof} public={cours.public}/></div>
-                            ))}
-                   
-            </div>
+          <div className="coursContainer">
+              <div className="coursListTitre">
+                <h1>Les Cours</h1>
+              </div>
+
+                <div className="coursList">
+                         
+                   {this.state.listOfCours.map(cours => (
+                      <div className="cours" key={cours._id}><Cours nom={cours.nom} jour={cours.jour} horaire={cours.horaire} lieu={cours.lieu} prof={cours.prof} public={cours.public}/></div>
+                    ))}
+               </div>
+          </div>
         );
     }
 }

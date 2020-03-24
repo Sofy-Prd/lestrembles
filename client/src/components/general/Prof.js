@@ -9,9 +9,9 @@ class Prof extends Component {
         return (
             <div>
 
-                <h1>{this.props.prenom}</h1>
+                <h2>{this.props.prenom}</h2>
                 <img src={this.props.photoProfil} alt="" />
-                <h2>{this.props.style}</h2>
+                <h3>{this.props.style}</h3>
                     
     
                 

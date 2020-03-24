@@ -7,7 +7,7 @@ class TarifsList extends Component {
     state = { listOfTarifs: [] };
    
     getAllTarifs = () =>{
-        axios.get(`http://localhost:5000/api/prices`)
+        axios.get(`${process.env.REACT_APP_APIURL || ""}/api/prices`)
         .then(responseFromApi => {
           this.setState({
             listOfTarifs: responseFromApi.data
@@ -22,13 +22,22 @@ class TarifsList extends Component {
     render () {
      
         return (
-            <div className="tarifsList">
-             
-                  
-                        {this.state.listOfTarifs.map(tarif => (
-                            <div className="tarif" key={tarif._id}><Tarif duree={tarif.duree} montant={tarif.montant}/></div>
-                            ))}
-                  
+
+          <div className="tarifsContainer">
+             <div className="tarifListTitre">
+                <h1>Les Tarifs</h1>
+              </div>
+
+              <div className="tarifListBackground">
+                  <div className="tarifsList">
+                      {this.state.listOfTarifs.map(tarif => (
+                         <div className="tarif" key={tarif._id}><Tarif duree={tarif.duree} montant={tarif.montant}/></div>
+                       ))}
+                        
+                  </div>
+                  <p>Déduction de 12€ à partir de la 2ème inscription</p>
+                  <p>Possibilité de régler en trois chèques, encaissés mi-octobre, mi-novembre et fin janvier</p>
+              </div>
             </div>
         );
     }

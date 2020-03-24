@@ -15,7 +15,7 @@ class ChangePasswordByMail extends Component {
 getTheToken = () => {
     const { params } = this.props.match;
     
-    axios.get(`http://localhost:5000/api/changePasswordByMail/${params.token}`)
+    axios.get(`${process.env.REACT_APP_APIURL || ""}/api/changePasswordByMail/${params.token}`)
     .then(response => response.data)
     .catch((err)=>{
         console.log(err)
@@ -30,7 +30,7 @@ getTheToken = () => {
     
     event.preventDefault();
 
-    axios.post(`http://localhost:5000/api/changePasswordByMail/${params.token}`, { password1, password2 })
+    axios.post(`${process.env.REACT_APP_APIURL || ""}/api/changePasswordByMail/${params.token}`, { password1, password2 })
         .then(
            
             this.props.history.push('/espacePerso/login')

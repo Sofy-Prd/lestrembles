@@ -6,6 +6,7 @@ import EspacePerso from './components/espacePerso/EspacePerso.js'
 import Profil from './components/espacePerso/Profil.js'
 import EditProfil from './components/espacePerso/EditProfil.js'
 import SendAbsences from './components/espacePerso/SendAbsences.js'
+import SendInvoices from './components/espacePerso/SendInvoices.js'
 import ChangePassword from './components/auth/ChangePassword.js'
 import ChangePasswordByMail from './components/auth/ChangePasswordByMail.js'
 import ForgotPassword from './components/auth/ForgotPassword.js'
@@ -55,25 +56,7 @@ class App extends Component {
     })
   }
 
-  // getTheFamily = () => {
-        
-  //   axios.get(`http://localhost:5000/api/user`,{params:{userId:this.state.user._id}})
-  //   // axios.get(`http://localhost:5000/api/user`,{userId:this.state.user._id})
-  //   .then(responseFromApi => {
-  //       // console.log("responseFromApi",responseFromApi);
-
-     
-  //     this.setState({
-  //       theFamily: responseFromApi.data
-  //     })
-  //   })
-  //   .catch((err)=>{
-  //       console.log(err)
-  //   })
-
-  // }
- 
-
+  
   render() {
       return (
         <div className="App">
@@ -84,7 +67,7 @@ class App extends Component {
             <Route exact path='/cours' component={CoursList} />/>
             <Route exact path='/tarifs' component={TarifsList} />/>
             <Route exact path='/espacePerso/:name/sendAbsences' render={(props) => <SendAbsences {...props} user={this.state.user}/>}/> />/>
-              
+            <Route exact path='/espacePerso/:name/sendInvoices' render={(props) => <SendInvoices {...props} user={this.state.user}/>}/> />/> 
            <Route exact path='/espacePerso/forgotPassword' component={ForgotPassword} />/>
 
             <Route exact path='/espacePerso/changePassword' render={(props) => (<ChangePassword {...props} />)} />/>

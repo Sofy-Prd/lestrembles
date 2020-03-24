@@ -72,6 +72,15 @@ class EspacePerso extends Component {
                     }
                     </ul>
 
+                    <p>Pour quel adherent souhaitez vous une facture ?</p>
+                    <ul>
+                    {
+                    this.props.user.adherent.map(membre => (
+                            <Link to={`/espacePerso/${membre.prenom}/sendInvoices`}><li key={membre._id}>Prénom de l'adhérent: {membre.prenom}</li></Link>
+                        ))
+                    }
+                    </ul>
+
 
 
                   

@@ -2,14 +2,16 @@ import React, {Component} from 'react';
 import MailService from './mail-service';
 import axios from 'axios';
 
-class SendAbsences extends Component {
+class SendInvoices extends Component {
   constructor(props) {
     super(props)
 
     const { params } = this.props.match;  // {name: "Marion"}
     let user = this.props.user; // {}
+    let email = this.props.user.email; // {}
     let adherents = user.adherent; // undefined
     console.log ("user", user);
+    console.log ("userEmail", email);
     console.log ("adherents", adherents);
     console.log ("params", params);
 
@@ -21,17 +23,18 @@ class SendAbsences extends Component {
     let prenom = adherent[0].prenom;
     console.log("prenom",prenom);
     let nom = adherent[0].nom;
-    console.log("nom",nom)
-    let profEmail=adherent[0].cours1.prof.email;
-    console.log("profEmail",profEmail)
+    console.log("nom",nom);
+    let tarif=adherent[0].cours1.duree.montant; //pour récupérer le montant 
+    console.log("tarif",tarif);
+
 
     this.state={
-      profEmail:profEmail,
-      message:"",
+      email:email,
       prenom:prenom,
       nom:nom,
+      tarif:tarif,
+      subject: "",	
       date:""
-
     }
   }
   
@@ -48,32 +51,34 @@ class SendAbsences extends Component {
       let prenom = adherent[0].prenom;
       console.log("prenom",prenom);
       let nom = adherent[0].nom;
-      console.log("nom",nom)
-      let profEmail=adherent[0].cours1.prof.email;
-      console.log("profEmail",profEmail)
+      console.log("nom",nom);
+      let tarif=adherent[0].cours1.duree.montant; //pour récupérer le montant 
+      console.log("tarif",tarif);
+      let email=user.email;
 
       this.setState({ 
-        profEmail:profEmail,
-        message:"",
+        email:email,
         prenom:prenom,
         nom:nom,
-        date:"" })
-    }
+        tarif:tarif,
+        date:""
+    })
+}
   }
  
   service = new MailService();
 
   handleFormSubmit = (event) => {
-    const profEmail=this.state.profEmail;
-    const message=this.state.message;
+    const email=this.state.email;
     const prenom=this.state.prenom; 
     const nom=this.state.nom; 
     const date=this.state.date;
+    const tarif=this.state.tarif;
     
     event.preventDefault();
 
 
-    axios.put(`${process.env.REACT_APP_APIURL || ""}/api/user/:name/sendAbsences`, { profEmail, message,prenom, nom, date })
+    axios.put(`${process.env.REACT_APP_APIURL || ""}/api/user/adherents/:name/sendInvoices`, { email, prenom, nom, tarif, date })
         .then(
            
             this.props.history.push('/espacePerso')
@@ -83,40 +88,31 @@ class SendAbsences extends Component {
       .catch( error => console.log(error) )
     }
 
-  handleSendAbsences = (event) => {  
+  handleSendInvoices = (event) => {  
     const {name, value} = event.target;
     this.setState({[name]: value});
-}
+    }
 
  
   render() {
      
-   
-   
-  //   this.setState({
-  //   prenom:prenom,
-  //   nom:nom,
-  //   profEmail:profEmail
-
-      
-  // })
+  
       return (
-        <div className="SendAbsences">
+        <div className="SendInvoices">
 
-        {/* <h3>adherent : {this.props.adherent[0].prenom}</h3> */}
-
+        
         <form onSubmit={this.handleFormSubmit}>
-            <label>Nom:</label>
-            <input type="text" name="prenom"  value={this.state.prenom} onChange={e => this.handleSendAbsences(e)}/>
-            <label>Prenom:</label>
-            <input type="text" name="nom" value={this.state.nom}/>
-            <label>Email de la prof:</label>
-            <input type="text" name="profEmail" value={this.state.profEmail}/>
-            <label>Motif:</label> 
-            <input type="textarea" name="message" value={this.state.message} onChange={e => this.handleSendAbsences(e)}/>
-            <label>Nom :</label>
-            <input type="date" name="date" value={this.state.date} onChange={e => this.handleSendAbsences(e)}/>
-          
+            {/* <label>Prenom :</label>
+            <input type="text" name="prenom"  value={this.state.prenom} onChange={e => this.handleSendInvoices(e)}/>
+	    <label>Nom :</label>
+            <input type="text" name="nom" value={this.state.nom} onChange={e => this.handleSendInvoices(e)}/>
+            <label>Email de la Famille:</label>
+            <input type="text" name="email" value={this.state.email}/>
+            <label>Tarif :</label>
+            <input type="number" name="tarif" value={this.state.tarif} onChange={e => this.handleSendInvoices(e)}/> */}
+            <label>A ÉDITER EN DATE DU:</label>
+            <input type="date" name="date" value={this.state.date} onChange={e => this.handleSendInvoices(e)}/>
+                 
           <input type="submit" value="Submit" />
         </form>
         
@@ -124,7 +120,9 @@ class SendAbsences extends Component {
         </div>
       );
               }
-}
+            }
+  
 
 
-export default SendAbsences;
+export default SendInvoices;
+

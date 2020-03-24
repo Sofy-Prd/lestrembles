@@ -16,9 +16,9 @@ const MongoStore = require('connect-mongo')(session);
 require('./configs/passport');
 
 
-
 mongoose
-  .connect('mongodb://localhost/lestrembles', {useNewUrlParser: true})
+  // .connect('mongodb://localhost/lestrembles', {useNewUrlParser: true})
+  .connect((process.env.MONGODB_URI ||`mongodb://localhost/lestrembles`), {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -83,6 +83,8 @@ app.use('/api', espaceUserRoutes);
 
 const generalRoutes = require('./routes/general');
 app.use('/api', generalRoutes);
+
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 
 
