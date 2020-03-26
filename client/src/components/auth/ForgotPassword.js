@@ -34,21 +34,21 @@ class ForgotPassword extends Component {
   render() {
     
       return (
-        <div className="forgotPassword">
+        <div className="changePassword">
 
-        <h3>Modification du mot de passe</h3>
+        <h1>Modification du mot de passe</h1>
         <form onSubmit={this.handleFormSubmit}>
-          <label>Votre adresse mail :</label>
+          <label id="forgotLabel">Veuillez taper votre adresse mail ci-dessous pour recevoir un lien de réinitialisation :</label>
           <input type="text" name="email" value={this.state.email} onChange={e => this.handleForgotPassword(e)}/>
         
           {/* <label>Recevoir un email de réinitialisation  :</label> */}
-          <input type="submit" value="Submit" />
+          <input id="button" type="submit" value="Submit" />
         </form>
         
         
         </div>
       );
-              }
+  }
 }
 
 export default ForgotPassword;

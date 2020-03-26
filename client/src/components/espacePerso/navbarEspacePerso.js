@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useReducer} from 'react';
 import AuthService from '../auth/auth-service';
 
 import Profil from './Profil.js'
@@ -21,16 +21,47 @@ class NavBarEspacePerso extends Component {
                  })};
     render () {
        
-
+        console.log("user",this.props.user);
        
 
         return (
             <div className="navBarEP">
-              
-                <Link to="/espacePerso/profil">Consulter mon profil</Link>
-                <Link to="/espacePerso/formAbsences">Prévenir d'une absence</Link>
-                <Link to="/espacePerso/formInvoices">Editer une facture</Link>
-                <button className="btn logout" onClick={this.logout}>Logout</button>
+
+
+
+  
+                <div className="user-navbar">
+                    <h1>Espace perso</h1>
+
+                </div>
+                
+                <div className="click-items-container">
+                    <div className="click-item">
+                    <div className="icone"><img src="/images/iconProfil.svg"/></div>
+                    <div className="libelle"><Link to="/espacePerso/profil">Consulter mon profil</Link></div>    
+                    </div>
+
+                    <div className="click-item">
+                    <div className="icone"><img src="/images/iconAbsence.svg"/></div>
+                    <div className="libelle"> <Link to="/espacePerso/formAbsences">Prévenir d'une absence</Link></div>   
+                    </div>
+                
+                    <div className="click-item">
+                    <div className="icone"><img src="/images/iconFacture.svg"/></div>
+                    <div className="libelle"><Link to="/espacePerso/formInvoices">Editer une facture</Link></div>    
+                    </div>
+
+                    <button className="btn logout" onClick={this.logout}></button>
+                    {/* <div className="click-item">
+                    <div className="icone"><img src="https://img.icons8.com/material-outlined/24/000000/buy.png"/></div>
+                    <div className="libelle"><h2>Acheter des places</h2></div>   
+                    </div> */}
+                </div>
+                
+
+            
+  
+               
             </div>
 
 
@@ -40,3 +71,4 @@ class NavBarEspacePerso extends Component {
 }
 
 export default NavBarEspacePerso;
+

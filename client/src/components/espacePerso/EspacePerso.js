@@ -51,7 +51,7 @@ class EspacePerso extends Component {
 
         if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
 
-        console.log("user",this.props.user);
+       
       
         
        
@@ -62,14 +62,20 @@ class EspacePerso extends Component {
                 <div className="espacePerso">
 
                     <div className="navbarEspacePerso">
-                        <NavBarEspacePerso />
+                        <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
                     </div>
 
                     <div className="partieDroiteEspacePerso">
-                        <h1>Bienvenue Famille {this.props.user.username} !</h1>
-                        <p>fyuzdfyizatgluifezutgfutgiauztgfuiatgi</p>
+                        <h1>Bienvenue dans votre espace Famille {this.props.user.username} !</h1>
 
-                        <Link to="/espacePerso/profil"><h2>voir mes informations personnelles</h2></Link>
+
+                        <p> Dans la rubrique <span>Profil</span> vous pourrez consulter les informations au sujet des cours des adherents de votre famille</p>
+                        <p> mais aussi modifier vos coordonnées</p>
+                        <p> Dans la rubrique <span>Absences</span> vous pourrez prevenir le professeur d'une absence à un cours</p>
+                        <p> Dans la rubrique <span>Facture</span> vous pourrez recevoir un mail avec la facture de l'activité par adherent</p>
+
+
+                        {/* <Link to="/espacePerso/profil"><h2>voir mes informations personnelles</h2></Link> */}
                         {/* <p>quel enfant sera absent ?</p>
                         <ul>
                         {
@@ -88,7 +94,7 @@ class EspacePerso extends Component {
                         }
                         </ul>
       */}
-                        <button className="btn logout" onClick={this.logout}>Logout</button>
+                        {/* <button className="btn logout" onClick={this.logout}>Logout</button> */}
 
                  
                     </div>

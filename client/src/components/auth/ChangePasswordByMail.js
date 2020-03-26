@@ -51,20 +51,20 @@ getTheToken = () => {
       return (
         <div className="changePassword">
 
-        <h3>Modification du mot de passe</h3>
+        <h1>Modification du mot de passe</h1>
         <form onSubmit={this.handleFormSubmit}>
           <label>Veuiller taper votre nouveau mot de passe :</label>
           <input type="password" name="password1" value={this.state.password1} onChange={e => this.handleChangePasswordByMail(e)}/>
           <label>Veuillez confirmer votre mot de passe :</label>
           <input type="password" name="password2" value={this.state.password2} onChange={e => this.handleChangePasswordByMail(e)}/>
           
-          <input type="submit" value="Submit" />
+          <input id="button" type="submit" value="Submit" />
         </form>
         
         
         </div>
       );
-              }
+      }
 }
 
 export default ChangePasswordByMail;

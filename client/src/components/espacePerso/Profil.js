@@ -55,7 +55,7 @@ class Profil extends Component {
               
               
                       <p>avec {membre.cours1.prof.prenom}</p>
-                      <img src={membre.cours1.prof.photo} alt="prof"/>  
+                      <img src={membre.cours1.prof.photoProfil} alt="prof"/>  
                       
             </div>        
             
