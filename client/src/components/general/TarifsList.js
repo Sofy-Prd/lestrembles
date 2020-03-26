@@ -36,8 +36,10 @@ class TarifsList extends Component {
                         
                   </div>
                   <div className="tarifListBackground">
-                    <p>Déduction de 12€ à partir de la 2ème inscription</p>
-                    <p>Possibilité de régler en trois chèques, encaissés mi-octobre, mi-novembre et fin janvier</p>
+                    <div className="tarifReduction">
+                      <p>Déduction de 12€ à partir de la 2ème inscription</p>
+                      <p>Possibilité de régler en trois chèques, encaissés mi-octobre, mi-novembre et fin janvier</p>
+                    </div>
                   </div>
                </div>
         );

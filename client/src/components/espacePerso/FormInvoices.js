@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import AuthService from '../auth/auth-service';
+
 // import axios from 'axios';
 
 import { Link } from 'react-router-dom'; 
@@ -7,32 +7,13 @@ import { Link } from 'react-router-dom';
 
 import Loader from '../Loader.js';
 // import SendAbsences from './SendAbsences.js'
-import navbarEspacePerso from './navbarEspacePerso.js';
+
 import NavBarEspacePerso from './navbarEspacePerso.js';
 
 
-class EspacePerso extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            
-        }
-        this.service = new AuthService();
-    }
-   
+class FormInvoices extends Component {
     
-   
-
-    logout = (event) => {
-       this.service.logout()
-          .then(()=>{
-            this.props.history.push('/espacePerso/login')
-           
-            this.props.setUser(null);
-           
-                })}
-          
-        ;
+    
 
     
 
@@ -66,20 +47,8 @@ class EspacePerso extends Component {
                     </div>
 
                     <div className="partieDroiteEspacePerso">
-                        <h1>Bienvenue Famille {this.props.user.username} !</h1>
-                        <p>fyuzdfyizatgluifezutgfutgiauztgfuiatgi</p>
-
-                        <Link to="/espacePerso/profil"><h2>voir mes informations personnelles</h2></Link>
-                        {/* <p>quel enfant sera absent ?</p>
-                        <ul>
-                        {
-                        this.props.user.adherent.map(membre => (
-                                <Link to={`/espacePerso/${membre.prenom}/sendAbsences`}><li key={membre._id}>Prénom de l'adhérent: {membre.prenom}</li></Link>
-                            ))
-                        }
-                        </ul>
-
-                        <p>Pour quel adherent souhaitez vous une facture ?</p>
+                     
+                    <p>Pour quel adherent souhaitez vous une facture ?</p>
                         <ul>
                         {
                         this.props.user.adherent.map(membre => (
@@ -87,10 +56,10 @@ class EspacePerso extends Component {
                             ))
                         }
                         </ul>
-      */}
-                        <button className="btn logout" onClick={this.logout}>Logout</button>
+     
+                      
 
-                 
+                     
                     </div>
 
             </div>
@@ -98,4 +67,4 @@ class EspacePerso extends Component {
     }
 }
 
-export default EspacePerso;
+export default FormInvoices;

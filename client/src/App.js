@@ -4,6 +4,8 @@ import { Switch, Route } from 'react-router-dom';
 import Login from './components/auth/Login.js'
 import EspacePerso from './components/espacePerso/EspacePerso.js'
 import Profil from './components/espacePerso/Profil.js'
+import FormAbsences from './components/espacePerso/FormAbsences.js'
+import FormInvoices from './components/espacePerso/FormInvoices.js'
 import EditProfil from './components/espacePerso/EditProfil.js'
 import SendAbsences from './components/espacePerso/SendAbsences.js'
 import SendInvoices from './components/espacePerso/SendInvoices.js'
@@ -66,8 +68,10 @@ class App extends Component {
 
             <Route exact path='/cours' component={CoursList} />/>
             <Route exact path='/tarifs' component={TarifsList} />/>
+            <Route exact path="/espacePerso/formAbsences" render={(props) => (<FormAbsences {...props} user={this.state.user} />)} />
             <Route exact path='/espacePerso/:name/sendAbsences' render={(props) => <SendAbsences {...props} user={this.state.user}/>}/> />/>
             <Route exact path='/espacePerso/:name/sendInvoices' render={(props) => <SendInvoices {...props} user={this.state.user}/>}/> />/> 
+            <Route exact path="/espacePerso/formInvoices" render={(props) => (<FormInvoices {...props} user={this.state.user} />)} />
            <Route exact path='/espacePerso/forgotPassword' component={ForgotPassword} />/>
 
             <Route exact path='/espacePerso/changePassword' render={(props) => (<ChangePassword {...props} />)} />/>

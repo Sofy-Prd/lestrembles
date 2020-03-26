@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import ProfsList from './ProfsList.js'
+import CountersBan from './CountersBan.js'
 import CoursList from './CoursList.js'
 import TarifsList from './TarifsList.js'
 import Spectacles from './Spectacles.js'
@@ -25,12 +26,13 @@ class HomePage extends Component {
                 </div>
                
                 <ProfsList/>
+                <CountersBan/>
                 <div className="backgroundWhitePink">
-                <CoursList/>
-                <TarifsList/>
-                <Spectacles/>
-                <Footer/>
+                    <CoursList/>
+                    <TarifsList/>
+                    <Spectacles/>
                 </div>
+                <Footer/>
                
 
             </div>
