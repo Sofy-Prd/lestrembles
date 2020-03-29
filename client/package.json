@@ -10,6 +10,7 @@
     "react": "^16.13.0",
     "react-countup": "^4.3.3",
     "react-dom": "^16.13.0",
+    "react-responsive-modal": "^4.0.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-siema": "^1.0.1",

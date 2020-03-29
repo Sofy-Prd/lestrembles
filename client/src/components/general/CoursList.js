@@ -22,7 +22,7 @@ class CoursList extends Component {
     render () {
      
         return (
-          <div className="coursContainer">
+          <div id="cours" className="coursContainer">
               <div className="coursListTitre">
                 <h1>Les Cours</h1>
               </div>

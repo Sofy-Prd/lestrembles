@@ -1,13 +1,7 @@
 import React, {Component} from 'react';
-
-// import axios from 'axios';
-
+import NavBar from '../general/NavBar.js'
 import { Link } from 'react-router-dom'; 
-// import { Redirect } from 'react-router-dom';
-
 import Loader from '../Loader.js';
-// import SendAbsences from './SendAbsences.js'
-
 import NavBarEspacePerso from './navbarEspacePerso.js';
 
 
@@ -37,9 +31,8 @@ class FormInvoices extends Component {
         
        
         return (
-           
-          
-                
+            <div>
+                <NavBar/>
                 <div className="espacePerso">
 
                     <div className="navbarEspacePerso">
@@ -57,8 +50,8 @@ class FormInvoices extends Component {
                         }
                         </ul>
      
-                      
-
+                        </div>
+                     
                      
                     </div>
 

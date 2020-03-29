@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import MailService from './mail-service';
 import axios from 'axios';
+import NavBarEspacePerso from './navbarEspacePerso.js';
+import NavBar from '../general/NavBar.js'
 
 class SendAbsences extends Component {
   constructor(props) {
@@ -23,6 +25,7 @@ class SendAbsences extends Component {
     let nom = adherent[0].nom;
     console.log("nom",nom)
     let profEmail=adherent[0].cours1.prof.email;
+    let prof=adherent[0].cours1.prof.prenom;
     console.log("profEmail",profEmail)
 
     this.state={
@@ -30,7 +33,8 @@ class SendAbsences extends Component {
       message:"",
       prenom:prenom,
       nom:nom,
-      date:""
+      date:"",
+      prof:prof
 
     }
   }
@@ -50,6 +54,7 @@ class SendAbsences extends Component {
       let nom = adherent[0].nom;
       console.log("nom",nom)
       let profEmail=adherent[0].cours1.prof.email;
+      let prof=adherent[0].cours1.prof.prenom;
       console.log("profEmail",profEmail)
 
       this.setState({ 
@@ -57,7 +62,8 @@ class SendAbsences extends Component {
         message:"",
         prenom:prenom,
         nom:nom,
-        date:"" })
+        date:"",
+        prof:prof})
     }
   }
  
@@ -90,36 +96,39 @@ class SendAbsences extends Component {
 
  
   render() {
-     
    
-   
-  //   this.setState({
-  //   prenom:prenom,
-  //   nom:nom,
-  //   profEmail:profEmail
-
-      
-  // })
       return (
-        <div className="SendAbsences">
+        <div>
+                <NavBar/>
+                <div className="espacePerso">
+
+                    <div className="navbarEspacePerso">
+                        <NavBarEspacePerso />
+                    </div>
+
+                    <div className="partieDroiteEspacePerso">
+                     
 
         {/* <h3>adherent : {this.props.adherent[0].prenom}</h3> */}
 
+        <p> Prevenir par mail {this.state.prof} de l'absence de {this.state.prenom} </p>
+
         <form onSubmit={this.handleFormSubmit}>
-            <label>Nom:</label>
+            {/* <label>Nom:</label>
             <input type="text" name="prenom"  value={this.state.prenom} onChange={e => this.handleSendAbsences(e)}/>
             <label>Prenom:</label>
             <input type="text" name="nom" value={this.state.nom}/>
             <label>Email de la prof:</label>
-            <input type="text" name="profEmail" value={this.state.profEmail}/>
+            <input type="text" name="profEmail" value={this.state.profEmail}/> */}
             <label>Motif:</label> 
             <input type="textarea" name="message" value={this.state.message} onChange={e => this.handleSendAbsences(e)}/>
-            <label>Nom :</label>
+            <label>Date :</label>
             <input type="date" name="date" value={this.state.date} onChange={e => this.handleSendAbsences(e)}/>
           
           <input type="submit" value="Submit" />
         </form>
-        
+        </div>
+        </div>
         
         </div>
       );

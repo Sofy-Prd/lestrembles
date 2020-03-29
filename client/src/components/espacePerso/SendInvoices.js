@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import MailService from './mail-service';
 import axios from 'axios';
+import NavBarEspacePerso from './navbarEspacePerso.js';
+import NavBar from '../general/NavBar.js'
 
 class SendInvoices extends Component {
   constructor(props) {
@@ -98,6 +100,16 @@ class SendInvoices extends Component {
      
   
       return (
+        <div>
+        <NavBar/>
+        <div className="espacePerso">
+
+            <div className="navbarEspacePerso">
+                <NavBarEspacePerso />
+            </div>
+
+            <div className="partieDroiteEspacePerso">
+             
         <div className="SendInvoices">
 
         
@@ -116,7 +128,10 @@ class SendInvoices extends Component {
           <input type="submit" value="Submit" />
         </form>
         
-        
+        </div>
+        </div>
+        </div>
+
         </div>
       );
               }

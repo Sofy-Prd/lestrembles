@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AuthService from './auth-service';
 import { Link } from 'react-router-dom';
+import NavBar from '../general/NavBar.js';
 
 class Login extends Component {
      constructor(props){
@@ -30,6 +31,9 @@ class Login extends Component {
       
   render(){
     return(
+      <div>
+        <NavBar/>
+     
       <div className="login">
 
         <h1>Mon espace</h1>
@@ -50,6 +54,7 @@ class Login extends Component {
         </p>
         </form>
         
+      </div>
       </div>
     )
   }

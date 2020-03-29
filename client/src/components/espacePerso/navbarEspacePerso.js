@@ -1,13 +1,7 @@
-import React, {Component, useReducer} from 'react';
+import React, {Component} from 'react';
 import AuthService from '../auth/auth-service';
-
-import Profil from './Profil.js'
 import { Link } from 'react-router-dom'; 
-import { Redirect } from 'react-router-dom';
 
-
-import Loader from '../Loader.js';
-// import SendAbsences from './SendAbsences.js';
 
 class NavBarEspacePerso extends Component {
     service = new AuthService();
@@ -37,18 +31,18 @@ class NavBarEspacePerso extends Component {
                 
                 <div className="click-items-container">
                     <div className="click-item">
-                    <div className="icone"><img src="/images/iconProfil.svg"/></div>
+                    <div className="icone"><img src="/images/iconProfil.svg" alt=""/></div>
                     <div className="libelle"><Link to="/espacePerso/profil">Consulter mon profil</Link></div>    
                     </div>
 
                     <div className="click-item">
-                    <div className="icone"><img src="/images/iconAbsence.svg"/></div>
+                    <div className="icone"><img src="/images/iconAbsence.svg" alt=""/></div>
                     <div className="libelle"> <Link to="/espacePerso/formAbsences">Prévenir d'une absence</Link></div>   
                     </div>
                 
                     <div className="click-item">
-                    <div className="icone"><img src="/images/iconFacture.svg"/></div>
-                    <div className="libelle"><Link to="/espacePerso/formInvoices">Editer une facture</Link></div>    
+                    <div className="icone"><img src="/images/iconFacture.svg" alt=""/></div>
+                    <div className="libelle"><Link to="/espacePerso/formInvoices">Recevoir une facture</Link></div>    
                     </div>
 
                     <button className="btn logout" onClick={this.logout}></button>

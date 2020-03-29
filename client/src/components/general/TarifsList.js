@@ -23,7 +23,7 @@ class TarifsList extends Component {
      
         return (
 
-          <div className="tarifsContainer">
+          <div id="tarifs" className="tarifsContainer">
              <div className="tarifListTitre">
                 <h1>Les Tarifs</h1>
               </div>

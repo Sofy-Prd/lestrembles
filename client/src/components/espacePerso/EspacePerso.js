@@ -1,14 +1,8 @@
 import React, {Component} from 'react';
 import AuthService from '../auth/auth-service';
-// import axios from 'axios';
-
-import { Link } from 'react-router-dom'; 
-// import { Redirect } from 'react-router-dom';
-
 import Loader from '../Loader.js';
-// import SendAbsences from './SendAbsences.js'
-import navbarEspacePerso from './navbarEspacePerso.js';
 import NavBarEspacePerso from './navbarEspacePerso.js';
+import NavBar from '../general/NavBar.js'
 
 
 class EspacePerso extends Component {
@@ -34,7 +28,6 @@ class EspacePerso extends Component {
           
         ;
 
-    
 
     componentDidUpdate(prevProps) {
         if (prevProps.user !== this.props.user) {
@@ -44,60 +37,37 @@ class EspacePerso extends Component {
         }
     }
    
-   
-
-    
     render () {
 
         if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
 
-       
-      
-        
-       
         return (
            
-          
+          <div> 
+              
+                <NavBar/>
                 
                 <div className="espacePerso">
+                   
 
                     <div className="navbarEspacePerso">
                         <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
                     </div>
 
                     <div className="partieDroiteEspacePerso">
-                        <h1>Bienvenue dans votre espace Famille {this.props.user.username} !</h1>
+                        {/* <div className="accueilEspacePerso"> */}
+                        <h1>Bienvenue dans votre espace </h1>
+                        <h1>Famille {this.props.user.username} !</h1>
 
 
-                        <p> Dans la rubrique <span>Profil</span> vous pourrez consulter les informations au sujet des cours des adherents de votre famille</p>
-                        <p> mais aussi modifier vos coordonnées</p>
-                        <p> Dans la rubrique <span>Absences</span> vous pourrez prevenir le professeur d'une absence à un cours</p>
-                        <p> Dans la rubrique <span>Facture</span> vous pourrez recevoir un mail avec la facture de l'activité par adherent</p>
+                        <p> Dans la rubrique <span>Consulter mon Profil</span> vous pourrez consulter les informations au sujet des cours des adhérents de votre famille mais aussi modifier vos coordonnées</p>
+                        <p> Dans la rubrique <span>Prevenir d'une absence</span> vous pourrez prevenir le professeur d'une absence à un cours</p>
+                        <p> Dans la rubrique <span>Recevoir une facture</span> vous pourrez recevoir un mail avec la facture de l'activité par adhérent</p>
 
-
-                        {/* <Link to="/espacePerso/profil"><h2>voir mes informations personnelles</h2></Link> */}
-                        {/* <p>quel enfant sera absent ?</p>
-                        <ul>
-                        {
-                        this.props.user.adherent.map(membre => (
-                                <Link to={`/espacePerso/${membre.prenom}/sendAbsences`}><li key={membre._id}>Prénom de l'adhérent: {membre.prenom}</li></Link>
-                            ))
-                        }
-                        </ul>
-
-                        <p>Pour quel adherent souhaitez vous une facture ?</p>
-                        <ul>
-                        {
-                        this.props.user.adherent.map(membre => (
-                                <Link to={`/espacePerso/${membre.prenom}/sendInvoices`}><li key={membre._id}>Prénom de l'adhérent: {membre.prenom}</li></Link>
-                            ))
-                        }
-                        </ul>
-      */}
-                        {/* <button className="btn logout" onClick={this.logout}>Logout</button> */}
-
-                 
+                 {/* </div> */}
                     </div>
+
+                 </div>
 
             </div>
         );

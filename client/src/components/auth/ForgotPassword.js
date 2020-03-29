@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import AuthService from './auth-service';
+import NavBar from '../general/NavBar.js';
 
 
 class ForgotPassword extends Component {
@@ -34,18 +35,20 @@ class ForgotPassword extends Component {
   render() {
     
       return (
+        <div>
+        <NavBar/>
         <div className="changePassword">
 
-        <h1>Modification du mot de passe</h1>
+        <h1>Oubli du mot de passe</h1>
         <form onSubmit={this.handleFormSubmit}>
           <label id="forgotLabel">Veuillez taper votre adresse mail ci-dessous pour recevoir un lien de réinitialisation :</label>
           <input type="text" name="email" value={this.state.email} onChange={e => this.handleForgotPassword(e)}/>
         
           {/* <label>Recevoir un email de réinitialisation  :</label> */}
-          <input id="button" type="submit" value="Submit" />
+          <input id="button" type="submit" value="Envoyer l'email" />
         </form>
         
-        
+        </div>
         </div>
       );
   }

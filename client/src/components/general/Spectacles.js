@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 // import ReactSiema from 'react-siema';
 import Slider from "react-slick";
 
-const Slide = (props) => <img className="imgSpectacles" {...props} alt="slide" />
+// const Slide = (props) => <img className="imgSpectacles" {...props} alt="s" />
 
 
 
@@ -27,8 +27,8 @@ class Spectacles extends Component {
 
         return (
             <div className="spectacles">
-                 <div className="spectaclesTitre">
-                <h1>Spectacles</h1>
+                 <div id="spectacles" className="spectaclesTitre">
+                <h1>Les Spectacles</h1>
               </div>
                 {/* <button onClick={() => slider.prev()}><img className="fleche" src="/images/flecheGauche.svg" alt=""/></button>
                 <ReactSiema ref={siema => slider = siema}>

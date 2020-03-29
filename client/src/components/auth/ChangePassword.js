@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import AuthService from './auth-service';
 import NavBarEspacePerso from '../espacePerso/navbarEspacePerso.js';
+import NavBar from '../general/NavBar.js'
 
 
 class ChangePassword extends Component {
@@ -39,6 +40,7 @@ class ChangePassword extends Component {
     
       return (
         <div className="changePasswordFlex">
+           <NavBar/>
            <div className="navbarEspacePerso">
                         <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
                     </div>

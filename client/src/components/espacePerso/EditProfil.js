@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
 import AuthService from '../auth/auth-service';
+import NavBarEspacePerso from './navbarEspacePerso.js';
+import NavBar from '../general/NavBar.js'
 
 class EditProfil extends Component {
   state= {
@@ -56,31 +58,59 @@ class EditProfil extends Component {
 
   render(){
     return (
-      <div>
+      <div className="editProfil">
+      <NavBar/>
+      <div className="espacePerso">
+
+          <div className="navbarEspacePerso">
+              <NavBarEspacePerso />
+          </div>
+
+          <div className="partieDroiteEspacePerso">
       
-        <h3>Edit Profil</h3>
+        <h1>Mettre à jour mes coordonnées</h1>
+
         <form onSubmit={this.handleFormSubmit}>
         {this.state.error && (
                   <p className="error">{this.state.error}</p>
                 )}
-          <label>email :</label>
-          <input type="email" name="email" value={this.state.email} onChange={e => this.handleChangeProfil(e)}/>
-          <label>rue:</label>
-          <input type="text" name="rue" value={this.state.rue} onChange={e => this.handleChangeProfil(e)} />
-          <label>code Postal  :</label>
-          <input type="text" name="codePostal" value={this.state.codePostal} onChange={e => this.handleChangeProfil(e)} />
-           <label>ville:</label>
-          <input type="text" name="ville" value={this.state.ville} onChange={e => this.handleChangeProfil(e)} />
-          <label>telephone1:</label>
-          <input type="text" name="telephone1" value={this.state.telephone1} onChange={e => this.handleChangeProfil(e)} />
-           <label>telephone2:</label>
-          <input type="text" name="telephone2" value={this.state.telephone2} onChange={e => this.handleChangeProfil(e)} />
-          
-          <input type="submit" value="submit" />
-        
-        </form>
+                <div className="libelleInput">
+                 <label>email :</label>
+                 <input type="email" name="email" value={this.state.email} onChange={e => this.handleChangeProfil(e)}/>
+                </div>
+                
+                <div className="libelleInput">
+                  <label>rue:</label>
+                  <input type="text" name="rue" value={this.state.rue} onChange={e => this.handleChangeProfil(e)} />
+                </div>
 
-   
+                <div className="libelleInput">
+                  <label>code Postal  :</label>
+                  <input type="text" name="codePostal" value={this.state.codePostal} onChange={e => this.handleChangeProfil(e)} />
+                </div>
+
+                <div className="libelleInput">
+                  <label>ville:</label>
+                  <input type="text" name="ville" value={this.state.ville} onChange={e => this.handleChangeProfil(e)} />
+                </div>
+
+                <div className="libelleInput">
+                  <label>telephone1:</label>
+                  <input type="text" name="telephone1" value={this.state.telephone1} onChange={e => this.handleChangeProfil(e)} />
+                </div>
+
+                <div className="libelleInput">
+                  <label>telephone2:</label>
+                  <input type="text" name="telephone2" value={this.state.telephone2} onChange={e => this.handleChangeProfil(e)} />
+                </div>
+
+                 <input id="button" type="submit" value="Enregistrer les modifications" />
+        
+               </form>
+        
+        </div>
+
+        </div>
       </div>
     );
   }
