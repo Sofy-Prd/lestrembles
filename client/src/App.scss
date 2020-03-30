@@ -1,49 +1,4 @@
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-
-  @media (max-width:900px) {
-
-  }
-}
-
-@media (max-width:900px) {¨
-  .App-header {}
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 * :before, after {
   box-sizing:border-box;
@@ -59,6 +14,8 @@ body {
   margin:0;
   font-family: 'Montserrat', sans-serif;
 }
+
+// html { overflow-y: hidden; } 
 
 img {
   max-width:100%;
@@ -83,6 +40,10 @@ img {
 
   img {
     height:9vh;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   h1 {
@@ -309,13 +270,13 @@ img {
   
 .tarifsContainer h1 {
   display:block;
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: lighter;
-    color:grey;
-    width:100vw;
-    padding-top:11vh;
-    margin-bottom: 1em;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color:grey;
+  width:100vw;
+  padding-top:11vh;
+  margin-bottom: 2em;
 }
 
   .tarifsList {
@@ -401,16 +362,18 @@ img {
     font-weight: lighter;
     color:grey;
     width:100vw;
-    padding-top:11vh;
-    margin-bottom: 1em;
+    padding-top:13vh;
+    // margin-bottom: 1em;
     }
   }
+
 
   .slick-slide img {
     width: 20%;
     text-align: center;
     margin-left:auto;
     margin-right:auto;
+    margin-top:1.5em;
   }
   
 
@@ -449,9 +412,10 @@ img {
 
 }
 
-.login, .changePassword {
+.login, .changePassword, .sendAbsences, .sendInvoices {
   background-image: url("/images/backgroundEspacePerso.png");
-  height:90vh;
+  padding-top:3em;
+  // height:88vh;
 
   input {
     border-radius: 5px;
@@ -482,7 +446,7 @@ img {
     background-color: white;
 
     label {
-      margin-top:3em;
+      margin-top:1em;
       margin-bottom:1em;
       font-size:0.8em;
     }
@@ -517,7 +481,7 @@ img {
 
 }
 
-.accueilEspacePerso {
+.espacePersoAccueil {
   span {
     color:#FF385C;
 
@@ -532,12 +496,19 @@ img {
 
 .navbarEspacePerso {
   width: 30%;
-  height: 90vh;
   padding-top:12vh;
   color:white;
 
   h1 {
     font-weight: lighter;
+    text-align: center;
+    margin-left:0;
+   
+  }
+
+  a {
+    text-decoration: none;
+    color:White;
   }
   
 }
@@ -677,7 +648,7 @@ img {
 .navBarEP {
   display:flex;
   flex-direction: column;
-  height: 90vh;
+  height: 88vh;
   background: linear-gradient(90.98deg, rgba(255, 56, 92, 0.69) 1.82%, rgba(248, 108, 102, 0.69) 97.68%);
   border-radius: 0 32px 0 0;
 
@@ -730,24 +701,9 @@ img {
 }
 
 .user-navbar {
-  // display: flex;
   margin-top: 1.2em;
-  margin-left: 1.2em;
-}
+ }
 
-
-// .user-navbar img {
-//   display: block;
-// /*   position: absolute; */
-  
-//   width: 80px;
-//   height: 90px;
-//   left: 94px;
-//   top: 182px;
-//   box-shadow: -2px -2px 15px #FFFFFF;
-//   border-radius: 19px;
-  
-// }
 
 
 .user-name {
@@ -755,13 +711,10 @@ img {
   flex-direction: column;
   width: 120px;
   height: 55px;
-/*   left: 185px;
-  top: 202px; */
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
-/*   font-size: 22px; */
   line-height: 27px;
   color: #FFFFFF;
   margin-left: 1em;
@@ -793,10 +746,12 @@ img {
 }
 
 button {
-  background: url("/images/iconAbsence.svg");
+  background: url("/images/iconExit.svg");
+  background-size: cover;
   background-repeat:no-repeat;
-  width:7em;
-  height:7em;
+  border: none;
+  width:3em;
+  height:3em;
   margin-top:auto;
   margin-bottom: 2em;
   margin-left:auto;
@@ -830,6 +785,7 @@ button {
     color:white;
     margin-left: auto;
     margin-right:auto;
+    border:none;
   
   }
 }
@@ -853,6 +809,76 @@ button {
     width:30%;
   }
 
+}
+
+.absences, .invoices  {
+  h1 {
+    margin-top:0;
+    margin-bottom:1em;
+    font-size:1.5em;
+    color:#5C5A5A;
+    text-align:center;
+    margin-bottom:2em,
+  }
+
+  a {
+    text-decoration: none;
+    color: #FF385C;
+    margin : 1em;
+    font-size: 1.5em;
+  }
+
+  li {
+    list-style: none;
+  }
+
+ 
+}
+.sendAbsences, .sendInvoices {
+
+  span {color: #FF385C;}
+
+  // p {padding-bottom: 2em;}
+
+  .formSendAbsences, .formSendInvoices {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  label {
+    text-align:center;
+  }
+  .motif input {
+    height: 2em;
+    margin-left:auto;
+    margin-right:auto;
+  }
  
 }
 
+#asso {
+
+ h1 {
+  display:block;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color:grey;
+  width:100vw;
+  padding-top:11vh;
+  margin-bottom: 1em;
+}
+
+p {
+  padding-left:3.5em;
+  padding-right:3.5em;
+  text-align:justify;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size:0.8em;
+}
+
+}

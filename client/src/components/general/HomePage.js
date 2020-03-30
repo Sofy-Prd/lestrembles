@@ -7,11 +7,7 @@ import Spectacles from './Spectacles.js'
 import Footer from './Footer.js'
 import NavBar from './NavBar.js'
 
-
-
 class HomePage extends Component {
-    
-   
     
     render () {
      
@@ -21,14 +17,12 @@ class HomePage extends Component {
                     <NavBar/>
                 </div>
                 <div className="accueil">
-                    
                     <h1>Bienvenue sur le site des Trembles</h1>
-                    <h1>Association de danse à partir de 3ans</h1>
+                    <h1>Association de danse à partir de 3 ans</h1>
                     <h1>à Tremblay en France</h1>
-
                 </div>
                 <div id="profs">
-                <ProfsList/>
+                    <ProfsList/>
                 </div>
                 <CountersBan/>
                 <div className="backgroundWhitePink">
@@ -49,8 +43,6 @@ Venez nous rejoindre !
                     </div>
                 </div>
                 <Footer/>
-               
-
             </div>
         );
     }

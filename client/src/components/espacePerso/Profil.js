@@ -10,26 +10,19 @@ import AuthService from '../auth/auth-service';
 
 class Profil extends Component {
 
-
-  // state= {
-  //   user:this.props.user
-  // }
-
   service = new AuthService();
 
   render() {
     if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
 
     let user = this.props.user;
-    console.log("user",user)
     let adherents = user.adherent;
    
-    
     return(
       <div className="profil">
         <NavBar/>
         <div className="navbarEspacePerso">
-            <NavBarEspacePerso />
+          <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
         </div>
 
         <div className="partieDroiteProfil">
@@ -44,12 +37,16 @@ class Profil extends Component {
                 <p>{user.codePostal} {user.ville}</p>  
               </div>
             </div>
-            <p><span>Téléphones :</span> </p>
-            <p>{user.telephone1} </p>
-            <p >{user.telephone2} </p>
+            <div className="adresse">
+              <p><span>Téléphones :</span> </p>
+              <div className="adresseDetails">
+                <p>{user.telephone1} </p>
+                <p >{user.telephone2} </p>
+              </div>
+            </div>
             <div className="liens">
-            <Link to="/espacePerso/editProfil">Modifier le profil</Link>
-            <Link to="/espacePerso/changePassword">Modifier le mot de passe</Link>
+              <Link to="/espacePerso/editProfil">Modifier le profil</Link>
+              <Link to="/espacePerso/changePassword">Modifier le mot de passe</Link>
             </div>
           </div>
           <div className="profilDetailDroite">
@@ -59,29 +56,23 @@ class Profil extends Component {
                 {
                 adherents.map(membre => (
               <div className="adherents" key={membre._id}>
-
                 <div className="adherentGauche">
-                      <p><span>{membre.prenom}</span></p>
-                        <p>Groupe {membre.cours1.nom} </p> 
-                        <p> {membre.cours1.jour} - {membre.cours1.horaire}</p> 
-                        <p>{membre.cours1.lieu.nom}</p>
-                
+                  <p><span>{membre.prenom}</span></p>
+                  <p>Groupe {membre.cours1.nom} </p> 
+                  <p> {membre.cours1.jour} - {membre.cours1.horaire}</p> 
+                  <p>{membre.cours1.lieu.nom}</p>
                 </div>
-
                 <div className="adherentDroite">
-                        <p>avec</p>
-                        <img src={membre.cours1.prof.photoProfil} alt="prof"/>
-                        <p> {membre.cours1.prof.prenom}</p>
-                  </div>        
-             </div>
+                  <p>avec</p>
+                  <img src={membre.cours1.prof.photoProfil} alt="prof"/>
+                  <p> {membre.cours1.prof.prenom}</p>
+                </div>          
+              </div>
                     ))
                 }
                 </ul>
-                </div> 
-
-             
-        </div>  
-
+            </div> 
+          </div>  
       </div>
     </div>
     )

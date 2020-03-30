@@ -19,8 +19,6 @@ class EditProfil extends Component {
   service = new AuthService();
     
   handleFormSubmit = (event) => {
-    console.log("la fonction a été lancée");
-    console.log("this.state.user",this.state.user);
     const userId=this.state.userId;
     const email= this.state.email;
     const rue= this.state.rue;
@@ -35,13 +33,11 @@ class EditProfil extends Component {
     .then(data => {
         
         this.setState({error: ""});
-        console.log("on est entré dans le then");
-
         // on veut maj le user de App
         this.props.setUser(data)
              
         this.props.history.push('/espacePerso/profil');
-        // this.props.getFamily();
+       
       })
       .catch( err => this.setState({error: "error"}) )
     }
@@ -54,62 +50,50 @@ class EditProfil extends Component {
     this.setState({[name]: value});
 }
   
-
-
   render(){
     return (
-      <div className="editProfil">
+      <div>
       <NavBar/>
+      <div className="editProfil">
       <div className="espacePerso">
-
-          <div className="navbarEspacePerso">
-              <NavBarEspacePerso />
-          </div>
-
-          <div className="partieDroiteEspacePerso">
-      
-        <h1>Mettre à jour mes coordonnées</h1>
-
-        <form onSubmit={this.handleFormSubmit}>
-        {this.state.error && (
-                  <p className="error">{this.state.error}</p>
-                )}
-                <div className="libelleInput">
-                 <label>email :</label>
-                 <input type="email" name="email" value={this.state.email} onChange={e => this.handleChangeProfil(e)}/>
-                </div>
-                
-                <div className="libelleInput">
-                  <label>rue:</label>
-                  <input type="text" name="rue" value={this.state.rue} onChange={e => this.handleChangeProfil(e)} />
-                </div>
-
-                <div className="libelleInput">
-                  <label>code Postal  :</label>
-                  <input type="text" name="codePostal" value={this.state.codePostal} onChange={e => this.handleChangeProfil(e)} />
-                </div>
-
-                <div className="libelleInput">
-                  <label>ville:</label>
-                  <input type="text" name="ville" value={this.state.ville} onChange={e => this.handleChangeProfil(e)} />
-                </div>
-
-                <div className="libelleInput">
-                  <label>telephone1:</label>
-                  <input type="text" name="telephone1" value={this.state.telephone1} onChange={e => this.handleChangeProfil(e)} />
-                </div>
-
-                <div className="libelleInput">
-                  <label>telephone2:</label>
-                  <input type="text" name="telephone2" value={this.state.telephone2} onChange={e => this.handleChangeProfil(e)} />
-                </div>
-
-                 <input id="button" type="submit" value="Enregistrer les modifications" />
-        
-               </form>
-        
+        <div className="navbarEspacePerso">
+          <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
         </div>
 
+        <div className="partieDroiteEspacePerso">
+          <h1>Mettre à jour mes coordonnées</h1>
+          <form onSubmit={this.handleFormSubmit}>
+              {this.state.error && (
+                <p className="error">{this.state.error}</p>
+              )}
+              <div className="libelleInput">
+                <label>email :</label>
+                <input type="email" name="email" value={this.state.email} onChange={e => this.handleChangeProfil(e)}/>
+              </div>
+              <div className="libelleInput">
+                <label>rue:</label>
+                <input type="text" name="rue" value={this.state.rue} onChange={e => this.handleChangeProfil(e)} />
+              </div>
+              <div className="libelleInput">
+                <label>code Postal  :</label>
+                <input type="text" name="codePostal" value={this.state.codePostal} onChange={e => this.handleChangeProfil(e)} />
+              </div>
+              <div className="libelleInput">
+                <label>ville:</label>
+                <input type="text" name="ville" value={this.state.ville} onChange={e => this.handleChangeProfil(e)} />
+              </div>
+              <div className="libelleInput">
+                <label>telephone1:</label>
+                <input type="text" name="telephone1" value={this.state.telephone1} onChange={e => this.handleChangeProfil(e)} />
+              </div>
+              <div className="libelleInput">
+                <label>telephone2:</label>
+                <input type="text" name="telephone2" value={this.state.telephone2} onChange={e => this.handleChangeProfil(e)} />
+              </div>
+              <input id="button" type="submit" value="Enregistrer les modifications" />
+             </form>
+            </div>
+          </div>
         </div>
       </div>
     );

@@ -14,9 +14,6 @@ class EspacePerso extends Component {
         this.service = new AuthService();
     }
    
-    
-   
-
     logout = (event) => {
        this.service.logout()
           .then(()=>{
@@ -24,10 +21,7 @@ class EspacePerso extends Component {
            
             this.props.setUser(null);
            
-                })}
-          
-        ;
-
+                })};
 
     componentDidUpdate(prevProps) {
         if (prevProps.user !== this.props.user) {
@@ -44,31 +38,22 @@ class EspacePerso extends Component {
         return (
            
           <div> 
-              
-                <NavBar/>
-                
+            <NavBar/>
                 <div className="espacePerso">
-                   
-
-                    <div className="navbarEspacePerso">
+                   <div className="navbarEspacePerso">
                         <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
                     </div>
 
                     <div className="partieDroiteEspacePerso">
-                        {/* <div className="accueilEspacePerso"> */}
-                        <h1>Bienvenue dans votre espace </h1>
-                        <h1>Famille {this.props.user.username} !</h1>
-
-
-                        <p> Dans la rubrique <span>Consulter mon Profil</span> vous pourrez consulter les informations au sujet des cours des adhérents de votre famille mais aussi modifier vos coordonnées</p>
-                        <p> Dans la rubrique <span>Prevenir d'une absence</span> vous pourrez prevenir le professeur d'une absence à un cours</p>
-                        <p> Dans la rubrique <span>Recevoir une facture</span> vous pourrez recevoir un mail avec la facture de l'activité par adhérent</p>
-
-                 {/* </div> */}
+                        <div className="espacePersoAccueil">
+                            <h1>Bienvenue dans votre espace </h1>
+                            <h1>Famille {this.props.user.username} !</h1>
+                            <p> Dans la rubrique <span>Consulter mon Profil</span> vous pourrez consulter les informations au sujet des cours des adhérents de votre famille mais aussi modifier vos coordonnées</p>
+                            <p> Dans la rubrique <span>Prevenir d'une absence</span> vous pourrez prevenir le professeur d'une absence à un cours</p>
+                            <p> Dans la rubrique <span>Recevoir une facture</span> vous pourrez recevoir un mail avec la facture de l'activité par adhérent</p>
+                        </div>
                     </div>
-
                  </div>
-
             </div>
         );
     }

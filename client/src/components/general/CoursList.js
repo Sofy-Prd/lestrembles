@@ -26,9 +26,8 @@ class CoursList extends Component {
               <div className="coursListTitre">
                 <h1>Les Cours</h1>
               </div>
-
                 <div className="coursList">
-                         
+                  
                    {this.state.listOfCours.map(cours => (
                       <div className="cours" key={cours._id}><Cours nom={cours.nom} jour={cours.jour} horaire={cours.horaire} lieu={cours.lieu} prof={cours.prof} public={cours.public}/></div>
                     ))}

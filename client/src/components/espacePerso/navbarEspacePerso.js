@@ -15,18 +15,10 @@ class NavBarEspacePerso extends Component {
                  })};
     render () {
        
-        console.log("user",this.props.user);
-       
-
         return (
             <div className="navBarEP">
-
-
-
-  
                 <div className="user-navbar">
-                    <h1>Espace perso</h1>
-
+                    <a href="/espacePerso"><h1>Espace perso</h1></a>
                 </div>
                 
                 <div className="click-items-container">
@@ -34,33 +26,21 @@ class NavBarEspacePerso extends Component {
                     <div className="icone"><img src="/images/iconProfil.svg" alt=""/></div>
                     <div className="libelle"><Link to="/espacePerso/profil">Consulter mon profil</Link></div>    
                     </div>
-
                     <div className="click-item">
                     <div className="icone"><img src="/images/iconAbsence.svg" alt=""/></div>
                     <div className="libelle"> <Link to="/espacePerso/formAbsences">Prévenir d'une absence</Link></div>   
                     </div>
-                
-                    <div className="click-item">
+                                    <div className="click-item">
                     <div className="icone"><img src="/images/iconFacture.svg" alt=""/></div>
                     <div className="libelle"><Link to="/espacePerso/formInvoices">Recevoir une facture</Link></div>    
                     </div>
 
-                    <button className="btn logout" onClick={this.logout}></button>
-                    {/* <div className="click-item">
-                    <div className="icone"><img src="https://img.icons8.com/material-outlined/24/000000/buy.png"/></div>
-                    <div className="libelle"><h2>Acheter des places</h2></div>   
-                    </div> */}
+                    <button className="btnLogout" onClick={this.logout}></button>
+                  
                 </div>
-                
-
-            
-  
-               
+              
             </div>
-
-
         );
-
     }
 }
 

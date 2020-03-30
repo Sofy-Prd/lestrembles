@@ -41,12 +41,10 @@ class ChangePassword extends Component {
       return (
         <div className="changePasswordFlex">
            <NavBar/>
-           <div className="navbarEspacePerso">
-                        <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
-                    </div>
-
+          <div className="navbarEspacePerso">
+            <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
+          </div>
           <div className="changePassword partieDroiteChangePassword">
-
             <h1>Modification du mot de passe</h1>
             <form onSubmit={this.handleFormSubmit}>
               {this.state.error && (
@@ -56,16 +54,13 @@ class ChangePassword extends Component {
               <input type="password" name="password1" value={this.state.password1} onChange={e => this.handleChangePassword(e)}/>
               <label>Veuillez confirmer votre mot de passe :</label>
               <input type="password" name="password2" value={this.state.password2} onChange={e => this.handleChangePassword(e)}/>
-              
               <input id="button" type="submit" value="Submit" />
             </form>
-            
-            
-            </div>
           </div>
+        </div>
 
       );
-              }
+   }
 }
 
 export default ChangePassword;

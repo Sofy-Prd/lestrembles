@@ -25,38 +25,31 @@ class FormInvoices extends Component {
     render () {
 
         if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
-
-        console.log("user",this.props.user);
-      
-        
-       
         return (
             <div>
                 <NavBar/>
                 <div className="espacePerso">
-
                     <div className="navbarEspacePerso">
-                        <NavBarEspacePerso />
+                        <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
                     </div>
-
                     <div className="partieDroiteEspacePerso">
-                     
-                    <p>Pour quel adherent souhaitez vous une facture ?</p>
-                        <ul>
-                        {
-                        this.props.user.adherent.map(membre => (
-                                <Link to={`/espacePerso/${membre.prenom}/sendInvoices`}><li key={membre._id}>Prénom de l'adhérent: {membre.prenom}</li></Link>
-                            ))
-                        }
-                        </ul>
-     
+                        <div className="invoices">
+                            <h1>Recevoir une facture</h1> 
+                            <p>Cliquez sur le prénom de l'adhérent pour lequel vous souhaitez recevoir une facture</p>
+                            <ul>
+                            {
+                            this.props.user.adherent.map(membre => (
+                                    <Link to={`/espacePerso/${membre.prenom}/sendInvoices`}><li key={membre._id}>{membre.prenom}</li></Link>
+                                ))
+                            }
+                            </ul>
                         </div>
-                     
-                     
                     </div>
 
+                </div>
             </div>
-        );
+
+        );  
     }
 }
 

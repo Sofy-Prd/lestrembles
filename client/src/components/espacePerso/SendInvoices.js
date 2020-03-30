@@ -12,23 +12,13 @@ class SendInvoices extends Component {
     let user = this.props.user; // {}
     let email = this.props.user.email; // {}
     let adherents = user.adherent; // undefined
-    console.log ("user", user);
-    console.log ("userEmail", email);
-    console.log ("adherents", adherents);
-    console.log ("params", params);
-
+  
     if (adherents) {
-
     
     let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
-    console.log("adherent", adherent);
     let prenom = adherent[0].prenom;
-    console.log("prenom",prenom);
     let nom = adherent[0].nom;
-    console.log("nom",nom);
     let tarif=adherent[0].cours1.duree.montant; //pour récupérer le montant 
-    console.log("tarif",tarif);
-
 
     this.state={
       email:email,
@@ -37,10 +27,8 @@ class SendInvoices extends Component {
       tarif:tarif,
       subject: "",	
       date:""
+      }
     }
-  }
-  
-    
   }
   
   componentDidUpdate(prevProps) {
@@ -49,13 +37,9 @@ class SendInvoices extends Component {
       let user = this.props.user; // {}
       let adherents = user.adherent;
       let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
-      console.log("adherent", adherent);
       let prenom = adherent[0].prenom;
-      console.log("prenom",prenom);
       let nom = adherent[0].nom;
-      console.log("nom",nom);
       let tarif=adherent[0].cours1.duree.montant; //pour récupérer le montant 
-      console.log("tarif",tarif);
       let email=user.email;
 
       this.setState({ 
@@ -64,8 +48,8 @@ class SendInvoices extends Component {
         nom:nom,
         tarif:tarif,
         date:""
-    })
-}
+      })
+    }
   }
  
   service = new MailService();
@@ -81,61 +65,44 @@ class SendInvoices extends Component {
 
 
     axios.put(`${process.env.REACT_APP_APIURL || ""}/api/user/adherents/:name/sendInvoices`, { email, prenom, nom, tarif, date })
-        .then(
-           
-            this.props.history.push('/espacePerso')
-          
-            )
-    
+      .then(
+        this.props.history.push('/espacePerso')
+      )
       .catch( error => console.log(error) )
-    }
+  }
 
   handleSendInvoices = (event) => {  
     const {name, value} = event.target;
     this.setState({[name]: value});
-    }
+  }
 
- 
   render() {
-     
-  
-      return (
-        <div>
+    return (
+      <div>
         <NavBar/>
         <div className="espacePerso">
+          <div className="navbarEspacePerso">
+            <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
+          </div>
 
-            <div className="navbarEspacePerso">
-                <NavBarEspacePerso />
+          <div className="partieDroiteEspacePerso">
+            <div className="sendInvoices">
+           
+            <form className="formSendInvoices" onSubmit={this.handleFormSubmit}>
+                <p> Recevoir ma facture à cette adresse :<p>
+                </p><span>{this.state.email}</span> </p>  
+                <label>A ÉDITER EN DATE DU:</label>
+                <input className="date" type="date" name="date" value={this.state.date} onChange={e => this.handleSendInvoices(e)}/>
+                <input id="button" type="submit" value="Submit" />
+              </form>
+        
             </div>
-
-            <div className="partieDroiteEspacePerso">
-             
-        <div className="SendInvoices">
-
-        
-        <form onSubmit={this.handleFormSubmit}>
-            {/* <label>Prenom :</label>
-            <input type="text" name="prenom"  value={this.state.prenom} onChange={e => this.handleSendInvoices(e)}/>
-	    <label>Nom :</label>
-            <input type="text" name="nom" value={this.state.nom} onChange={e => this.handleSendInvoices(e)}/>
-            <label>Email de la Famille:</label>
-            <input type="text" name="email" value={this.state.email}/>
-            <label>Tarif :</label>
-            <input type="number" name="tarif" value={this.state.tarif} onChange={e => this.handleSendInvoices(e)}/> */}
-            <label>A ÉDITER EN DATE DU:</label>
-            <input type="date" name="date" value={this.state.date} onChange={e => this.handleSendInvoices(e)}/>
-                 
-          <input type="submit" value="Submit" />
-        </form>
-        
+          </div>
         </div>
-        </div>
-        </div>
-
-        </div>
-      );
-              }
-            }
+      </div>
+    );
+  }
+}
   
 
 

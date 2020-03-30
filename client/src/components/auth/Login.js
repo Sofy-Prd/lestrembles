@@ -33,28 +33,22 @@ class Login extends Component {
     return(
       <div>
         <NavBar/>
-     
-      <div className="login">
-
-        <h1>Mon espace</h1>
-
-        <form onSubmit={this.handleFormSubmit}>
-          {this.state.error && (
-                <p className="error">{this.state.error}</p>
-              )}
-
-          <label>Identifiant :</label>
-          <input type="text" name="username" value={this.state.username} onChange={ e => this.handleChange(e)}/>
-          <label>Mot de passe:</label>
-          <input type="password" name="password" value={this.state.password} onChange={ e => this.handleChange(e)} />
-          
-          <input id="button" type="submit" value="CONNEXION"/>
-          <p> 
-            <Link to={"/espacePerso/forgotPassword"}>J'ai oublié mon mot de passe</Link>
-        </p>
-        </form>
-        
-      </div>
+        <div className="login">
+          <h1>Connexion à mon espace</h1>
+          <form onSubmit={this.handleFormSubmit}>
+            {this.state.error && (
+                  <p className="error">{this.state.error}</p>
+                )}
+            <label>Identifiant :</label>
+            <input type="text" name="username" value={this.state.username} onChange={ e => this.handleChange(e)}/>
+            <label>Mot de passe:</label>
+            <input type="password" name="password" value={this.state.password} onChange={ e => this.handleChange(e)} />
+            <input id="button" type="submit" value="CONNEXION"/>
+            <p> 
+              <Link to={"/espacePerso/forgotPassword"}>J'ai oublié mon mot de passe</Link>
+            </p>
+          </form>
+        </div>
       </div>
     )
   }

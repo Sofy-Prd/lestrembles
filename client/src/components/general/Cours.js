@@ -1,12 +1,7 @@
 import React, {Component} from 'react';
 
-
-
-
-
 class Cours extends Component {
-
-    
+  
     render () {
      
         return (
@@ -25,10 +20,7 @@ class Cours extends Component {
                     <div className="coursSection">
                         <p className="coursLibelle">Prof </p> <p className="coursDetail">{this.props.prof.prenom}</p>
                     </div>
-
                 </div>
-
-            
             </div>
         );
     }
