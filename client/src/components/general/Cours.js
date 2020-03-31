@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 class Cours extends Component {
   
     render () {
-     
-        return (
+
+          return (
             <div>
                 <p className="coursTitre"><span>{this.props.nom}</span> : {this.props.public}</p>
                 <div className="coursInfo">

@@ -11,11 +11,11 @@ class CoursNavBarMobile extends Component {
       nom:"Eveil",
       jour:'Samedi',
       horaire:'10H30-11H30',
-      lieu: 'Salle des associations',
-      prof:'Lucile',
+      lieu: {nom:'Salle des associations'},
+      prof:{prenom:'Lucile'},
       public:'enfants nés en 2015'
        };
-
+     
        
       }
     
@@ -31,6 +31,8 @@ class CoursNavBarMobile extends Component {
     componentDidMount() {
     this.getAllCours();
     }
+
+    
    
     handleClick = (c) => {
        this.setState({
@@ -43,8 +45,8 @@ class CoursNavBarMobile extends Component {
       }) 
   
     }           
-
     render () {
+     
     
       return (
         <div className="coursNavBarMobile">
