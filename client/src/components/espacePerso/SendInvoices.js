@@ -93,7 +93,7 @@ class SendInvoices extends Component {
                 </p><span>{this.state.email}</span> </p>  
                 <label>A ÉDITER EN DATE DU:</label>
                 <input className="date" type="date" name="date" value={this.state.date} onChange={e => this.handleSendInvoices(e)}/>
-                <input id="button" type="submit" value="Submit" />
+                <input id="button" type="submit" value="Recevoir la facture" />
               </form>
         
             </div>

@@ -7,10 +7,6 @@ import NavBarEspacePerso from './navbarEspacePerso.js';
 
 class FormInvoices extends Component {
     
-    
-
-    
-
     componentDidUpdate(prevProps) {
         if (prevProps.user !== this.props.user) {
             if (this.props.user === false) {
@@ -18,10 +14,7 @@ class FormInvoices extends Component {
             }
         }
     }
-   
-   
-
-    
+      
     render () {
 
         if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>

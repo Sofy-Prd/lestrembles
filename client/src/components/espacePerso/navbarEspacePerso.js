@@ -23,19 +23,19 @@ class NavBarEspacePerso extends Component {
                 
                 <div className="click-items-container">
                     <div className="click-item">
-                    <div className="icone"><img src="/images/iconProfil.svg" alt=""/></div>
-                    <div className="libelle"><Link to="/espacePerso/profil">Consulter mon profil</Link></div>    
+                        <div className="icone"><img src="/images/iconProfil.svg" alt=""/></div>
+                        <div className="libelle"><Link to="/espacePerso/profil"><span>Consulter mon profil</span></Link></div>    
                     </div>
                     <div className="click-item">
-                    <div className="icone"><img src="/images/iconAbsence.svg" alt=""/></div>
-                    <div className="libelle"> <Link to="/espacePerso/formAbsences">Prévenir d'une absence</Link></div>   
+                        <div className="icone"><img src="/images/iconAbsence.svg" alt=""/></div>
+                        <div className="libelle"> <Link to="/espacePerso/formAbsences"><span>Prévenir d'une absence</span></Link></div>   
                     </div>
-                                    <div className="click-item">
-                    <div className="icone"><img src="/images/iconFacture.svg" alt=""/></div>
-                    <div className="libelle"><Link to="/espacePerso/formInvoices">Recevoir une facture</Link></div>    
+                    <div className="click-item">
+                        <div className="icone"><img src="/images/iconFacture.svg" alt=""/></div>
+                        <div className="libelle"><Link to="/espacePerso/formInvoices"><span>Recevoir une facture</span></Link></div>    
                     </div>
 
-                    <button className="btnLogout" onClick={this.logout}></button>
+                    <button onClick={this.logout}></button>
                   
                 </div>
               

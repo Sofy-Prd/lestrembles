@@ -61,7 +61,7 @@ class EditProfil extends Component {
         </div>
 
         <div className="partieDroiteEspacePerso">
-          <h1>Mettre à jour mes coordonnées</h1>
+          <h1 className="editProfilTitre">Mettre à jour mes coordonnées</h1>
           <form onSubmit={this.handleFormSubmit}>
               {this.state.error && (
                 <p className="error">{this.state.error}</p>

@@ -37,7 +37,7 @@ class ForgotPassword extends Component {
       return (
         <div>
           <NavBar/>
-          <div className="changePassword">
+          <div className="forgotPassword">
             <h1>Oubli du mot de passe</h1>
             <form onSubmit={this.handleFormSubmit}>
               <label id="forgotLabel">Veuillez taper votre adresse mail ci-dessous pour recevoir un lien de réinitialisation :</label>

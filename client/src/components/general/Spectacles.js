@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
-// import ReactSiema from 'react-siema';
 import Slider from "react-slick";
 
-// const Slide = (props) => <img className="imgSpectacles" {...props} alt="s" />
-
-
-
 class Spectacles extends Component {
-    // siema= new Siema();
-  
-
+   
     render () {
        
-        // let slider;
         var settings = {
             dots: true,
             infinite: true,

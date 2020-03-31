@@ -94,7 +94,7 @@ class SendAbsences extends Component {
                   <input className="motif" type="textarea" name="message" value={this.state.message} onChange={e => this.handleSendAbsences(e)}/>
                   <label>Date :</label>
                   <input className="date" type="date" name="date" value={this.state.date} onChange={e => this.handleSendAbsences(e)}/>
-                  <input id="button" type="submit" value="Submit" />
+                  <input id="button" type="submit" value="Envoyer le mail" />
               </form>
           </div> 
           </div>
