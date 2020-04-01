@@ -110,9 +110,6 @@ img {
     display:none;
   }
 
-  
-
-  
 
   .profsContainer h1 {
     display:block;
@@ -308,21 +305,54 @@ img {
   }
 
   @media(max-width:500px){
-
+    .coursList{display:none;}
     .navBarMobileFlex {
       display:flex;
     }
-
     .coursMobile {
       border:solid 1px #FF385C;
       border-radius:25px;
-    }
-    .coursList{display:none;}
+      width: 45%;
+      margin-bottom:3em;
+      margin-right: 1em;
+      padding-left: 15px;
+      padding-right: 15px;
+      span {
+        font-weight:bold;
+      }
+      }
     .coursNavBarMobile {
       display:block;
     }
-
+    .coursListMobile {
+      padding:1em;
+   
+      .coursLiens {
+        padding-bottom:0.5em;
+      }
+      a {
+      text-decoration: none;
+      color:black;
+    
+      }
+      a:hover {
+        color:#FF385C;
+      }
+      a:focus {
+        background-color: #FCBCBD;
+      }  
+  } 
+  .coursLibelle {
+    margin-bottom: 2em;
   }
+  .coursDetail {
+    padding-right:0;
+  }
+  
+     
+    }
+
+  
 
 
 .tarifListBackground {
@@ -404,6 +434,7 @@ img {
   @media (max-width:500px){
     .tarif {
     width : 6em;
+    padding-top: 0.5em;
   }
 
 
@@ -504,7 +535,29 @@ img {
 
   }
 
+  #asso {
 
+    h1 {
+     display:block;
+     text-align: center;
+     font-size: 2.5em;
+     font-weight: lighter;
+     color:grey;
+     width:100vw;
+     padding-top:11vh;
+     margin-bottom:0.3em;
+   }
+   
+   p {
+     padding-left:3.5em;
+     padding-right:3.5em;
+     text-align:justify;
+     margin-bottom: 0;
+     margin-top: 0;
+     font-size:0.8em;
+   }
+   
+   }
   
 
   .footer {
@@ -577,6 +630,7 @@ img {
 .login, .changePassword, .sendAbsences, .sendInvoices, .forgotPassword {
   background-image: url("/images/backgroundEspacePerso.png");
   padding-top:3em;
+  background-size: cover;
   // height:88vh;
 
   input {
@@ -638,24 +692,45 @@ img {
   }
   p {
     text-align: center;
-  
+   
   }
-
 }
 
 
 .login, .changePassword {
+  padding-top:3em;
   form {
     padding-top: 2em;
+  }
+  p {
+    color: red;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top:0;
+  
+  }
+}
+
+@media (max-width:500px){
+  .login {
+    form {
+      width:60vw;
+      height:45vh;
+    }
   }
 }
 
 .espacePersoAccueil {
+
+  p {
+  text-align: justify;
+}
   span {
     color:#FF385C;
-
   }
-
+  p {
+    margin-top:2em;
+  }
 }
 
 
@@ -663,39 +738,34 @@ img {
   display: flex;
 }
 
-.navbarEspacePerso {
-  width: 30%;
-  padding-top:12vh;
-  color:white;
-
-  h1 {
-    font-weight: lighter;
-    text-align: center;
-    margin-left:0;
-    color:white!important;
-  }
-
-  a {
-    text-decoration: none;
-    color:White;
-  }
-  
-}
-
 
 .partieDroiteEspacePerso, .partieDroiteChangePassword  {
   width:70%;
   padding-left: 3em;
   padding-right: 2em;
-  padding-top:5em;
+  padding-top:7em;
+
+}
+
+@media (max-width:500px) {
+  .partieDroiteEspacePerso, .partieDroiteChangePassword {
+    width:auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top:3em;
+  }
 
 }
 
 .partieDroiteProfil {
   width:70%;
   padding-left: 3em;
-  padding-right: 3em;
-   padding-top:5em;
+  padding-right: 7em;
+  padding-top:7em;
+  color:#616161;
+  display:flex;
+  justify-content: space-between;
+   
   span {
     color:#FB9695;
   }
@@ -707,9 +777,11 @@ img {
 }
 
 .partieDroiteProfil {
-  color:#616161;
-  display:flex;
-  justify-content: space-between;
+  .padRight {
+    padding-right:7.2em;
+
+  }
+  
   span {
     color:black;
   }
@@ -718,9 +790,10 @@ img {
   }
   h1 {
     margin-top:0.2em;
+    margin-bottom: 1.5em;
   }
   p {
-    font-size:0.8em;
+    font-size:1em;
     text-align: left;
   }
   .adresse {
@@ -749,10 +822,10 @@ img {
       text-decoration: none;
       border : solid 1px #616161;
       border-radius:25px;
-      font-size:0.6em;
-      padding:0.2em 0.4em;
+      font-size:0.9em;
+      padding:0.2em 0.6em;
       margin-left:2em;
-      margin-right:2em;
+      margin-right:2.5em;
 
   
     }
@@ -780,7 +853,6 @@ img {
   justify-content: space-between;
   font-size:1em;
 
-  
  
  }  
 
@@ -810,10 +882,77 @@ img {
 }
 }
 
+@media (max-width:500px){
+  .profil {
+   display:inline;
+  }
+  .partieDroiteProfil {
+    display:inline;
+    .profilDetailGauche {
+      width:100vw;
+      margin-left:1em;
+      h1 {
+        text-align:center;
+      }
+      .padRight {
+        padding-right:5em;
+    
+      }
+      .telephone {
+        margin-bottom:2em;
+       }
+      .liens {
+        display:inline;
+        
+      }
+      .liens a {
+        font-size:0.7em;
+      }
+  }
+  .profilDetailDroite {
+    margin:0 1em;
+    h1{
+      text-align:center;
+      margin-top:1em;
+      margin-bottom:1em;
+    }
+  }
+  }
+ 
+}
+
 .changePasswordFlex {
   display:flex;
  
 }
+.navbarEspacePerso {
+  width: 30%;
+  padding-top:12vh;
+  color:white;
+
+  h1 {
+    font-weight: lighter;
+    text-align: center;
+    margin-left:0;
+    color:white!important;
+    width:100%;
+  }
+
+  a {
+    text-decoration: none;
+    color:White;
+    display:flex;
+    align-items: center;
+    img {
+      width:2em;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+   
+  }
+  
+}
+
 
 .navBarEP {
   display:flex;
@@ -824,26 +963,11 @@ img {
 
 }
 
-.click-items-container button {
-  background: url("/images/iconExit.svg");
-  background-size: cover;
-  background-repeat:no-repeat;
-  border: none;
-  width:3em;
-  height:3em;
-  margin-top:auto;
-  margin-bottom: 2em;
-  margin-left:auto;
-  margin-right:auto;
-  
-}
-
 
 .click-item {
   width: 80%;
   padding-top: 0.7em;
   padding-bottom: 0.7em;
-  // height: 60px;
   background: linear-gradient(180deg, rgba(255, 56, 92, 0.05) 0%, rgba(248, 108, 102, 0.05) 100%);
   box-shadow: inset 1px 1px 10px #FF385C;
   border-radius: 32px;
@@ -864,19 +988,16 @@ img {
   margin-right: auto;
   padding-left: 0.5em;
   height: 1.5em;
-  
- 
-}
+ }
 
 .libelle {
   flex: 80%;
   display: flex;
   align-items: center;
-
 }
 
 .click-item a {
- font-size:0.8em;
+ font-size:1em;
   text-decoration: none;
   font-weight: lighter;
 
@@ -908,10 +1029,6 @@ img {
 }
 
 
-
-
-
-
 .click-items-container {
   display: flex;
   flex-direction: column;
@@ -919,68 +1036,37 @@ img {
 }
 
 @media (max-width:500px){
+  .navbarEspacePerso {
+    width:100vw;
+    padding-top:10vh;
+    h1 {
+      display:none;
+    }
+  }
+
+.navBarEP {
+  height:10vh;
+  width: 100vw;
+  border-radius:0;
+
+}
+  .espacePerso {
+    flex-direction:column;
+  }
   .navbarEspacePerso span {
     display:none;
   }
-  // .click-item {
-  //   width: 80%;
-  //   padding-top: 0.7em;
-  //   padding-bottom: 0.7em;
-  //   // height: 60px;
-  //   margin-left: 1.2em;
-  //   margin-bottom: 2em;
-    
-  // }
-    
-  // .icone img {
-  //   display: block;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   padding-left: 0.5em;
-  //   height: 1.5em;
-    
-  // }
-  
-  // .libelle {
-  //   flex: 80%;
-  //   display: flex;
-  //   align-items: center;
-  
-  // }
-  
-  // .click-item a {
-  //  font-size:0.8em;
-  //   text-decoration: none;
-  //   font-weight: lighter;
-  
-  //   // letter-spacing: 0.02em;
-  //   color: #FFFFFF;
-  
-  // }
-  
-  // .user-navbar {
-  //   margin-top: 1.2em;
-  //  }
-  
-  
-  
-  // .user-name {
-  //   display: flex;
-  //   flex-direction: column;
-  //   width: 120px;
-  //   height: 55px;
-  //   font-size: 1em;
-  //   line-height: 27px;
-  //   color: #FFFFFF;
-  //   margin-left: 1em;
-  // }
-  
-  // .user-name h1 {
-  //   margin: none;
-  //   padding: none;
-  // }
-  
-  
+
+  .click-items-container {
+    flex-direction:row;
+    margin-top:0;
+  }
+
+  .click-item {
+    box-shadow: none;
+
+  }
+   
 }
 
 
@@ -990,6 +1076,7 @@ img {
     width: 100%;
     margin-left: auto;
     margin-right:auto;
+    margin-top:2em;
 
   }
   .editProfilTitre h1 {
@@ -1003,7 +1090,7 @@ img {
     border-radius: 5px;
     border:solid 1px #FF385C;
     padding : 0.7em;
-    font-size:0.8em;
+    font-size:1em;
     display:block;
     margin-top:2em;
     background: linear-gradient(90deg, rgba(248, 108, 102, 0.75) 3.55%, rgba(255, 56, 92, 0.75) 100%);;
@@ -1029,13 +1116,29 @@ img {
     border:solid 1px #FF385C;
     color:#5C5A5A;
     padding : 0.6em;
-    font-size:0.8em;
+    font-size:1em;
     width:70%;
   }
   label {
     width:30%;
   }
 
+}
+
+@media (max-width:500px){
+  .editProfil {
+    h1 {
+      text-align:center;
+    }
+    .libelleInput {
+      margin-left:0;
+      margin-right:0;
+      width:auto;
+    }
+    #button {
+      width:auto;
+    }
+  }
 }
 
 .absences, .invoices  {
@@ -1059,14 +1162,18 @@ img {
     list-style: none;
   }
 
+  @media (max-width:500px){
+    h1 {
+      padding-top:1em;
+    }
+  }
  
 }
 .sendAbsences, .sendInvoices {
 
   span {color: #FF385C;}
 
-  // p {padding-bottom: 2em;}
-
+  
   .formSendAbsences, .formSendInvoices {
     display:flex;
     flex-direction:column;
@@ -1074,6 +1181,7 @@ img {
     justify-content: center;
 
   }
+
 
   label {
     text-align:center;
@@ -1086,31 +1194,26 @@ img {
  
 }
 
-#asso {
 
- h1 {
-  display:block;
-  text-align: center;
-  font-size: 2.5em;
-  font-weight: lighter;
-  color:grey;
-  width:100vw;
-  padding-top:11vh;
-  margin-bottom:0.3em;
+@media (max-width:500px){
+  .sendAbsences, .sendInvoices {
+    form {
+      width:40vw;
+      height:30vh;
+      margin-top:10vh;
+    }
+
+    form #button {
+      width:100%;
+      margin-left:0;
+      margin-right:0;
+    }
+  }
 }
 
-p {
-  padding-left:3.5em;
-  padding-right:3.5em;
-  text-align:justify;
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size:0.8em;
-}
 
-}
 
-// @media (max-width:500px){
+
 .navBarResp {
   a {
     color: #000;
@@ -1130,14 +1233,14 @@ p {
   .leftNavBar {
     display:flex;
     align-items: center;
+    a {
+          text-decoration: none;
+          color:#FF385C;
+          font-size:1.5em;
+        }
+      
   }
 
-  // .navBarFlex {
-  //   display:flex;
-  //   align-items: center;
-  //   justify-content: space-between;
-
-  // }
 
   .header  img {
         height:7vh;
@@ -1153,8 +1256,8 @@ p {
   
   .header li a {
     display: block;
-    padding: 15px 20px;
-    border-right: 1px solid #f4f4f4;
+    padding: 20px 20px 15px 20px;
+   // border-right: 1px solid #f4f4f4;
     text-decoration: none;
   }
   
@@ -1167,7 +1270,7 @@ p {
     display: block;
     float: left;
     font-size: 0.5em;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-decoration: none;
   }
   
@@ -1252,7 +1355,7 @@ p {
       float: left;
     }
     .header li a {
-      padding: 20px 30px;
+      padding: 30px 30px;
     }
     .header .menu {
       clear: none;

@@ -45,8 +45,9 @@ class ChangePassword extends Component {
             <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
           </div>
           <div className="changePassword partieDroiteChangePassword">
-            <h1>Modification du mot de passe</h1>
+          
             <form onSubmit={this.handleFormSubmit}>
+            <h1>Modification du mot de passe</h1>
               {this.state.error && (
                       <p className="error">{this.state.error}</p>
                     )}

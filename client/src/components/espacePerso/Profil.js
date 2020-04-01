@@ -28,8 +28,8 @@ class Profil extends Component {
         <div className="partieDroiteProfil">
           <div className="profilDetailGauche">
             <h1>Informations</h1>
-            <p><span>Nom :</span> {user.username}</p>
-            <p><span>email :</span><span id="email">{user.email}</span></p>
+            <p><span className="padRight">Nom :</span> {user.username}</p>
+            <p><span className="padRight">email :</span><span id="email">{user.email}</span></p>
             <div className="adresse">
               <p><span>adresse :</span></p>
               <div className="adresseDetails">
@@ -37,7 +37,7 @@ class Profil extends Component {
                 <p>{user.codePostal} {user.ville}</p>  
               </div>
             </div>
-            <div className="adresse">
+            <div className="adresse telephone">
               <p><span>Téléphones :</span> </p>
               <div className="adresseDetails">
                 <p>{user.telephone1} </p>

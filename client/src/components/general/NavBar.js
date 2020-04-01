@@ -31,7 +31,7 @@ class NavBar extends Component {
                                 <li><a href="/#tarifs" onClick={this.uncheckbox}><span>Les Tarifs</span></a></li>
                                 <li><a href="/#spectacles" onClick={this.uncheckbox}><span>Les Spectacles</span></a></li>
                                 <li><a href="/#asso" onClick={this.uncheckbox}><span>L'Asso</span></a></li>
-                                <li><a href="/espacePerso" onClick={this.uncheckbox}><span>Espace Adhérent</span></a></li>
+                                <li><a href="/espacePerso" onClick={this.uncheckbox}n><span>Espace Adhérent</span></a></li>
                             
                             </ul>      
                             </div>        

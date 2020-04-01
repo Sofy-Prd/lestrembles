@@ -34,8 +34,9 @@ class Login extends Component {
       <div>
         <NavBar/>
         <div className="login">
-          <h1>Connexion à mon espace</h1>
+          
           <form onSubmit={this.handleFormSubmit}>
+          <h1>Connexion à mon espace</h1>
             {this.state.error && (
                   <p className="error">{this.state.error}</p>
                 )}

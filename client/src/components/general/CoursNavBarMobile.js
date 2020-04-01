@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios'
 import Cours from './Cours.js'
+import {Link} from 'react-router-dom';
 
 
 class CoursNavBarMobile extends Component {
@@ -50,16 +51,13 @@ class CoursNavBarMobile extends Component {
     
       return (
         <div className="coursNavBarMobile">
-          <div className="coursListTitreMobile">
-            <h1>Les Cours</h1>
-          </div>
-          <div className="navBarMobileFlex">
+           <div className="navBarMobileFlex">
             <div className="coursListMobile">
           
               {this.state.listOfCours.map(cours => (
                   <div className="coursLiens" key={cours._id}>
                   {/* <p>{cours.nom}</p> */}
-                  <button onClick={() => this.handleClick(cours)}>{cours.nom}</button>
+                  <Link onClick={() => this.handleClick(cours)}>{cours.nom}</Link>
                   </div>
               ))}
             </div>
