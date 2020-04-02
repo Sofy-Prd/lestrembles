@@ -21,44 +21,13 @@ img {
   max-width:100%;
 }
 
-// .navBar {
-//   height: 10vh;
-//   display:flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   position: fixed;
-//   // overflow: hidden;
-//   background-color: white;
-//   width:100vw;
-//   z-index: 5;
-// }
 
-#foo {opacity:0;pointer-events:none; transition:opacity .3s;}
-#foo.active {opacity:1; pointer-events:normal;}
+// #foo {opacity:0;pointer-events:none; transition:opacity .3s;}
+// #foo.active {opacity:1; pointer-events:normal;}
 
-// .leftNavBar {
-//   display:flex;
-//   align-items: center;
-//   padding-left:1.5em;
-
-//   img {
-//     height:9vh;
-//   }
-
-//   a {
-//     text-decoration: none;
-//   }
-
-//   h1 {
-//     color:#FF385C;
-//     font-weight: lighter;
-//     font-size:1.8em;
-//   }
-// }
 
 .menu {
-  // display:flex;
-  // list-style: none;
+  
   a {
   padding-right:1.5em;
   padding-left:2em;
@@ -72,10 +41,6 @@ img {
 }
 
 
-// .homePage,
-// .aboutPAge {
-
-// }
 
 .homePage {
   .accueil {
@@ -96,6 +61,15 @@ img {
     }
   }
   
+  @media (max-width:500px){
+   .accueil h1 {
+          font-size: 1.2em;
+          padding-left: 2em;
+          padding-right: 2em;
+      }
+     }
+
+
   .profsListDesktop {
     display:flex;
     justify-content: space-between;
@@ -120,7 +94,7 @@ img {
     color:grey;
     width:100vw;
     padding-top:11vh;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   @media (max-width:500px){
@@ -298,7 +272,7 @@ img {
     color:grey;
     width:100vw;
     padding-top:11vh;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   .coursNavBarMobile {
@@ -547,16 +521,20 @@ img {
      color:grey;
      width:100vw;
      padding-top:11vh;
-     margin-bottom:0.3em;
+     margin-bottom:1.5em;
    }
    
    p {
      padding-left:3.5em;
      padding-right:3.5em;
+     padding-top:1.5em;
+     padding-bottom:1.5em;
      text-align:justify;
      margin-bottom: 0;
      margin-top: 0;
-     font-size:0.8em;
+     font-size:1em;
+     line-height: 1.5em;
+     
    }
    
    }
@@ -574,7 +552,13 @@ img {
 
   .footer p {
     color: white;
-    font-size: 1em;
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .contactMail {
+    display:flex;
+    align-items: center;
   }
 
   .footerGauche a {
@@ -597,8 +581,9 @@ img {
 } 
 
 @media (max-width:500px){
+ 
   .footerGauche a {
-   font-size:0.7em;
+   font-size:0.6em;
   }
   .footer p{
     font-size:0.8em;
@@ -607,7 +592,7 @@ img {
 }
 
 .login, .forgotPassword {
-  height:90vh;
+  height:94vh;
  display:flex;
  flex-direction: column;
  justify-content: center;
@@ -713,6 +698,10 @@ img {
   }
 }
 
+.espacePersoAccueil {
+  padding-left: 2em;
+  padding-right: 2em;}
+
 @media (max-width:500px){
   .login, .changePassword {
     form {
@@ -743,8 +732,6 @@ img {
 
 .partieDroiteEspacePerso, .partieDroiteChangePassword  {
   width:70%;
-  padding-left: 3em;
-  padding-right: 2em;
   padding-top:7em;
 
 }
@@ -1088,9 +1075,9 @@ img {
     margin-top:2em;
 
   }
-  .editProfilTitre h1 {
+  .editProfilTitre {
     margin-top:0;
-    margin-bottom:1em;
+    margin-bottom:4em;
     font-size:1.5em;
     color:#5C5A5A;
     text-align:center;
