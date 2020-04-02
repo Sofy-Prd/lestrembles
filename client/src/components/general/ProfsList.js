@@ -4,9 +4,13 @@ import axios from 'axios'
 import Slider from "react-slick";
 
 
+
+
+
 class ProfsList extends Component {
-    state = { listOfProfs: [] };
+    state = { listOfProfs: []};
    
+  
     getAllProfs = () =>{
         axios.get(`${process.env.REACT_APP_APIURL || ""}/api/teachers`)
         .then(responseFromApi => {
@@ -33,6 +37,7 @@ class ProfsList extends Component {
        
       };
      
+     
         return (
           <div className="profsContainer">
               <div className="profsListTitre">
@@ -40,7 +45,7 @@ class ProfsList extends Component {
               </div>
               <div className="profsListDesktop">
                 {this.state.listOfProfs.map(prof => (
-                  <div className="prof" key={prof._id}><Prof prenom={prof.prenom} photoProfil={prof.photoProfil} style={prof.style}/></div>
+                  <div className="prof" key={prof._id}><Prof prenom={prof.prenom} photoProfil={prof.photoProfil} style={prof.style} citation={prof.citation}/></div>
                   ))}
               </div>
            

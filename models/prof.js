@@ -5,7 +5,8 @@ const ProfSchema = new Schema({
   prenom: String,
   photo: String,
   email: String,
-  style: String
+  style: String,
+  citation: String
  });
 
 const Prof = mongoose.model('Prof', ProfSchema);

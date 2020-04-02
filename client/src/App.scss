@@ -88,7 +88,7 @@ img {
     justify-content: center;
     
     height:100vh;
-    background:#FCBCBD url("/images/backgroundHomepage.png") center no-repeat;
+    background:#FCBCBD url("/images/backgroundHomepage.png");
 
    
     h1 {
@@ -105,6 +105,7 @@ img {
     padding-bottom:2em;
     
   }
+  
 
   .profsListMobile {
     display:none;
@@ -526,6 +527,7 @@ img {
   @media (max-width:500px){
     .slick-slide img {
       width: 50%;
+      height: 40vh;
     }
 
     .spectacles h1 {
@@ -712,7 +714,7 @@ img {
 }
 
 @media (max-width:500px){
-  .login {
+  .login, .changePassword {
     form {
       width:60vw;
       height:45vh;
@@ -924,6 +926,13 @@ img {
 .changePasswordFlex {
   display:flex;
  
+}
+
+@media (max-width:500px) {
+  .changePasswordFlex {
+    display:inline;
+   
+  }
 }
 .navbarEspacePerso {
   width: 30%;
@@ -1367,4 +1376,12 @@ img {
     }
   }
   
+}
+
+.styles_overlay__CLSq- {
+  display:flex!important;
+}
+.styles_modal__gNwvD {
+  margin-top:auto!important;
+  margin-bottom:auto!important;
 }
