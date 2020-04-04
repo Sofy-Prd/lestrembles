@@ -28,10 +28,14 @@ class Profil extends Component {
         <div className="partieDroiteProfil">
           <div className="profilDetailGauche">
             <h1>Informations</h1>
-            <p><span className="padRight">Nom :</span> {user.username}</p>
-            <p><span className="padRight">email :</span><span id="email">{user.email}</span></p>
             <div className="adresse">
-              <p><span>adresse :</span></p>
+            <p><span>Nom :</span></p> <p>{user.username}</p>
+            </div>
+            <div className="adresse">
+            <p><span>Email :</span></p> <p><span id="email">{user.email}</span></p>
+            </div>
+            <div className="adresse">
+              <p><span>Adresse :</span></p>
               <div className="adresseDetails">
                 <p>{user.rue}</p>
                 <p>{user.codePostal} {user.ville}</p>  
@@ -65,7 +69,7 @@ class Profil extends Component {
                 <div className="adherentDroite">
                   <p>avec</p>
                   <img src={membre.cours1.prof.photoProfil} alt="prof"/>
-                  <p> {membre.cours1.prof.prenom}</p>
+                  <p> <span>{membre.cours1.prof.prenom}</span></p>
                 </div>          
               </div>
                     ))

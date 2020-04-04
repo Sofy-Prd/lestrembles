@@ -57,7 +57,7 @@ class CoursNavBarMobile extends Component {
               {this.state.listOfCours.map(cours => (
                   <div className="coursLiens" key={cours._id}>
                   {/* <p>{cours.nom}</p> */}
-                  <Link onClick={() => this.handleClick(cours)}>{cours.nom}</Link>
+                  <Link to="" onClick={() => this.handleClick(cours)}>{cours.nom}</Link>
                   </div>
               ))}
             </div>

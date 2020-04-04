@@ -67,27 +67,27 @@ class EditProfil extends Component {
                 <p className="error">{this.state.error}</p>
               )}
               <div className="libelleInput">
-                <label>email :</label>
+                <label>Email :</label>
                 <input type="email" name="email" value={this.state.email} onChange={e => this.handleChangeProfil(e)}/>
               </div>
               <div className="libelleInput">
-                <label>rue:</label>
+                <label>Rue:</label>
                 <input type="text" name="rue" value={this.state.rue} onChange={e => this.handleChangeProfil(e)} />
               </div>
               <div className="libelleInput">
-                <label>code Postal  :</label>
+                <label>Code Postal  :</label>
                 <input type="text" name="codePostal" value={this.state.codePostal} onChange={e => this.handleChangeProfil(e)} />
               </div>
               <div className="libelleInput">
-                <label>ville:</label>
+                <label>Ville:</label>
                 <input type="text" name="ville" value={this.state.ville} onChange={e => this.handleChangeProfil(e)} />
               </div>
               <div className="libelleInput">
-                <label>telephone1:</label>
+                <label>Téléphone1:</label>
                 <input type="text" name="telephone1" value={this.state.telephone1} onChange={e => this.handleChangeProfil(e)} />
               </div>
               <div className="libelleInput">
-                <label>telephone2:</label>
+                <label>Téléphone2:</label>
                 <input type="text" name="telephone2" value={this.state.telephone2} onChange={e => this.handleChangeProfil(e)} />
               </div>
               <input id="button" type="submit" value="Enregistrer les modifications" />

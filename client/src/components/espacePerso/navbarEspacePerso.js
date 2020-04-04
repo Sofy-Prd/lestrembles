@@ -8,7 +8,7 @@ class NavBarEspacePerso extends Component {
     logout = (event) => {
         this.service.logout()
            .then(()=>{
-             this.props.history.push('/espacePerso/login')
+             this.props.history.push('/')
             
             //  this.props.setUser(null);
             

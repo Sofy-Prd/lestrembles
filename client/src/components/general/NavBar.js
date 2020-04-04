@@ -12,7 +12,7 @@ class NavBar extends Component {
  
         return (
             <div className="navBarResp">
-                <header class="header">
+                <header className="header">
                     <div className="navBar">
                         {/* <div className="navBarFlex"> */}
                             <div className="logo">
@@ -22,8 +22,8 @@ class NavBar extends Component {
                                 </div>
                             </div> 
                             <div className="hamburger">
-                                <input class="menu-btn" type="checkbox" id="menu-btn" ref={this.checkbox} />
-                                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                                <input className="menu-btn" type="checkbox" id="menu-btn" ref={this.checkbox} />
+                                <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
                            
                             <ul className="menu">
                                 <li><a href="/#profs" onClick={this.uncheckbox}><span>Les Profs</span></a></li>
@@ -34,10 +34,9 @@ class NavBar extends Component {
                                 <li><a href="/espacePerso" onClick={this.uncheckbox}n><span>Espace Adhérent</span></a></li>
                             
                             </ul>      
-                            </div>        
-                        {/* </div> */}
+                        </div>        
                     </div>
-            </header> 
+                 </header> 
             </div>
         );
     }

@@ -89,9 +89,9 @@ class SendAbsences extends Component {
           <div className="partieDroiteEspacePerso">
             <div className="sendAbsences">
               <form className="formSendAbsences" onSubmit={this.handleFormSubmit}>
-                  <p> Prevenir par mail <span>{this.state.prof}</span> de l'absence de <span>{this.state.prenom}</span> </p>
+                  <p> Prévenir par mail <span>{this.state.prof}</span> de l'absence de <span>{this.state.prenom}</span> </p>
                   <label>Motif:</label> 
-                  <input className="motif" type="textarea" name="message" value={this.state.message} onChange={e => this.handleSendAbsences(e)}/>
+                  <textarea className="motif" type="text" name="message"  value={this.state.message} onChange={e => this.handleSendAbsences(e)}/>
                   <label>Date :</label>
                   <input className="date" type="date" name="date" value={this.state.date} onChange={e => this.handleSendAbsences(e)}/>
                   <input id="button" type="submit" value="Envoyer le mail" />
