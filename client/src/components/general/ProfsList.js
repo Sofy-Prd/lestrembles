@@ -49,34 +49,36 @@ class ProfsList extends Component {
                   ))}
               </div>
            
-           <div className="profsListMobile">      
-          <Slider {...settings}> 
-           <div>
-             <h2>Lucile</h2>
-              <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801087/Projet2%20-%20Les%20Trembles/lucile_gp5qik.jpg" alt="" />
-              <h3>Modern</h3>
-            </div>
-            <div>
-            <h2>Claudia</h2>
-              <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801087/Projet2%20-%20Les%20Trembles/claudia_luyrvd.jpg" alt="" />
-              <h3>Modern</h3>
-            </div>
-            <div>
-             <h2>Angelina</h2>
-             <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801087/Projet2%20-%20Les%20Trembles/angelina_xpncys.jpg" alt="" />
-              <h3>Afrovibe</h3>
-            </div>
-            <div>
-             <h2>Cassandre</h2>
-             <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801086/Projet2%20-%20Les%20Trembles/cassandre_jqhpd3.jpg" alt="" />
-              <h3>Dancehall</h3>
-            </div>
-            <div>
-             <h2>Marie</h2>
-             <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801084/Projet2%20-%20Les%20Trembles/marie_cpsbyc.jpg" alt="" />
-              <h3>Street-Jazz</h3>
-            </div>
-           </Slider> 
+           <div className="profsListMobile">   
+             <div className="sliders">   
+              <Slider {...settings}> 
+              <div>
+                <h2>Lucile</h2>
+                  <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801087/Projet2%20-%20Les%20Trembles/lucile_gp5qik.jpg" alt="" />
+                  <h3>Modern</h3>
+                </div>
+                <div>
+                <h2>Claudia</h2>
+                  <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801087/Projet2%20-%20Les%20Trembles/claudia_luyrvd.jpg" alt="" />
+                  <h3>Modern</h3>
+                </div>
+                <div>
+                <h2>Angelina</h2>
+                <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801087/Projet2%20-%20Les%20Trembles/angelina_xpncys.jpg" alt="" />
+                  <h3>Afrovibe</h3>
+                </div>
+                <div>
+                <h2>Cassandre</h2>
+                <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801086/Projet2%20-%20Les%20Trembles/cassandre_jqhpd3.jpg" alt="" />
+                  <h3>Dancehall</h3>
+                </div>
+                <div>
+                <h2>Marie</h2>
+                <img src="https://res.cloudinary.com/dkwcrwudm/image/upload/v1577801084/Projet2%20-%20Les%20Trembles/marie_cpsbyc.jpg" alt="" />
+                  <h3>Street-Jazz</h3>
+                </div>
+              </Slider> 
+             </div> 
            </div>
 
           </div>

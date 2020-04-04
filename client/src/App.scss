@@ -1,14 +1,9 @@
 
 
-* :before, after {
+* :before, :after {
   box-sizing:border-box;
   }
 
-:root {
-  -pad:1em;
-  -ma1:2em;
-
-  }
 
 body {
   margin:0;
@@ -92,7 +87,6 @@ img {
     font-size: 2.5em;
     font-weight: lighter;
     color:grey;
-    width:100vw;
     padding-top:11vh;
     margin-bottom: 2em;
   }
@@ -270,7 +264,6 @@ img {
     font-size: 2.5em;
     font-weight: lighter;
     color:grey;
-    width:100vw;
     padding-top:11vh;
     margin-bottom: 2em;
   }
@@ -358,7 +351,6 @@ img {
   font-size: 2.5em;
   font-weight: lighter;
   color:grey;
-  width:100vw;
   padding-top:13vh;
   margin-bottom: 2.5em;
 }
@@ -381,8 +373,7 @@ img {
       padding-left: 2em;
       padding-right: 2em;
       height:6em;
-      // width: 100vw;
-     }
+      }
      .tarifsContainer h1 {
       padding-top:0;
       margin-bottom: 2em;
@@ -487,12 +478,15 @@ img {
     font-size: 2.5em;
     font-weight: lighter;
     color:grey;
-    width:100vw;
     padding-top:13vh;
-    // margin-bottom: 1em;
+    margin-bottom: 2em;
     }
   }
 
+  .sliders {
+    width:85%!important;
+    padding-left:7%;
+  }
 
   .slick-slide img {
     width: 20%;
@@ -505,12 +499,13 @@ img {
   @media (max-width:500px){
     .slick-slide img {
       width: 50%;
-      height: 40vh;
+      height: 30vh;
     }
 
     .spectacles h1 {
       padding-top:0;
       margin-bottom: 2em;
+     
     }
 
   }
@@ -523,7 +518,6 @@ img {
      font-size: 2.5em;
      font-weight: lighter;
      color:grey;
-     width:100vw;
      padding-top:11vh;
      margin-bottom:1.5em;
    }
@@ -1246,7 +1240,7 @@ img {
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 3;
    
   }
