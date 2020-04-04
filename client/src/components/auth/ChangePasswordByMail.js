@@ -53,14 +53,14 @@ getTheToken = () => {
       return (
         <div>
             <NavBar/>
-         <div className="changePassword">
+         <div className="changePassword byMail">
           <form onSubmit={this.handleFormSubmit}>
             <h1>Modification du mot de passe</h1>
             <label>Veuiller taper votre nouveau mot de passe :</label>
             <input type="password" name="password1" value={this.state.password1} onChange={e => this.handleChangePasswordByMail(e)}/>
             <label>Veuillez confirmer votre mot de passe :</label>
             <input type="password" name="password2" value={this.state.password2} onChange={e => this.handleChangePasswordByMail(e)}/>
-            <input id="button" type="submit" value="Enregistrer le mot de passe" />
+            <input id="button" type="submit" value="Enregistrer" />
           </form>
          </div>
         </div>

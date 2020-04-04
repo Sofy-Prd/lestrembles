@@ -94,7 +94,7 @@ img {
   @media (max-width:500px){
     .profsContainer {
       h1 {
-        padding-top:0;
+        padding-top:11vh;
         margin-bottom:0.5em;
       }
     }
@@ -317,11 +317,7 @@ img {
     padding-right:0;
   }
   
-     
     }
-
-  
-
 
 .tarifListBackground {
   background-color:#FCBCBD;
@@ -329,18 +325,28 @@ img {
   text-align: center;
   margin-left: 3.5em;
   margin-right: 3.5em;
-  position: relative;
-  height:10em;
-  z-index: 1;
-  top: -5em;
+  height:14em;
+  margin-top:8em; // --w/2 + padding
+  margin-bottom:7em;
+  padding-bottom:1em;
+    
+  .tarifsList {display:flex; justify-content:center;}
+    
+  
 }
+
 
 @media (max-width:500px){
   .tarifListBackground {
     margin-left: 1em;
     margin-right: 1em;
-    height:6em;
-    top: -3em;
+    margin-top: 4em;
+    height:7em;
+    padding-bottom: 1em;
+    p {
+      font-size:0.6em;
+  
+    }
     
   }
 }
@@ -351,43 +357,37 @@ img {
   font-size: 2.5em;
   font-weight: lighter;
   color:grey;
-  padding-top:13vh;
-  margin-bottom: 2.5em;
+  padding-top:15vh;
+  padding-bottom: 2.5em;
 }
 
-  .tarifsList {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20em;
-    margin-right: 20em;
-    position: relative;
-    height:13em;
-    z-index: 2;
-   
-  }
 
   @media (max-width:500px){
     .tarifsList {
       margin-left:0;
       margin-right:0;
-      padding-left: 2em;
-      padding-right: 2em;
-      height:6em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+     
       }
      .tarifsContainer h1 {
-      padding-top:0;
+      padding-top:11vh;
       margin-bottom: 2em;
     }
+
+  
   }
 
 
   .tarifReduction {
-    padding-top:10em;
+
     font-size: 0.6em;
   }
   
   .tarif {
-    width : 13em;
+    width:14em;height:14em; margin-top:-7em;
+    margin-left:2em;
+    margin-right:2em;
     border-radius: 25px;
     background-color: white;
     display:flex;
@@ -399,8 +399,12 @@ img {
 
   @media (max-width:500px){
     .tarif {
-    width : 6em;
-    padding-top: 0.5em;
+    width : 7em;
+    height: 7em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: -3.5em;
+    // padding-top: 0.5em;
   }
 
 
@@ -499,11 +503,11 @@ img {
   @media (max-width:500px){
     .slick-slide img {
       width: 50%;
-      height: 30vh;
+      height: 35vh;
     }
 
     .spectacles h1 {
-      padding-top:0;
+      padding-top:11vh;
       margin-bottom: 2em;
      
     }
@@ -631,7 +635,7 @@ img {
     color:rgba(0, 0, 0, 0.37);
     font-weight: lighter;
     font-size:1.5em;
-    padding-bottom:1.5em;
+   
   }
 
   form {
@@ -707,10 +711,20 @@ img {
     form {
       width:60vw;
       height:45vh;
+      padding-top:0;
     }
     label {
       font-size:0.65em!important;
   }
+}
+
+
+.changePassword, .sendInvoices, .sendAbsences {
+  height:71vh;
+}
+
+.login, .byMail, .forgotPassword {
+  height:90vh;
 }
 }
 
@@ -1203,7 +1217,7 @@ img {
     }
     form {
       width:40vw;
-      height:30vh;
+      height:38vh;
       margin-top:10vh;
     }
 

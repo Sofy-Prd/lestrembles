@@ -205,7 +205,7 @@ authRoutes.post('/forgotPassword', (req, res, next) => {
           subject: 'Réinitialiser votre Mot de Passe',
           text: 'Vous recevez cet email parce que vous avez demandé la réinitialisation du mot de passe de votre compte.\n\n' +
             'Veuillez cliquer sur le lien suivant ou le coller dans votre navigateur pour terminer le processus :\n\n' +
-            'http://associationlestrembles/espacePerso/changePasswordByMail/' + token + '\n\n' +
+            'http://associationlestrembles.herokuapp.com/espacePerso/changePasswordByMail/' + token + '\n\n' +
             'Si cette demande ne vient pas de vous, veuillez ignorer cet e-mail et votre mot de passe restera inchangé.\n'
         };
         smtpTransport.sendMail(mailOptions, function(err) {

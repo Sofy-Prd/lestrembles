@@ -55,7 +55,7 @@ class ChangePassword extends Component {
               <input type="password" name="password1" value={this.state.password1} onChange={e => this.handleChangePassword(e)}/>
               <label>Veuillez confirmer votre mot de passe :</label>
               <input type="password" name="password2" value={this.state.password2} onChange={e => this.handleChangePassword(e)}/>
-              <input id="button" type="submit" value="Enregistrer le mot de passe" />
+              <input id="button" type="submit" value="Enregistrer" />
             </form>
           </div>
         </div>
