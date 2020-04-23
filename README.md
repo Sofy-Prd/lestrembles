@@ -1,4 +1,4 @@
-# Lest Trembles
+# Les Trembles
 
 ## Site Web Responsive d'une Association de Danse 
 ## Serveur API Restful & Client en React
