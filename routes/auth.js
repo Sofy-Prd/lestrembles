@@ -189,6 +189,7 @@ authRoutes.post('/forgotPassword', (req, res, next) => {
         User.findOne({ email: req.body.email }, function(err, user) {
           if (!user) {
              res.status(400).json({ message: 'il n\'y a pas de compte associé à cette adresse mail' });
+             return
           }
        
           user.resetPasswordToken = token;
