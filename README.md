@@ -1,4 +1,6 @@
 # Les Trembles
+site de démonstration : https://associationlestrembles.herokuapp.com/
+*pour obtenir un login et un mot de passe, me contacter*
 
 ## Site Web Responsive d'une Association de Danse 
 ## Serveur API Restful & Client en React
@@ -10,7 +12,6 @@ Cet espace comprend les rubriques suivantes : les profs, les cours, les tarifs, 
 #### 1.2. Espace dédié aux adhérents
 Permettre aux adhérents d'avoir accès à leurs informations personnelles et relatives aux cours suivis par les membres de la famille.
 Il est possible de mofifier ses informations (adresse, email, téléphone...), prévenir les professeurs en cas d'absence et recevoir par mail une facture.
-
 
 ### 2. Sécurité et Authentification
 A chaque modification de mot de passe, la confirmation du mot de passe est nécessaire.
@@ -33,4 +34,16 @@ Envoi de la facture par email à l'adhérent.
 #### Responsive CSS
 #### Animations : modal, carrousel, menu hamburger, counter
 
-![alt text](/public/images/ecrans.jpg)
+### 4.Installation
+#### Necessite les dépendances NodeJs et MongoDB
+- cloner le répertoire
+- dans le repertoire racine, lancer un **npm install**
+- puis lancer le serveur avec **npm run dev** (mode developpement) ou **npm start**
+
+- dans le répertoire client, lancer un **npm install**
+- puis lancer le client React **npm start**
+
+![alt text](/public/images/prez_homepage.png)
+![alt text](/public/images/prez_profs.png)
+![alt text](/public/images/prez_EPerso.png)
+
