@@ -4,6 +4,7 @@ const User = require("../models/user");
 const nodemailer  = require('nodemailer');
 const templates = require('../templates/template');
 const { google } = require("googleapis");
+// OAuth2 for Gmail
 const OAuth2 = google.auth.OAuth2;
 const oauth2Client = new OAuth2(
   process.env.ClientID,
@@ -11,7 +12,12 @@ const oauth2Client = new OAuth2(
   "https://developers.google.com/oauthplayground"
 );
 
+oauth2Client.setCredentials({
+  refresh_token: process.env.RefreshToken
+});
 
+
+//Nodemailer
 const smtpTransport = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -24,23 +30,9 @@ const smtpTransport = nodemailer.createTransport({
   }
 });
 
-oauth2Client.setCredentials({
-  refresh_token: process.env.RefreshToken
-});
-
 
 router.get("/user", (req, res, next) => {
-  // console.log("req", req);
-  // if (!req.user) {
-    
-  //   res.status(401).json({
-  //   message: "Vous devez être connecté pour consulter vos informations"
-  //   });
-  //   return;
-  // }
-  // ok, req.user is defined    
   User.findOne({_id : req.query.userId})
-  // User.findOne({_id : userId})
   .populate({
     path: 'adherent.cours1',
     populate: {
@@ -117,15 +109,9 @@ router.put("/user", (req, res, next) => {
 // Absence
 router.put("/user/:name/sendAbsences", (req, res, next) => {
   let email = req.body.profEmail;
-  console.log("email", email);
   let message = req.body.message;
-  console.log("message", message);
   let prenom = req.body.prenom;
-  console.log("prenom", prenom);
- 
- 
   let nom = req.body.nom;
-  console.log("nom", nom);
   let date = req.body.date;
   let subject = `Absence de ${prenom} ${nom} le ${date}`;
   smtpTransport.sendMail({
@@ -140,7 +126,7 @@ router.put("/user/:name/sendAbsences", (req, res, next) => {
 });
 
 
-// Facture
+// Envoi d'un mail Facture à partir d'un template
 router.put("/user/adherents/:id/sendInvoices", (req, res) => {
   let email = req.body.email; //req.body.email pour postman
   let prenom = req.body.prenom;

@@ -7,12 +7,21 @@ var async = require('async');
 var crypto = require('crypto');
 const nodemailer  = require('nodemailer');
 const { google } = require("googleapis");
+
+// OAuth2 for Gmail
 const OAuth2 = google.auth.OAuth2;
 const oauth2Client = new OAuth2(
   process.env.ClientID,
   process.env.ClientSecret,
   "https://developers.google.com/oauthplayground"
 );
+
+oauth2Client.setCredentials({
+  refresh_token: process.env.RefreshToken
+});
+const accessToken = oauth2Client.getAccessToken();
+
+//Nodemailer
 const smtpTransport = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -24,44 +33,11 @@ const smtpTransport = nodemailer.createTransport({
        accessToken: process.env.AccessToken
   }
 });
-oauth2Client.setCredentials({
-  refresh_token: process.env.RefreshToken
-});
-const accessToken = oauth2Client.getAccessToken();
+
 
 // require the user model !!!!
 const User       = require('../models/user');
 
-
-// function getUserPopulated(userId) {
-//   return User.findOne({_id : userId})
-//   .populate({
-//     path: 'adherent.cours1',
-//     populate: {
-//       path: 'prof'
-//     }
-//   })
-//   .populate({
-//     path: 'adherent.cours2',
-//     populate: {
-//       path: 'prof'
-//     }
-//   })
-//   .populate({
-//     path: 'adherent.cours1',
-//     populate: {
-//       path: 'lieu'
-//     }
-//   })
-//   .populate({
-//     path: 'adherent.cours2',
-//     populate: {
-//       path: 'lieu'
-//     }
-//   })
-  
- 
-// }
 
 //LOGIN
 authRoutes.post('/sessions', (req, res, next) => {
@@ -72,7 +48,6 @@ authRoutes.post('/sessions', (req, res, next) => {
         }
     
         if (!theUser) {
-            
             res.status(401).json(failureDetails);
             return;
         }
@@ -83,7 +58,6 @@ authRoutes.post('/sessions', (req, res, next) => {
                 res.status(500).json({ message: 'Session save went bad.' });
                 return;
             }
-
         
             theUser
             .populate({
@@ -129,8 +103,6 @@ authRoutes.get('/loggedin', (req, res, next) => {
         }
         res.json(theUserPopulated)
       });
-
-        
         return;
     }
     res.status(403).json({ message: 'Vous n\'êtes pas autorisé' });
@@ -223,7 +195,7 @@ authRoutes.post('/forgotPassword', (req, res, next) => {
 });
 
 
-  //Modifier mdp oublié grâce à un lien contenant le token
+  //affichage de la page mdp oublié grâce à un lien contenant le token
   authRoutes.get('/changePasswordByMail/:token', function(req, res) {
     User.findOne({ resetPasswordToken: req.params.token }, function(err, user) {
       if (!user) {
@@ -234,6 +206,7 @@ authRoutes.post('/forgotPassword', (req, res, next) => {
     });
   });
 
+  //reinitialisation du mdp à partir du lien securisé avec le token
   authRoutes.post("/changePasswordByMail/:token", (req, res, next) => { 
     const password1 = req.body.password1;
     const password2 = req.body.password2;
