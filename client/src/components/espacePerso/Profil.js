@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import { Link } from 'react-router-dom';
 import NavBarEspacePerso from './navbarEspacePerso.js';
 import NavBar from '../general/NavBar.js'
@@ -59,21 +58,21 @@ class Profil extends Component {
               <ul>
                 {
                 adherents.map(membre => (
-              <div className="adherents" key={membre._id}>
-                <div className="adherentGauche">
-                  <p><span>{membre.prenom}</span></p>
-                  <p>Groupe {membre.cours1.nom} </p> 
-                  <p> {membre.cours1.jour} - {membre.cours1.horaire}</p> 
-                  <p>{membre.cours1.lieu.nom}</p>
+                <div className="adherents" key={membre._id}>
+                  <div className="adherentGauche">
+                    <p><span>{membre.prenom}</span></p>
+                    <p>Groupe {membre.cours1.nom} </p> 
+                    <p> {membre.cours1.jour} - {membre.cours1.horaire}</p> 
+                    <p>{membre.cours1.lieu.nom}</p>
+                  </div>
+                  <div className="adherentDroite">
+                    <p>avec</p>
+                    <img src={membre.cours1.prof.photoProfil} alt="prof"/>
+                    <p> <span>{membre.cours1.prof.prenom}</span></p>
+                  </div>          
                 </div>
-                <div className="adherentDroite">
-                  <p>avec</p>
-                  <img src={membre.cours1.prof.photoProfil} alt="prof"/>
-                  <p> <span>{membre.cours1.prof.prenom}</span></p>
-                </div>          
-              </div>
-                    ))
-                }
+                      ))
+                  }
                 </ul>
             </div> 
           </div>  

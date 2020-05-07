@@ -8,9 +8,6 @@ import NavBar from '../general/NavBar.js'
 class EspacePerso extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            
-        }
         this.service = new AuthService();
     }
    
@@ -37,10 +34,10 @@ class EspacePerso extends Component {
 
         return (
            
-          <div> 
-            <NavBar/>
+            <div> 
+                <NavBar/>
                 <div className="espacePerso">
-                   <div className="navbarEspacePerso">
+                    <div className="navbarEspacePerso">
                         <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
                     </div>
 
@@ -53,7 +50,7 @@ class EspacePerso extends Component {
                             <p> Dans la rubrique <span>Recevoir une facture</span> vous pourrez recevoir un mail avec la facture de l'activité par adhérent</p>
                         </div>
                     </div>
-                 </div>
+                </div>
             </div>
         );
     }

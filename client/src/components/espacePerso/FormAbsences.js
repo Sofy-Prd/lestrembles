@@ -16,25 +16,25 @@ class FormAbsences extends Component {
     render () {
         if (!this.props.user._id) return <Loader>veuillez patienter pendant le chargement de la page...</Loader>
         return (
-          <div>
-            <NavBar/>
-            <div className="espacePerso">
-                <div className="navbarEspacePerso">
-                    <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
-                </div>
-                <div className="partieDroiteEspacePerso">
-                    <div className="absences">
-                        <h1>Prévenir d'une absence</h1>
-                        <p>Cliquez sur le prénom de l'adhérent concerné,  un mail sera envoyé à son professeur pour le prévenir</p>
-                        <ul>
-                        {
-                        this.props.user.adherent.map(membre => (
-                                <Link to={`/espacePerso/${membre.prenom}/sendAbsences`}><li key={membre._id}>{membre.prenom}</li></Link>
-                            ))
-                        }
-                        </ul>
+            <div>
+                <NavBar/>
+                <div className="espacePerso">
+                    <div className="navbarEspacePerso">
+                        <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
                     </div>
-                </div>
+                    <div className="partieDroiteEspacePerso">
+                        <div className="absences">
+                            <h1>Prévenir d'une absence</h1>
+                            <p>Cliquez sur le prénom de l'adhérent concerné,  un mail sera envoyé à son professeur pour le prévenir</p>
+                            <ul>
+                                {
+                                this.props.user.adherent.map(membre => (
+                                        <Link to={`/espacePerso/${membre.prenom}/sendAbsences`}><li key={membre._id}>{membre.prenom}</li></Link>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

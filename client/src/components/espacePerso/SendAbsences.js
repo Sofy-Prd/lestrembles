@@ -8,9 +8,9 @@ class SendAbsences extends Component {
   constructor(props) {
     super(props)
 
-    const { params } = this.props.match;  // {name: "Marion"}
-    let user = this.props.user; // {}
-    let adherents = user.adherent; // undefined
+    const { params } = this.props.match; 
+    let user = this.props.user; 
+    let adherents = user.adherent; 
     
     if (adherents) {
 
@@ -34,8 +34,8 @@ class SendAbsences extends Component {
   
   componentDidUpdate(prevProps) {
     if (prevProps.user !== this.props.user) {
-      const { params } = this.props.match;  // {name: "Marion"}
-      let user = this.props.user; // {}
+      const { params } = this.props.match; 
+      let user = this.props.user; 
       let adherents = user.adherent;
       let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
       let prenom = adherent[0].prenom;
@@ -96,7 +96,7 @@ class SendAbsences extends Component {
                   <input className="date" type="date" name="date" value={this.state.date} onChange={e => this.handleSendAbsences(e)}/>
                   <input id="button" type="submit" value="Envoyer le mail" />
               </form>
-          </div> 
+           </div> 
           </div>
         </div>
       

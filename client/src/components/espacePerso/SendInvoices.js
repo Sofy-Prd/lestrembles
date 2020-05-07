@@ -8,17 +8,17 @@ class SendInvoices extends Component {
   constructor(props) {
     super(props)
 
-    const { params } = this.props.match;  // {name: "Marion"}
-    let user = this.props.user; // {}
-    let email = this.props.user.email; // {}
-    let adherents = user.adherent; // undefined
+    const { params } = this.props.match; 
+    let user = this.props.user;
+    let email = this.props.user.email; 
+    let adherents = user.adherent; 
   
     if (adherents) {
     
     let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
     let prenom = adherent[0].prenom;
     let nom = adherent[0].nom;
-    let tarif=adherent[0].cours1.duree.montant; //pour récupérer le montant 
+    let tarif=adherent[0].cours1.duree.montant; 
 
     this.state={
       email:email,
@@ -33,13 +33,13 @@ class SendInvoices extends Component {
   
   componentDidUpdate(prevProps) {
     if (prevProps.user !== this.props.user) {
-      const { params } = this.props.match;  // {name: "Marion"}
-      let user = this.props.user; // {}
+      const { params } = this.props.match; 
+      let user = this.props.user; 
       let adherents = user.adherent;
       let adherent = adherents.filter(adherent => adherent.prenom.includes(params.name));
       let prenom = adherent[0].prenom;
       let nom = adherent[0].nom;
-      let tarif=adherent[0].cours1.duree.montant; //pour récupérer le montant 
+      let tarif=adherent[0].cours1.duree.montant; 
       let email=user.email;
 
       this.setState({ 

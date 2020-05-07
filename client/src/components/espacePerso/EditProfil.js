@@ -55,45 +55,45 @@ class EditProfil extends Component {
       <div>
       <NavBar/>
       <div className="editProfil">
-      <div className="espacePerso">
-        <div className="navbarEspacePerso">
-          <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
-        </div>
-
-        <div className="partieDroiteEspacePerso">
-          <h1 className="editProfilTitre">Mettre à jour mes coordonnées</h1>
-          <form onSubmit={this.handleFormSubmit}>
-              {this.state.error && (
-                <p className="error">{this.state.error}</p>
-              )}
-              <div className="libelleInput">
-                <label>Email :</label>
-                <input type="email" name="email" value={this.state.email} onChange={e => this.handleChangeProfil(e)}/>
-              </div>
-              <div className="libelleInput">
-                <label>Rue:</label>
-                <input type="text" name="rue" value={this.state.rue} onChange={e => this.handleChangeProfil(e)} />
-              </div>
-              <div className="libelleInput">
-                <label>Code Postal  :</label>
-                <input type="text" name="codePostal" value={this.state.codePostal} onChange={e => this.handleChangeProfil(e)} />
-              </div>
-              <div className="libelleInput">
-                <label>Ville:</label>
-                <input type="text" name="ville" value={this.state.ville} onChange={e => this.handleChangeProfil(e)} />
-              </div>
-              <div className="libelleInput">
-                <label>Téléphone1:</label>
-                <input type="text" name="telephone1" value={this.state.telephone1} onChange={e => this.handleChangeProfil(e)} />
-              </div>
-              <div className="libelleInput">
-                <label>Téléphone2:</label>
-                <input type="text" name="telephone2" value={this.state.telephone2} onChange={e => this.handleChangeProfil(e)} />
-              </div>
-              <input id="button" type="submit" value="Enregistrer les modifications" />
-             </form>
-            </div>
+        <div className="espacePerso">
+          <div className="navbarEspacePerso">
+            <NavBarEspacePerso user={this.props.user} history={this.props.history}/>
           </div>
+
+          <div className="partieDroiteEspacePerso">
+            <h1 className="editProfilTitre">Mettre à jour mes coordonnées</h1>
+            <form onSubmit={this.handleFormSubmit}>
+                {this.state.error && (
+                  <p className="error">{this.state.error}</p>
+                )}
+                <div className="libelleInput">
+                  <label>Email :</label>
+                  <input type="email" name="email" value={this.state.email} onChange={e => this.handleChangeProfil(e)}/>
+                </div>
+                <div className="libelleInput">
+                  <label>Rue:</label>
+                  <input type="text" name="rue" value={this.state.rue} onChange={e => this.handleChangeProfil(e)} />
+                </div>
+                <div className="libelleInput">
+                  <label>Code Postal  :</label>
+                  <input type="text" name="codePostal" value={this.state.codePostal} onChange={e => this.handleChangeProfil(e)} />
+                </div>
+                <div className="libelleInput">
+                  <label>Ville:</label>
+                  <input type="text" name="ville" value={this.state.ville} onChange={e => this.handleChangeProfil(e)} />
+                </div>
+                <div className="libelleInput">
+                  <label>Téléphone1:</label>
+                  <input type="text" name="telephone1" value={this.state.telephone1} onChange={e => this.handleChangeProfil(e)} />
+                </div>
+                <div className="libelleInput">
+                  <label>Téléphone2:</label>
+                  <input type="text" name="telephone2" value={this.state.telephone2} onChange={e => this.handleChangeProfil(e)} />
+                </div>
+                <input id="button" type="submit" value="Enregistrer les modifications" />
+              </form>
+              </div>
+            </div>
         </div>
       </div>
     );
