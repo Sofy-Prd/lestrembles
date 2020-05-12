@@ -10,10 +10,26 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+// html { overflow-y: hidden; } 
+
 img {
   max-width:100%;
 }
 
+
+// #foo {opacity:0;pointer-events:none; transition:opacity .3s;}
+// #foo.active {opacity:1; pointer-events:normal;}
+
+
+/*
+##    ##    ###    ##     ## ########     ###    ########  
+###   ##   ## ##   ##     ## ##     ##   ## ##   ##     ## 
+####  ##  ##   ##  ##     ## ##     ##  ##   ##  ##     ## 
+## ## ## ##     ## ##     ## ########  ##     ## ########  
+##  #### #########  ##   ##  ##     ## ######### ##   ##   
+##   ### ##     ##   ## ##   ##     ## ##     ## ##    ##  
+##    ## ##     ##    ###    ########  ##     ## ##     ##
+*/
 
 .menu {
   
@@ -29,7 +45,15 @@ img {
   }
 }
 
-
+/*
+##     ##  #######  ##     ## ########    ########     ###     ######   ######## 
+##     ## ##     ## ###   ### ##          ##     ##   ## ##   ##    ##  ##       
+##     ## ##     ## #### #### ##          ##     ##  ##   ##  ##        ##       
+######### ##     ## ## ### ## ######      ########  ##     ## ##   #### ######   
+##     ## ##     ## ##     ## ##          ##        ######### ##    ##  ##       
+##     ## ##     ## ##     ## ##          ##        ##     ## ##    ##  ##       
+##     ##  #######  ##     ## ########    ##        ##     ##  ######   ######## 
+*/
 
 .homePage {
   .accueil {
@@ -40,24 +64,29 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
     height:100vh;
     background:#FCBCBD url("/images/backgroundHomepage.png");
 
-   
-    h1 {
-      font-size:1.5em;
-    }
+    h1 {font-size:1.5em;}
   }
   
   @media (max-width:500px){
    .accueil h1 {
-          font-size: 1.2em;
-          padding-left: 2em;
-          padding-right: 2em;
-      }
-     }
+    font-size: 1.2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    }
+  }
 
+  /*
+  ########  ########   #######  ######## ##       ####  ######  ######## 
+  ##     ## ##     ## ##     ## ##       ##        ##  ##    ##    ##    
+  ##     ## ##     ## ##     ## ##       ##        ##  ##          ##    
+  ########  ########  ##     ## ######   ##        ##   ######     ##    
+  ##        ##   ##   ##     ## ##       ##        ##        ##    ##    
+  ##        ##    ##  ##     ## ##       ##        ##  ##    ##    ##    
+  ##        ##     ##  #######  ##       ######## ####  ######     ##   
+  */
 
   .profsListDesktop {
     display:flex;
@@ -66,14 +95,9 @@ img {
     padding-right:3.5em;
     background:url("/images/backgroundProfsList.svg") center no-repeat;
     padding-bottom:2em;
-    
   }
   
-
-  .profsListMobile {
-    display:none;
-  }
-
+  .profsListMobile {display:none;}
 
   .profsContainer h1 {
     display:block;
@@ -92,12 +116,9 @@ img {
         margin-bottom:0.5em;
       }
     }
-    .profsListMobile {
-      display:block;
-    }
-    .profsListDesktop {
-      display:none;
-    }
+
+    .profsListMobile {display:block;}
+    .profsListDesktop {display:none;}
     
     h2 {
       text-align: center;
@@ -109,46 +130,54 @@ img {
     h3 {
       font-size:1.1em;
       font-weight: lighter;
-      text-align: center;
-        
+      text-align: center;   
     }
-
-
   }
 
-  
+  /*
+  ########  ########   #######  ########  
+  ##     ## ##     ## ##     ## ##           
+  ##     ## ##     ## ##     ## ##           
+  ########  ########  ##     ## ######       
+  ##        ##   ##   ##     ## ##           
+  ##        ##    ##  ##     ## ##          
+  ##        ##     ##  #######  ##        
+  */
+
   
   .prof {
     width:18%;
-    text-align:center;
-   
-  
+    text-align:center;  
   }
   
   .prof h2 {
     color:#FF385C;
     font-weight: lighter;
     font-size: 1.5em;
-  
-   
   }
   
   .prof img {
-    // display:block;
     width:80%;
     height: 40vh;
     border-radius:25px;
     object-fit: cover;
     text-align: center;
-    
   }
   
   .prof h3 {
     font-size:1.1em;
     font-weight: lighter;
-  
-  
   }
+
+  /*
+  ######   #######  ##     ## ##    ## ######## ######## ########   ######  ########     ###    ##    ## 
+  ##    ## ##     ## ##     ## ###   ##    ##    ##       ##     ## ##    ## ##     ##   ## ##   ###   ## 
+  ##       ##     ## ##     ## ####  ##    ##    ##       ##     ## ##       ##     ##  ##   ##  ####  ## 
+  ##       ##     ## ##     ## ## ## ##    ##    ######   ########   ######  ########  ##     ## ## ## ## 
+  ##       ##     ## ##     ## ##  ####    ##    ##       ##   ##         ## ##     ## ######### ##  #### 
+  ##    ## ##     ## ##     ## ##   ###    ##    ##       ##    ##  ##    ## ##     ## ##     ## ##   ### 
+  ######   #######   #######  ##    ##    ##    ######## ##     ##  ######  ########  ##     ## ##    ##   
+  */
 
   .countersBan {
     background: linear-gradient(180deg, rgba(255, 56, 92, 0.41) 0%, rgba(248, 108, 102, 0.41) 100%);
@@ -163,7 +192,7 @@ img {
   @media (max-width:500px){
     .countersBan {display:none;}
   }
-  
+
   .counterA, .counterL, .counterT {
     background-repeat: no-repeat;
     background-size: contain;
@@ -178,37 +207,36 @@ img {
     font-weight: lighter;
     font-size: 1em;
 
-    p {
-    margin-left:0;
-    }
+    p {margin-left:0;}
 
     span {
       font-weight: bold;
       font-size: 1.5em;
     }
-
   }
 
-  .counterA {
-    background-image: url("/images/backgroundA.png");
-  }
+  .counterA {background-image: url("/images/backgroundA.png");}
 
-  .counterL {
-    background-image: url("/images/backgroundL.png");
-    }
+  .counterL {background-image: url("/images/backgroundL.png");}
 
-  .counterT {
-    background-image: url("/images/backgroundT.png");
-  
-  }
+  .counterT {background-image: url("/images/backgroundT.png");}
 
-
-  
-  .backgroundWhitePink{
+  .backgroundWhitePink {
     background: url("/images/backgroundWhitePink.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
+  /*
+  ######   #######  ##     ## ########   ######  
+  ##    ## ##     ## ##     ## ##     ## ##    ## 
+  ##       ##     ## ##     ## ##     ## ##       
+  ##       ##     ## ##     ## ########   ######  
+  ##       ##     ## ##     ## ##   ##         ## 
+  ##    ## ##     ## ##     ## ##    ##  ##    ## 
+  ######   #######   #######  ##     ##  ######  
+  */
   
   .cours {
     border:solid 1px #FF385C;
@@ -219,9 +247,7 @@ img {
     padding-right: 15px;
   }
   
-  .cours span {
-    font-weight: bold;
-  } 
+  .cours span {font-weight: bold;} 
   
   .coursTitre {
     text-align: center;
@@ -233,16 +259,26 @@ img {
     justify-content: space-between;
     font-size: 0.8em;
   }
-  .coursLibelle {
-    width:35%;
-    
-  }
+
+  .coursLibelle {width:35%;}
   
   .coursDetail {
     width:65%;
     text-align: center;
     padding-right: 15px;
   }
+
+
+
+  /*
+  ######   #######  ##     ## ########   ######  ##       ####  ######  ######## 
+  ##    ## ##     ## ##     ## ##     ## ##    ## ##        ##  ##    ##    ##    
+  ##       ##     ## ##     ## ##     ## ##       ##        ##  ##          ##    
+  ##       ##     ## ##     ## ########   ######  ##        ##   ######     ##    
+  ##       ##     ## ##     ## ##   ##         ## ##        ##        ##    ##    
+  ##    ## ##     ## ##     ## ##    ##  ##    ## ##        ##  ##    ##    ##    
+  ######   #######   #######  ##     ##  ######  ######## ####  ######     ##    
+  */
   
   .coursList {
     display: flex;
@@ -262,15 +298,11 @@ img {
     margin-bottom: 2em;
   }
 
-  .coursNavBarMobile {
-    display:none;
-  }
+  .coursNavBarMobile {display:none;}
 
   @media(max-width:500px){
     .coursList{display:none;}
-    .navBarMobileFlex {
-      display:flex;
-    }
+    .navBarMobileFlex {display:flex;}
     .coursMobile {
       border:solid 1px #FF385C;
       border-radius:25px;
@@ -279,104 +311,86 @@ img {
       margin-right: 1em;
       padding-left: 15px;
       padding-right: 15px;
-      span {
-        font-weight:bold;
-      }
-      }
-    .coursNavBarMobile {
-      display:block;
+      span {font-weight:bold;}
     }
+
+    .coursNavBarMobile {display:block;}
+
     .coursListMobile {
       padding:1em;
-   
-      .coursLiens {
-        padding-bottom:0.5em;
-      }
+      .coursLiens {padding-bottom:0.5em;}
       a {
-      text-decoration: none;
-      color:black;
-    
+        text-decoration: none;
+        color:black;
       }
-      a:hover {
-        color:#FF385C;
-      }
-      a:focus {
-        background-color: #FCBCBD;
-      }  
-  } 
-  .coursLibelle {
-    margin-bottom: 2em;
-  }
-  .coursDetail {
-    padding-right:0;
-  }
-  
+      a:hover {color:#FF385C;}
+      a:focus {background-color: #FCBCBD;}  
     }
 
-.tarifListBackground {
-  background-color:#FCBCBD;
-  border-radius: 25px;
-  text-align: center;
-  margin-left: 3.5em;
-  margin-right: 3.5em;
-  height:14em;
-  margin-top:8em; // --w/2 + padding
-  margin-bottom:7em;
-  padding-bottom:1em;
-    
-  .tarifsList {display:flex; justify-content:center;}
-    
-  
-}
+    .coursLibelle {margin-bottom: 2em;}
 
+    .coursDetail {padding-right:0;}
+  }
 
-@media (max-width:500px){
+  /*
+   ########    ###    ########  #### ########  ######  ##       ####  ######  ######## 
+      ##      ## ##   ##     ##  ##  ##       ##    ## ##        ##  ##    ##    ##    
+      ##     ##   ##  ##     ##  ##  ##       ##       ##        ##  ##          ##    
+      ##    ##     ## ########   ##  ######    ######  ##        ##   ######     ##    
+      ##    ######### ##   ##    ##  ##             ## ##        ##        ##    ##    
+      ##    ##     ## ##    ##   ##  ##       ##    ## ##        ##  ##    ##    ##    
+      ##    ##     ## ##     ## #### ##        ######  ######## ####  ######     ##    
+  */
+
   .tarifListBackground {
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 4em;
-    height:7em;
-    padding-bottom: 1em;
-    p {
-      font-size:0.6em;
-  
-    }
+    background-color:#FCBCBD;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    height:14em;
+    margin-top:8em; // --w/2 + padding
+    margin-bottom:7em;
+    padding-bottom:1em;
     
+    .tarifsList {display:flex; justify-content:center;}  
   }
-}
 
-.tarifsContainer h1 {
-  display:block;
-  text-align: center;
-  font-size: 2.5em;
-  font-weight: lighter;
-  color:grey;
-  padding-top:15vh;
-  padding-bottom: 2.5em;
-}
+  @media (max-width:500px) {
+    .tarifListBackground {
+      margin-left: 1em;
+      margin-right: 1em;
+      margin-top: 4em;
+      height:7em;
+      padding-bottom: 1em;
+      p {font-size:0.6em;}
+    }
+  }
 
+  .tarifsContainer h1 {
+    display:block;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: lighter;
+    color:grey;
+    padding-top:15vh;
+    padding-bottom: 2.5em;  
+  }
 
-  @media (max-width:500px){
+  @media (max-width:500px) {
     .tarifsList {
       margin-left:0;
       margin-right:0;
       padding-left: 0.5em;
       padding-right: 0.5em;
-     
-      }
-     .tarifsContainer h1 {
+    }
+    .tarifsContainer h1 {
       padding-top:11vh;
       margin-bottom: 2em;
-    }
-
-  
+    }  
   }
 
-
-  .tarifReduction {
-
-    font-size: 0.6em;
-  }
+  .tarifReduction {font-size: 0.6em;}
   
   .tarif {
     width:14em;height:14em; margin-top:-7em;
@@ -391,27 +405,29 @@ img {
     box-shadow: -13px -13px 14px rgba(255, 56, 92, 0.21), 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  @media (max-width:500px){
+  @media (max-width:500px) {
     .tarif {
-    width : 7em;
-    height: 7em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-top: -3.5em;
-    // padding-top: 0.5em;
+      width : 7em;
+      height: 7em;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      margin-top: -3.5em;
+    }
   }
 
+  /*
+   ########    ###    ########  #### ########   
+      ##      ## ##   ##     ##  ##  ##          
+      ##     ##   ##  ##     ##  ##  ##          
+      ##    ##     ## ########   ##  ######      
+      ##    ######### ##   ##    ##  ##                
+      ##    ##     ## ##    ##   ##  ##        
+      ##    ##     ## ##     ## #### ##          
+  */
 
-  }
+  .tarifVerticalCenter {margin:1em;}
   
-  .tarifVerticalCenter {
-    margin:1em;
-  
-  }
-  
-  .tarif p {
-    margin-top: 0;
-  }
+  .tarif p {margin-top: 0;}
   
   .tarifMontant {
     text-align: center;
@@ -425,28 +441,18 @@ img {
     text-align: right;
     font-size: 1em;
     font-weight: lighter;
+  } 
+
+  .tarifAn span {border-bottom: #FF385C solid 3px;}
     
-  }
-
- 
-
-  .tarifAn span {
-    border-bottom: #FF385C solid 3px;
-  }
-  
-  
   .tarifDuree {
-   font-weight: bold;
-   text-align: center;
-  font-size: 0.8em;
-  padding-top:2em;
-  
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.8em;
+    padding-top:2em;
   }
   
-  .tarifDuree span {
-    background-color: #FFAFBE;
-  
-  }
+  .tarifDuree span {background-color: #FFAFBE;}
 
   @media (max-width:500px){
     .tarifMontant {font-size: 1em;}
@@ -459,25 +465,32 @@ img {
     .tarifReduction {
       padding-top:8em;
       font-size: 0.4em;
-
     }
   }
+
+  /*
+   ######  ########  ########  ######  ########    ###     ######  ##       ########  ######  
+  ##    ## ##     ## ##       ##    ##    ##      ## ##   ##    ## ##       ##       ##    ## 
+  ##       ##     ## ##       ##          ##     ##   ##  ##       ##       ##       ##       
+  ######  ########  ######   ##          ##    ##     ## ##       ##       ######    ######  
+        ## ##        ##       ##          ##    ######### ##       ##       ##             ## 
+  ##    ## ##        ##       ##    ##    ##    ##     ## ##    ## ##       ##       ##    ## 
+  ######  ##        ########  ######     ##    ##     ##  ######  ######## ########  ######  
+  */
   
   .spectacles {
     color:black;
 
-    img {
-      height:20%!important;
-    }
+    img {height:20%!important;}
 
     h1 {
       display:block;
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: lighter;
-    color:grey;
-    padding-top:13vh;
-    margin-bottom: 2em;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: lighter;
+      color:grey;
+      padding-top:13vh;
+      margin-bottom: 2em;
     }
   }
 
@@ -502,14 +515,11 @@ img {
 
     .spectacles h1 {
       padding-top:11vh;
-      margin-bottom: 2em;
-     
+      margin-bottom: 2em;   
     }
-
   }
 
   #asso {
-
     h1 {
      display:block;
      text-align: center;
@@ -518,23 +528,30 @@ img {
      color:grey;
      padding-top:11vh;
      margin-bottom:1.5em;
-   }
+    }
    
-   p {
-     padding-left:3.5em;
-     padding-right:3.5em;
-     padding-top:1.5em;
-     padding-bottom:1.5em;
-     text-align:justify;
-     margin-bottom: 0;
-     margin-top: 0;
-     font-size:1em;
-     line-height: 1.5em;
-     
-   }
-   
-   }
+    p {
+      padding-left:3.5em;
+      padding-right:3.5em;
+      padding-top:1.5em;
+      padding-bottom:1.5em;
+      text-align:justify;
+      margin-bottom: 0;
+      margin-top: 0;
+      font-size:1em;
+      line-height: 1.5em;
+    }
+  }
   
+  /*
+  ########  #######   #######  ######## ######## ########  
+  ##       ##     ## ##     ##    ##    ##       ##     ## 
+  ##       ##     ## ##     ##    ##    ##       ##     ## 
+  ######   ##     ## ##     ##    ##    ######   ########  
+  ##       ##     ## ##     ##    ##    ##       ##   ##   
+  ##       ##     ## ##     ##    ##    ##       ##    ##  
+  ##        #######   #######     ##    ######## ##     ##   
+  */
 
   .footer {
     background-image: url("/images/footer.svg");
@@ -543,7 +560,6 @@ img {
     justify-content: space-between;
     padding: 1vw 5vw;
     margin-top:1vh;
-   
   }
 
   .footer p {
@@ -564,34 +580,37 @@ img {
   }
 
   .footerDroite {
-    a {
-    text-align:center;
-  }
-    img {
-      width:2em;
-    }
+    a {text-align:center;}
+    img {width:2em;}
     .footerIcon {
       display:flex;
       justify-content: space-around;
     }
-} 
+  } 
 
-@media (max-width:500px){
- 
-  .footerGauche a {
-   font-size:0.6em;
-  }
-  .footer p{
-    font-size:0.8em;
+  @media (max-width:500px) {
+    .footerGauche a {
+      font-size:0.6em;
+    }
+    .footer p {font-size:0.8em;}
   }
 }
-}
+
+/*
+########  ######  ########     ###     ######  ######## ########  ######## ########   ######   #######       ####          ###    ##     ## ######## ##     ## 
+##       ##    ## ##     ##   ## ##   ##    ## ##       ##     ## ##       ##     ## ##    ## ##     ##     ##  ##        ## ##   ##     ##    ##    ##     ## 
+##       ##       ##     ##  ##   ##  ##       ##       ##     ## ##       ##     ## ##       ##     ##      ####        ##   ##  ##     ##    ##    ##     ## 
+######    ######  ########  ##     ## ##       ######   ########  ######   ########   ######  ##     ##     ####        ##     ## ##     ##    ##    ######### 
+##             ## ##        ######### ##       ##       ##        ##       ##   ##         ## ##     ##    ##  ## ##    ######### ##     ##    ##    ##     ## 
+##       ##    ## ##        ##     ## ##    ## ##       ##        ##       ##    ##  ##    ## ##     ##    ##   ##      ##     ## ##     ##    ##    ##     ## 
+########  ######  ##        ##     ##  ######  ######## ##        ######## ##     ##  ######   #######      ####  ##    ##     ##  #######     ##    ##     ##
+*/
 
 .login, .forgotPassword, .changePassword {
   height:94vh;
- display:flex;
- flex-direction: column;
- justify-content: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .sendAbsences, .sendInvoices {
@@ -607,9 +626,7 @@ img {
   label {
     margin-bottom: 0.2em!important;
   }
-}
-
- 
+} 
 
 .login, .changePassword, .sendAbsences, .sendInvoices, .forgotPassword {
   background-image: url("/images/backgroundEspacePerso.png");
@@ -667,38 +684,33 @@ img {
       margin-right:auto;
       border:none;
     }
-
   }
+
   a {
     text-decoration: none;
     color: black;
-    font-size:0.7em;
-   
+    font-size:0.7em; 
   }
-  p {
-    text-align: center;
-   
-  }
+
+  p {text-align: center;}
 }
 
 
 .login, .changePassword {
 
-  form {
-    padding-top: 2em;
-  }
+  form {padding-top: 2em;}
   p {
     color: red;
     font-size: 0.8em;
     font-weight: bold;
     margin-top:0;
-  
   }
 }
 
 .espacePersoAccueil {
   padding-left: 2em;
-  padding-right: 2em;}
+  padding-right: 2em;
+}
 
 @media (max-width:500px){
   .login, .changePassword, .forgotPassword {
@@ -707,60 +719,31 @@ img {
       height:45vh;
       padding-top:0;
     }
-    label {
-      font-size:0.65em!important;
+    label {font-size:0.65em!important;}
   }
-}
 
+  .changePassword, .sendInvoices, .sendAbsences {height:71vh;}
 
-.changePassword, .sendInvoices, .sendAbsences {
-  height:71vh;
-}
-
-.login, .byMail, .forgotPassword {
-  height:90vh;
-}
+  .login, .byMail, .forgotPassword {height:90vh;}
 }
 
 .espacePersoAccueil {
-
-  p {
-  text-align: justify;
-}
-  span {
-    color:#FF385C;
-  }
-  p {
-    margin-top:2em;
-  }
+  p {text-align: justify;}
+  span {color:#FF385C;}
+  p {margin-top:2em;}
 }
 
+.espacePerso, .profil {display: flex;}
 
-.espacePerso, .profil {
-  display: flex;
-}
+.partieDroiteEspacePerso, .partieDroiteChangePassword  {width:70%;}
 
-
-.partieDroiteEspacePerso, .partieDroiteChangePassword  {
-  width:70%;
- 
-}
-
-.partieDroiteEspacePerso {
-   padding-top:7em;
-
-
-}
+.partieDroiteEspacePerso {padding-top:7em;}
 
 @media (max-width:500px) {
   .partieDroiteEspacePerso, .partieDroiteChangePassword {
     width:auto;
     padding-top:0;
-    // padding-left: 1.5em;
-    // padding-right: 1.5em;
-    // padding-top:3em;
   }
-
 }
 
 .partieDroiteProfil {
@@ -772,29 +755,16 @@ img {
   display:flex;
   justify-content: space-between;
    
-  span {
-    color:#FB9695;
-  }
+  span {color:#FB9695;}
 
-  p {
-    text-align: justify;
-  }
-
+  p {text-align: justify;}
 }
 
 .partieDroiteProfil {
-  .padRight {
-    padding-right:7.2em;
-
-  }
+  .padRight {padding-right:7.2em;}
   
-  span {
-    color:black;
-  }
-  #email {
-    font-size: 0.9em;
-   // width: 
-  }
+  span {color:black;}
+  #email {font-size: 0.9em;}
   h1 {
     margin-top:0.2em;
     margin-bottom: 1.5em;
@@ -804,16 +774,10 @@ img {
     text-align: left;
   }
   .adresse {
-    
     display : flex;
     align-items: flex-start;
 
-    p {
-      width:28%
-    }
-  
-
-   
+    p {width:28%;}
   }
 
   .profilDetailGauche {
@@ -833,8 +797,6 @@ img {
       padding:0.2em 0.6em;
       margin-left:2em;
       margin-right:2.5em;
-
-  
     }
   }
 
@@ -849,96 +811,65 @@ img {
     p {
       width:100%;
       margin-bottom: 0;
-      // margin-top: 0;
-  }
-}
-
-.profilDetailDroite {
-  margin-left:2em;
-  .adherents {
-  display: flex;
-  justify-content: space-between;
-  font-size:1em;
-
- 
- }  
-
- 
-  span {
-    color:#FF385C;
-  }
-  ul {
-    padding-left:0;
+    }
   }
 
-  .adherentDroite {
-    margin-left:1em;
-    p {
-    text-align:center;
-    margin-bottom: 0.5em;
-    margin-top:0.5em;
+  .profilDetailDroite {
+    margin-left:2em;
+    .adherents {
+      display: flex;
+      justify-content: space-between;
+      font-size:1em;
+    }  
+    span {color:#FF385C;}
+    ul {padding-left:0;}
+
+    .adherentDroite {
+      margin-left:1em;
+      p {
+        text-align:center;
+        margin-bottom: 0.5em;
+        margin-top:0.5em;
+      }
+      img {
+        display: block;
+        width: 5em;
+        border-radius: 25px; 
+      }
+    }
   }
-    img {
-    display: block;
-    width: 5em;
-    border-radius: 25px;
-    
-  }
-}
- 
-}
 }
 
 @media (max-width:500px){
-  .profil {
-   display:inline;
-  }
+  .profil {display:inline;}
   .partieDroiteProfil {
     display:inline;
     .profilDetailGauche {
       width:100vw;
       margin-left:1em;
-      h1 {
+      h1 {text-align:center;}
+      .padRight {padding-right:5em;}
+      .telephone {margin-bottom:2em;}
+      .liens {display:inline;}
+      .liens a {font-size:0.7em;}
+    }
+    .profilDetailDroite {
+      margin:0 1em;
+      h1{
         text-align:center;
+        margin-top:1em;
+        margin-bottom:1em;
       }
-      .padRight {
-        padding-right:5em;
-    
-      }
-      .telephone {
-        margin-bottom:2em;
-       }
-      .liens {
-        display:inline;
-        
-      }
-      .liens a {
-        font-size:0.7em;
-      }
-  }
-  .profilDetailDroite {
-    margin:0 1em;
-    h1{
-      text-align:center;
-      margin-top:1em;
-      margin-bottom:1em;
     }
   }
-  }
- 
 }
 
-.changePasswordFlex {
-  display:flex;
- 
-}
+.changePasswordFlex {display:flex;}
 
 @media (max-width:500px) {
-  .changePasswordFlex {
-    display:inline;
-   
-  }
+  .changePasswordFlex {display:inline;}
 }
+
 .navbarEspacePerso {
   width: 30%;
   padding-top:12vh;
@@ -962,9 +893,7 @@ img {
       padding-left: 1.5em;
       padding-right: 1.5em;
     }
-   
   }
-  
 }
 
 
@@ -974,9 +903,7 @@ img {
   height: 88vh;
   background: linear-gradient(90.98deg, rgba(255, 56, 92, 0.69) 1.82%, rgba(248, 108, 102, 0.69) 97.68%);
   border-radius: 0 32px 0 0;
-
 }
-
 
 .click-item {
   width: 80%;
@@ -987,14 +914,10 @@ img {
   border-radius: 32px;
   display: flex;
   margin-left: 1.2em;
-  margin-bottom: 2em;
-  
+  margin-bottom: 2em;  
 }
 
-.icone {
-  flex: 20%;
- 
-}
+.icone {flex: 20%;}
 
 .icone img {
   display: block;
@@ -1002,7 +925,7 @@ img {
   margin-right: auto;
   padding-left: 0.5em;
   height: 1.5em;
- }
+}
 
 .libelle {
   flex: 80%;
@@ -1011,20 +934,13 @@ img {
 }
 
 .click-item a {
- font-size:1em;
+  font-size:1em;
   text-decoration: none;
   font-weight: lighter;
-
-  // letter-spacing: 0.02em;
   color: #FFFFFF;
-
 }
 
-.user-navbar {
-  margin-top: 1.2em;
- }
-
-
+.user-navbar {margin-top: 1.2em;}
 
 .user-name {
   display: flex;
@@ -1053,37 +969,25 @@ img {
   .navbarEspacePerso {
     width:100vw;
     padding-top:10vh;
-    h1 {
-      display:none;
-    }
+    h1 {display:none;}
   }
 
-.navBarEP {
-  height:10vh;
-  width: 100vw;
-  border-radius:0;
+  .navBarEP {
+    height:10vh;
+    width: 100vw;
+    border-radius:0;
+  }
+  .espacePerso {flex-direction:column;}
 
-}
-  .espacePerso {
-    flex-direction:column;
-  }
-  .navbarEspacePerso span {
-    display:none;
-  }
+  .navbarEspacePerso span {display:none;}
 
   .click-items-container {
     flex-direction:row;
     margin-top:0;
   }
 
-  .click-item {
-    box-shadow: none;
-
-  }
-   
+  .click-item {box-shadow: none;} 
 }
-
-
 
 .editProfil {
   form {
@@ -1091,8 +995,8 @@ img {
     margin-left: auto;
     margin-right:auto;
     margin-top:2em;
-
   }
+
   .editProfilTitre {
     margin-top:0;
     margin-bottom:4em;
@@ -1100,6 +1004,7 @@ img {
     color:#5C5A5A;
     text-align:center;
   }
+
   #button {
     border-radius: 5px;
     border:solid 1px #FF385C;
@@ -1114,7 +1019,6 @@ img {
     margin-left: auto;
     margin-right:auto;
     border:none;
-  
   }
 }
 
@@ -1125,6 +1029,7 @@ img {
   margin-left:auto;
   margin-right:auto;
   width:70%;
+
   input {
     border-radius: 5px;
     border:solid 1px #FF385C;
@@ -1133,25 +1038,19 @@ img {
     font-size:1em;
     width:70%;
   }
-  label {
-    width:30%;
-  }
 
+  label {width:30%;}
 }
 
 @media (max-width:500px){
   .editProfil {
-    h1 {
-      text-align:center;
-    }
+    h1 {text-align:center;}
     .libelleInput {
       margin-left:0;
       margin-right:0;
       width:auto;
     }
-    #button {
-      width:auto;
-    }
+    #button {width:auto;}
   }
 }
 
@@ -1172,37 +1071,28 @@ img {
     font-size: 1.5em;
   }
 
-  li {
-    list-style: none;
-  }
-
- 
+  li {list-style: none;} 
 }
+
 .sendAbsences, .sendInvoices {
 
   span {color: #FF385C;}
-
   
   .formSendAbsences, .formSendInvoices {
     display:flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
-
   }
 
+  label {text-align:center;}
 
-  label {
-    text-align:center;
-  }
   .motif input {
     height: 2em;
     margin-left:auto;
     margin-right:auto;
   }
- 
 }
-
 
 @media (max-width:500px){
   .sendAbsences, .sendInvoices {
@@ -1210,6 +1100,7 @@ img {
       padding-bottom:0;
       font-size:0.8em;
     }
+
     form {
       width:40vw;
       height:38vh;
@@ -1224,51 +1115,38 @@ img {
   }
 }
 
-// @media (max-width:500px){
-  .absences, .invoices {
-   p, a {
-     text-align: center;
-     padding:1em;
-        
-      }
-  ul {
-    padding-left:0;
+.absences, .invoices {
+  p, a {
+    text-align: center;
+    padding:1em;    
   }
-    }
-  // }
-
+  ul {padding-left:0;}
+}
 
 .navBarResp {
-  a {
-    color: #000;
-  }
-  
-  /* header */
-  
+  a {color: #000;}
+   
   .header {
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
     width: 100%;
-    z-index: 3;
-   
+    z-index: 3; 
   }
 
   .leftNavBar {
     display:flex;
     align-items: center;
     a {
-          text-decoration: none;
-          color:#FF385C;
-          font-size:1.5em;
-        }
-      
+      text-decoration: none;
+      color:#FF385C;
+      font-size:1.5em;
+    }  
   }
 
+  /* header */
 
-  .header  img {
-        height:7vh;
-      }
+  .header  img {height:7vh;}
   
   .header ul {
     margin: 0;
@@ -1281,7 +1159,6 @@ img {
   .header li a {
     display: block;
     padding: 20px 20px 15px 20px;
-   // border-right: 1px solid #f4f4f4;
     text-decoration: none;
   }
   
@@ -1347,9 +1224,7 @@ img {
   
   /* menu btn */
   
-  .header .menu-btn {
-    display: none;
-  }
+  .header .menu-btn {display: none;}
   
   .header .menu-btn:checked ~ .menu {
     max-height: 20em;
@@ -1372,30 +1247,22 @@ img {
     top: 0;
   }
   
-  /* 48em = 768px */
-  
   @media (min-width: 48em) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 30px 30px;
-    }
+    .header li {float: left;}
+    .header li a {padding: 30px 30px;}
     .header .menu {
       clear: none;
       float: right;
       max-height: none;
     }
-    .header .menu-icon {
-      display: none;
-    }
+    .header .menu-icon {display: none;}
   }
-  
 }
 
 .styles_overlay__CLSq- {
   display:flex!important;
 }
+
 .styles_modal__gNwvD {
   margin-top:auto!important;
   margin-bottom:auto!important;
